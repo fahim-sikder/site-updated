@@ -1,0 +1,6 @@
+github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2 h1:rgavbaIjA9ki73sJ9OkE/yIdUYF2AJALs6NzCg6kC60=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2/go.mod h1:C7jfxMLv1bEUqbM9XDSmEpfOpS8w06OgqNDEcbuRgL4=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.9.0 h1:lZJ3xjkZQ9c+cfZ++zm/q3HAS1XD7tERvGa4gPvu5TQ=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.9.0/go.mod h1:iiKLoehg9IqQd0R4jUfhl+wvJCiXPNgV88A/V8iKSLY=
+github.com/nicokaiser/hugo-theme-gallery/v4 v4.9.3 h1:7HKtUwUgNXVi+E3M7dQw18RrLAOF4xcDgDlxFAt52rY=
+github.com/nicokaiser/hugo-theme-gallery/v4 v4.9.3/go.mod h1:oVtY67dE9NbaJw9jM4G5moHAcgT/UXxdcIQhs52KPoU=
