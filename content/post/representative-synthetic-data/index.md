@@ -5,12 +5,12 @@ title: "Teaching Machines to Be Fair: The Fight Against Algorithmic Bias"
 subtitle: ""
 summary: ""
 authors: ["Md Fahim Sikder"]
-tags: ["Data Fairness", "Generative Models", "Intersectional Fairness", "Representation Learning", "Synthetic Datas"]
+tags: ["Data Fairness", "Generative Models", "Intersectional Fairness", "Representation Learning", "Synthetic Data"]
 categories: ["Blog Post"]
 date: 2025-12-10T11:05:01+01:00
 lastmod: 2025-12-10T11:05:01+01:00
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -27,6 +27,8 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+
 ## When AI Gets It Wrong: Teaching Machines to Be Fair
 
 Picture this: You are applying for a loan, and an AI system instantly rejects your application. Not because your credit score or income, but because you belong to a demographic group that was historically denied loans. The algorithm learned from past data that reflected decades of discrimination. Now it is repeating those same mistakes at lightning speed.
@@ -45,7 +47,7 @@ My research explores two strategies for tackling these challenges:
 
 First, I developed methods to generate synthetic data that removes discriminatory patterns while keeping the data useful for real-world applications. Think of it as creating practice datasets where AI can learn to make good decisions without picking up our bad habits. 
 
-I created two systems for this: Bt-GAN for healthcare data, which tackles the challenge of medical records where biases run deep, and FLDGMs (Fair Latent Deep Generative Models), which works across different types of data.
+I created two systems for this: [Bt-GAN](https://doi.org/https://doi.org/10.1613/jair.1.15317) for healthcare data, which tackles the challenge of medical records where biases run deep, and [FLDGMs (Fair Latent Deep Generative Models)](https://doi.org/10.3233/FAIA230484), which works across different types of data.
 
 The results were promising. When we tested Bt-GAN on real healthcare datasets, it achieved near-perfect demographic parity (reducing discrimination from 23.9% to just 0.1%) while maintaining the data quality needed for clinical predictions. FLDGMs showed similar success across financial and criminal justice datasets, proving that fair AI does not have to sacrifice accuracy.
 
@@ -53,7 +55,7 @@ The results were promising. When we tested Bt-GAN on real healthcare datasets, i
 
 Second, I developed techniques that teach AI models to extract "fair features" from biased data. Instead of treating fairness as something you add at the end, these approaches build it directly into how the model understands and represents information. 
 
-One method uses knowledge distillation—a teacher model learns to be accurate, then passes that knowledge to a student model that's also trained to be fair. Another approach, called Diff-Fair, uses diffusion models to gradually refine how the AI sees the data, making sensitive attributes like race or gender irrelevant to its decisions.
+One method uses knowledge distillation, a teacher model learns to be accurate, then passes that knowledge to a student model that's also trained to be fair. Another approach, called Diff-Fair, uses diffusion models to gradually refine how the AI sees the data, making sensitive attributes like race or gender irrelevant to its decisions.
 
 ## Making Fairness Measurable
 
