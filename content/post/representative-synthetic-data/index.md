@@ -10,7 +10,7 @@ categories: ["Blog Post"]
 date: 2025-12-10T11:05:01+01:00
 lastmod: 2025-12-10T11:05:01+01:00
 featured: false
-draft: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
