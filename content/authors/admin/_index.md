@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Ph.D. Student
+role: AI Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -49,20 +49,19 @@ profiles:
 
 interests:
   - Artificial Intelligence
-  - Deep Learning
   - Generative Models
   - Time-Series Generation
   - Trustworthy AI
   - Data Fairness
+  - ML for Healthcare
   - Explainable AI (XAI)
-  - Robotics
 
 education:
   - area: Ph.D. in Computer Science
     institution: Linköping University, Sweden
     icon: ""
     date_start: 2020-04-01
-    date_end:
+    date_end: # 2026-01-16
     summary: |
       Thesis on Representative Synthetic Data for Fair Decision Making.
     button:
@@ -82,12 +81,26 @@ education:
     summary:
 
 work:
+  # - position: Postdoc
+  #   company_name: Linköping University
+  #   company_url: 'https://liu.se/en'
+  #   icon: ''
+  #   date_start: 2026-04-01
+  #   date_end: 
+  #   summary: |2-
+  #       Department of Computer and Information Science (IDA)
+        
+  #       Responsibilities include:
+      
+  #       * Research
+  #       * Supervising Master's Thesis
+  #       * Conducting Labs
   - position: Ph.D. Student
     company_name: Linköping University
     company_url: 'https://liu.se/en'
     icon: ''
     date_start: 2020-04-01
-    date_end: ''
+    date_end: # 2026-03-31
     summary: |2-
         Department of Computer and Information Science (IDA)
         

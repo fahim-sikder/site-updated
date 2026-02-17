@@ -2,68 +2,74 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "FairRep: Mitigating Intersectional Bias through Fair Representation Learning"
-authors: ["Md Fahim Sikder", "Daniel de Leng", "Fredrik Heintz"]
 date: 2025-02-19T19:19:07+01:00
-doi: ""
 
-# Schedule page publish date (NOT publication's date).
-publishDate: 2025-02-19T19:19:07+01:00
+projects:
+  - fair-decision-making
+  - time-series-generation
+# Authors (reference data/authors/*.yaml slugs)
+authors:
+  - Md-Fahim-Sikder
+  - Daniel-de-Leng
+  - Fredrik-Heintz
 
-# Publication type.
-# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
-# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
-# 7 = Thesis; 8 = Patent
-publication_types: ["Conference paper"]
+# Publication type
+# Options: article-journal, paper-conference, thesis, book, chapter, report, patent, manuscript
+publication_types: ["paper-conference"]
 
-# Publication name and optional abbreviated publication name.
-publication: "Under Review"
+# Publication venue
+publication: "*Under Review*"
 publication_short: ""
 
+# Abstract
 abstract: ""
 
-# Summary. An optional shortened abstract.
+# Summary (for listing cards)
 summary: ""
 
-tags: []
-categories: []
-featured: false
+# DOI
+doi:
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
-# links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
-
-url_pdf:
-url_code:
-url_dataset:
-url_poster:
-url_project:
-url_slides:
-url_source:
-url_video:
+# Tags
+tags:
+  - Representation Learning
+  - ML for Healthcare
+  - Data Fairness
+  - Fair Representation Learning
+  - Intersectional Bias
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
+  filename:
+  caption: 
+  focal_point:
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
-projects: []
+# Links
+# links:
+#   - name: PDF
+#     url: "https://www.jair.org/index.php/jair/article/view/15317/27031"
+#   - name: Dataset
+#     url: "https://physionet.org/content/mimiciii/1.4/"
+#   - name: Slides
+#     url: slides.pdf
+#   - name: Video
+#     url: https://youtube.com/...
+#   - name: Poster
+#     url: poster.pdf
 
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: ""
+# External link (opens this URL instead of the publication page)
+# url_pdf: "https://www.jair.org/index.php/jair/article/view/15317/27031"
+# url_code: ""
+# url_dataset: "https://physionet.org/content/mimiciii/1.4/"
+# url_poster: ""
+# url_project: ""
+# url_slides: ""
+# url_source: ""
+# url_video: ""
+
+# Pin to top of listings
+featured: false
+
+# Draft
+draft: false
 ---

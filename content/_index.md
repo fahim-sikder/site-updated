@@ -42,7 +42,7 @@ sections:
       title: 'My Research'
       subtitle: ''
       text: |-
-        My research interests include Artificial Intelligence, Generative Models, Time-Series Generation, Data Fairness, Trustworthy AI.  
+        My research interests include Artificial Intelligence, Generative Models, Time-Series Generation, Data Fairness, Trustworthy AI, ML for Healthcare.  
     design:
       columns: '1'
   - block: collection
@@ -106,6 +106,22 @@ sections:
       count: 5
     design:
       view: citation
+
+  - block: collection
+    id: project
+    content:
+      title: Projects
+      filters:
+        folders:
+          - project
+      count: 3
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 3
+      show_date: false
+      show_read_time: false
+      show_read_more: false
 
   # - block: markdown
   #   content:
