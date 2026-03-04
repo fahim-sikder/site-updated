@@ -2,18 +2,21 @@
 title: "Fair Decision Making"
 date: 2026-02-17T12:34:34+01:00
 # Summary for listing cards
-summary: "An open-source tool for automated data analysis."
+summary: "Research on fair synthetic data generation using deep generative models for unbiased machine learning."
 
 # Tags for filtering
 tags:
-  - Python
-  - Data Science
-  - Open Source
+  - Data Fairness
+  - Synthetic Data Generation
+  - Generative Models
+  - ML for Healthcare
+  - Algorithmic Fairness
+  - Deep Learning
 
 # Featured image
 image:
   filename: featured.jpg
-  caption: "Screenshot of My App"
+  caption: 
   focal_point: Smart
 
 # Links displayed as buttons
@@ -44,14 +47,83 @@ featured: true
 draft: false
 ---
 
-## About This Project
+## Overview
 
-Describe your project in detail using Markdown. Include motivation, methodology, results, and impact.
+The Fair Decision Making project addresses an important challenge in modern machine learning: generating high-quality synthetic data while ensuring fairness across different demographic groups. As machine learning models increasingly influence high-stakes decisions in healthcare, finance, and criminal justice, ensuring these systems make unbiased predictions has become paramount.
 
-## Results
+This research program develops novel deep generative model architectures and training methodologies that produce synthetic data exhibiting both high utility (quality, diversity, fidelity) and fairness properties. Our work primarily focuses on healthcare applications, where biased models can have serious real-world consequences for patient care and treatment decisions.
 
-Add figures, tables, and discussion.
+## Motivation
 
-## How to Use
+Training machine learning models on real-world data often leads to biased outcomes due to:
 
-Include installation instructions, usage examples, or API documentation.
+1. **Spurious correlations** between sensitive attributes (e.g., race, gender) and target variables
+2. **Underrepresentation** of minority subgroups in training data
+3. **Historical biases** embedded in data collection processes
+4. **Privacy constraints** that limit access to diverse representative datasets
+
+Synthetic data generation offers a promising solution by allowing us to create de-identified, representative datasets that maintain utility while mitigating these fairness concerns. However, existing synthetic data generators often fail to adequately address fairness, leading to bias amplification in downstream tasks.
+
+## Research Approach
+
+Our research tackles fairness in synthetic data generation through multiple complementary approaches:
+
+### 1. Bias-Transforming Generative Models
+
+We develop generative adversarial networks (GANs) with explicit fairness constraints that learn to transform biased data distributions into fair ones. This includes:
+
+- Information-constrained data generation processes based on well-defined notions of algorithmic fairness
+- Score-based weighted sampling to preserve minority subgroup densities
+- Techniques to break spurious correlations while maintaining data utility
+
+### 2. Fair Latent Representations
+
+We propose learning syntax-agnostic, model-agnostic fair latent representations that separate fairness optimization from data generation:
+
+- Enables more stable training by decoupling fairness constraints from generator optimization
+- Reduces computational demands by generating data in low-dimensional spaces
+- Provides flexibility to use different generative model architectures (GANs, Diffusion Models, VAEs)
+
+### 3. Data-Free Fair Synthesis
+
+We explore data-free distillation techniques that generate fair synthetic samples without requiring access to the original sensitive data:
+
+- Enables fair data generation in privacy-constrained scenarios
+- Reduces dependency on large labeled datasets
+- Maintains high fidelity while ensuring fairness guarantees
+
+### 4. Intersectional Fairness
+
+We address the challenge of intersectional bias, where multiple sensitive attributes interact to create compounded discrimination:
+
+- Novel fairness metrics that capture intersectional disparities
+- Generation techniques that ensure fairness across intersecting demographic groups
+- Applications to temporal and sequential data domains
+
+## Key Contributions
+
+Our work has resulted in:
+
+- **Novel architectures**: Bt-GAN, FLDGM, and Fair4Free frameworks that achieve state-of-the-art performance in fair synthetic data generation
+- **Theoretical foundations**: Formal definitions and analysis of fairness in generative models
+- **Empirical validation**: Extensive experiments on real-world healthcare datasets (MIMIC-III) demonstrating improved fairness without sacrificing utility
+- **Open-source tools**: Publicly available implementations enabling reproducible research and practical applications
+- **Explainability analysis**: In-depth studies providing evidence for the validity and trustworthiness of our methods
+
+## Impact and Applications
+
+This research enables:
+
+- **Fair healthcare AI**: Training clinical decision support systems that provide equitable care across patient demographics
+- **Privacy-preserving analytics**: Generating synthetic datasets for research while protecting patient privacy
+- **Bias mitigation**: Identifying and correcting biases in existing datasets and models
+- **Regulatory compliance**: Meeting fairness requirements in AI systems deployed in regulated domains
+
+## Technical Approach
+
+Our methods employ:
+
+- **Deep generative models**: GANs, Diffusion Models, Variational Autoencoders
+- **Fairness metrics**: Demographic parity, equalized odds, individual fairness measures
+- **Optimization techniques**: Adversarial training, score-based sampling, information constraints
+- **Evaluation frameworks**: Comprehensive assessment of utility (quality, diversity, fidelity) and fairness trade-offs

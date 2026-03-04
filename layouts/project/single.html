@@ -1,0 +1,148 @@
+{{ define "main" }}
+
+{{ $pub_type_csl := "" }}
+{{ $pub_type_display := "" }}
+{{ if .Params.publication_types }}
+  {{ if reflect.IsSlice .Params.publication_types }}
+    {{ $pub_type_csl = index .Params.publication_types 0 }}
+    {{ $pub_type_display = i18n (printf "pub_%s" (strings.Replace $pub_type_csl "-" "_")) | default (strings.Title $pub_type_csl) }}
+  {{ end }}
+{{ end }}
+
+<div class="mx-auto flex max-w-screen-xl">
+  {{ partial "components/sidebar.html" (dict "context" . "no_sidebar" true) }}
+  {{ partial "components/toc.html" . }}
+  <article class="w-full break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+    <main class="w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
+
+      {{ if .Params.show_breadcrumb }}
+      <div class="mb-4">
+        {{ partial "components/breadcrumb.html" . }}
+      </div>
+      {{ end }}
+
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+        {{- .Title -}}
+      </h1>
+
+      <div class="mt-4 mb-16">
+      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2">
+        {{- if .Date | and (not .Params.hide_date) -}}
+        <span class="mr-1">{{- .Date | time.Format (site.Params.locale.date_format | default ":date_long") -}}</span>
+        {{- end -}}
+
+        {{ if ne .Params.reading_time false }}
+        <span class="mx-1">·</span>
+        <span class="mx-1">
+          {{ .ReadingTime }} {{ i18n "minute_read" }}
+        </span>
+        {{ end }}
+        </div>
+
+        <div class="mt-3">
+          {{ partial "page_links_div.html" . }}
+        </div>
+      </div>
+
+
+
+      {{ $featured := partial "functions/get_featured_image.html" . }}
+      {{/* Featured image layout */}}
+      {{ if and $featured (not .Params.image.preview_only) }}
+      {{/* Fit image within max size. */}}
+      {{ $image := $featured }}
+
+      {{/* Determine image placement. */}}
+      {{ $placement := .Params.image.placement | default 1 }}{{/* Default to full column width. */}}
+      {{/* Configure responsive processing based on placement */}}
+      {{ $image_container := "" }}
+      {{ $responsive_sizes := slice }}
+      {{ $sizes_attr := "" }}
+      {{ if eq $placement 2}}
+        {{ $image_container = "container" }}
+        {{ $responsive_sizes = slice 480 768 1024 1200 1600 }}
+        {{ $sizes_attr = "(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1200px) 80vw, 1200px" }}
+      {{else if eq $placement 3}}
+        {{ $image_container = "container-fluid" }}
+        {{ $responsive_sizes = slice 768 1024 1366 1920 2560 }}
+        {{ $sizes_attr = "(max-width: 768px) 100vw, (max-width: 1366px) 90vw, (max-width: 1920px) 80vw, 2560px" }}
+      {{else}}
+        {{ $image_container = "article-container" }}
+        {{ $responsive_sizes = slice 320 480 640 720 960 }}
+        {{ $sizes_attr = "(max-width: 480px) 100vw, (max-width: 640px) 90vw, (max-width: 720px) 80vw, 720px" }}
+      {{end}}
+
+      {{/* Process featured image using utility with placement-specific constraints */}}
+      {{ if ne $featured.MediaType.SubType "gif" }}
+        {{/* Pre-fit image to placement constraints, then apply responsive processing */}}
+        {{ $fitted_image := $featured }}
+        {{ if eq $placement 2}}
+          {{ $fitted_image = $featured.Fit "1200x2500" }}
+        {{else if eq $placement 3}}
+          {{ $fitted_image = $featured.Fit "2560x2560" }}
+        {{else}}
+          {{ $fitted_image = $featured.Fit "720x2500" }}
+        {{end}}
+
+        {{ $responsive := partial "functions/process_responsive_image.html" (dict
+            "image" $fitted_image
+            "mode" "responsive"
+            "sizes" $responsive_sizes
+        ) }}
+
+        {{/* Featured image - use fitted image dimensions for container, responsive for srcset */}}
+        <div class="article-header {{$image_container}} featured-image-wrapper mt-4 mb-16" style="max-width: {{$fitted_image.Width}}px; max-height: {{$fitted_image.Height}}px;">
+          <div style="position: relative">
+            <img srcset="{{ $responsive.srcset }}"
+                 sizes="{{ $sizes_attr }}"
+                 src="{{ $responsive.fallback.RelPermalink }}"
+                 width="{{ $fitted_image.Width }}"
+                 height="{{ $fitted_image.Height }}"
+                 alt="{{ with $.Params.image.alt_text }}{{.}}{{ end }}"
+                 class="featured-image"
+                 fetchpriority="high">
+            {{ with $.Params.image.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
+          </div>
+        </div>
+      {{ else }}
+        {{/* Handle GIF - apply same placement constraints without responsive processing */}}
+        {{ $image := $featured }}
+        {{ if eq $placement 2}}
+          {{ $image = $featured.Fit "1200x2500" }}
+        {{else if eq $placement 3}}
+          {{ $image = $featured.Fit "2560x2560" }}
+        {{else}}
+          {{ $image = $featured.Fit "720x2500" }}
+        {{end}}
+        <div class="article-header {{$image_container}} featured-image-wrapper mt-4 mb-16" style="max-width: {{$image.Width}}px; max-height: {{$image.Height}}px;">
+          <div style="position: relative">
+            <img src="{{ $image.RelPermalink }}"
+                 width="{{ $image.Width }}"
+                 height="{{ $image.Height }}"
+                 alt="{{ with $.Params.image.alt_text }}{{.}}{{ end }}"
+                 class="featured-image"
+                 fetchpriority="high">
+            {{ with $.Params.image.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
+          </div>
+        </div>
+      {{ end }}
+      {{end}}
+
+      <div class="prose prose-slate lg:prose-xl dark:prose-invert">
+        {{ .Content }}
+      </div>
+
+      {{/* Add our custom partial to display linked publications */}}
+      {{ partial "project_publications.html" . }}
+
+      {{ partial "components/last-edited.html" . }}
+
+      <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
+        {{ .Scratch.Set "invert_pager" true }}
+        {{ partial "page_footer" . }}
+      </div>
+
+    </main>
+  </article>
+</div>
+{{ end }}

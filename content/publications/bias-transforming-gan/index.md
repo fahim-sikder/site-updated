@@ -7,10 +7,10 @@ projects:
 
 # Authors (reference data/authors/*.yaml slugs)
 authors:
-  - Resmi-Ramachandranpillai
-  - Md-Fahim-Sikder
-  - David-Bergström
-  - Fredrik-Heintz
+  - Resmi Ramachandranpillai
+  - Md Fahim Sikder
+  - David Bergström
+  - Fredrik Heintz
 
 # Publication type
 # Options: article-journal, paper-conference, thesis, book, chapter, report, patent, manuscript

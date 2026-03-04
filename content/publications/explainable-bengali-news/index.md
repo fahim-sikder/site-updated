@@ -4,14 +4,14 @@ date: 2023-11-14T17:34:24+01:00
 
 # Authors (reference data/authors/*.yaml slugs)
 authors:
-  - Md-Fahim-Sikder
-  - Md-Ferdous
-  - Shraboni-Afroz
-  - Uzzal-Podder
-  - Kaniz-Fatema
-  - Mohammad-Nahid-Hossain
-  - Md-Tahmid-Hasan
-  - Mrinal-Kanti-Baowaly
+  - Md Fahim Sikder
+  - Md Ferdous
+  - Shraboni Afroz
+  - Uzzal Podder
+  - Kaniz Fatema
+  - Mohammad Nahid Hossain
+  - Md Tahmid Hasan
+  - Mrinal Kanti Baowaly
 
 # Publication type
 # Options: article-journal, paper-conference, thesis, book, chapter, report, patent, manuscript

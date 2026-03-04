@@ -97,17 +97,6 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
   - block: collection
-    id: post
-    content:
-      title: Recent Posts
-      filters:
-        folders:
-          - post
-      count: 5
-    design:
-      view: citation
-
-  - block: collection
     id: project
     content:
       title: Projects
@@ -122,6 +111,16 @@ sections:
       show_date: false
       show_read_time: false
       show_read_more: false
+  - block: collection
+    id: post
+    content:
+      title: Recent Posts
+      filters:
+        folders:
+          - post
+      count: 5
+    design:
+      view: citation
 
   # - block: markdown
   #   content:

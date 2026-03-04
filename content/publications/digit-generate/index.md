@@ -4,7 +4,7 @@ date: 2018-12-15T00:00:00
 
 # Authors (reference data/authors/*.yaml slugs)
 authors:
-  - Md-Fahim-Sikder
+  - Md Fahim Sikder
 
 # Publication type
 # Options: article-journal, paper-conference, thesis, book, chapter, report, patent, manuscript

@@ -8,9 +8,9 @@ projects:
   - time-series-generation
 # Authors (reference data/authors/*.yaml slugs)
 authors:
-  - Md-Fahim-Sikder
-  - Resmi-Ramachandranpillai
-  - Fredrik-Heintz
+  - Md Fahim Sikder
+  - Resmi Ramachandranpillai
+  - Fredrik Heintz
 
 # Publication type
 # Options: article-journal, paper-conference, thesis, book, chapter, report, patent, manuscript

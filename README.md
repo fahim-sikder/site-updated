@@ -1,125 +1,377 @@
-# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/theme-academic-cv)
+# Academic CV Website - Md Fahim Sikder
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
+Personal academic CV website built with Hugo and HugoBlox (Academic CV theme).
 
-<h1 align="center">Build an Academic CV and Resumé That Stands Out</h1>
+**Live Site:** https://fahim-sikder.github.io/
 
-<p align="center">
-  <strong>Your unfair advantage in academia and tech.</strong><br/>
-  Showcase your work, boost your citations, and land your dream job at places like <strong>Meta, Google, and Stanford</strong>.
-</p>
+## Technical Information
 
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>🚀 Deploy Your Free CV in 60s</b></a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/?open=academic-cv&loading=true&utm_source=github&utm_medium=readme">Live Demo</a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/pro?utm_source=github&utm_medium=readme"><b>✨ Upgrade to Pro</b></a>
-</p>
+- **Hugo Version:** v0.152.2 (Extended)
+- **Theme:** HugoBlox Academic CV (Tailwind)
+- **Build Date:** Built with Hugo compiled on 2025-10-24
+- **Deployment:** GitHub Pages
 
-<p align="center">
-  Trusted by 250,000+ researchers, students, and educators worldwide.
-</p>
+## Prerequisites
 
-<p align="center">
-  <a href="https://discord.gg/z8wNYzb">
-    <img src="https://img.shields.io/discord/722225264733716590?label=Join%20Discord&style=social" alt="Discord">
-  </a>
-  <a href="https://github.com/HugoBlox/theme-academic-cv">
-    <img src="https://img.shields.io/github/stars/HugoBlox/theme-academic-cv?label=Star%20Academic%20CV&style=social" alt="GitHub Stars">
-  </a>
-</p>
+Before you begin, ensure you have installed:
 
----
+- **Hugo Extended** (v0.152.0 or later) - [Installation Guide](https://gohugo.io/installation/)
+- **Node.js and pnpm** (for asset processing)
+- **Git** (for version control)
 
-## Your Career Starts Here
+### Installing Hugo Extended
 
-The Academic CV template is designed for impact. Whether you're an AI researcher, a recent graduate, or a seasoned professor, this is the last resumé you'll ever need.
+Download Hugo Extended from the [official releases page](https://github.com/gohugoio/hugo/releases). Make sure to download the **extended** version, as this site requires it for SCSS processing.
 
-- **✍️ Showcase Your Expertise:** Easily write content with Markdown, Jupyter, or RStudio. Display your publications, talks, and projects in a stunning, professional layout.
-- **📈 Boost Your Citations:** Automatic BibTeX import and SEO-optimized pages mean your work gets discovered more easily, increasing your research impact.
-- **💼 Land Your Dream Job:** Create a memorable online presence that impresses recruiters from top tech firms and prestigious universities.
-- **🚀 Launch in Minutes:** No coding required. The Hugo Blox Builder lets you customize everything with drag-and-drop sections.
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme">
-    <img src="https://img.shields.io/badge/⚡️%20Get%20Your%20CV%20in%2060s-ff4655?style=for-the-badge" alt="Deploy this template" width="400">
-  </a>
-</p>
-
----
-
-## Level Up with Pro Templates
-
-Ready to take your career to the next level? Our Pro templates offer exclusive designs and features to help you stand out even more.
-
-<!-- <p align="center">
-  <img src="" alt="Free vs Pro templates">
-</p>-->
-
-| Feature              | Academic CV (Free)       | Academic CV Pro & Resumé Pro     |
-| -------------------- | ------------------------ | -------------------------------- |
-| **Design**           | Professional & clean     | **Exclusive premium designs**    |
-| **Layouts**          | Standard resumé sections | **Advanced layouts & timelines** |
-| **Call to Action**   | Simple contact link      | **Prominent CTA buttons**        |
-| **First Impression** | Strong                   | **Unforgettable**                |
-
-<br/>
-<p align="center">
-  <a href="https://hugoblox.com/pro?utm_source=github&utm_medium=readme"><b>💎 Get the Pro Pass</b></a> — Includes all Pro templates for a one-time price.<br/>
-  <a href="https://hugoblox.com/templates/academic-cv-pro/start?utm_source=github&utm_medium=readme">✨ Deploy Academic CV Pro</a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/resume-pro/start?utm_source=github&utm_medium=readme">📄 Deploy Resumé Pro</a>
-</p>
-
----
-
-## What Researchers Say
-
-> “Hugo Blox saved me 40+ hours on my lab site. BibTeX integration auto-updates publications — **our citations are up 3×**.”
-> — **Dr. Sarah Yang**, AI Researcher
-
----
-
-## Get Started in Minutes
-
-### Recommended (Fastest)
-
-Deploy your site to GitHub Pages in just 60 seconds with our browser-based starter.
-
-👉 <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>Start with the Academic CV Template</b></a>
-
-### Prefer the Command Line?
-
-Use the local quickstart:
-
+Verify your installation:
 ```bash
-# 1. Install Hugo Extended → https://docs.hugoblox.com/getting-started/install-hugo/
-# 2. Clone this starter
-git clone https://github.com/HugoBlox/theme-academic-cv my-site
-cd my-site
-
-# 3. Run locally
-pnpm install && hugo server
+hugo version
+# Should show: hugo v0.152.x-xxx+extended
 ```
 
-For more guides, visit our documentation at **https://docs.hugoblox.com/**.
+## Getting Started
 
+### Clone and Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/fahim-sikder/fahim-sikder.github.io.git
+cd fahim-sikder.github.io
+
+# Install dependencies
+pnpm install
+
+# Run the development server
+hugo server
+```
+
+The site will be available at `http://localhost:1313/`
+
+### Building for Production
+
+```bash
+# Build the site (output will be in /public directory)
+hugo
+
+# Build with drafts included
+hugo --buildDrafts
+```
+
+## Site Structure
+
+```
+.
+├── config/
+│   └── _default/          # Configuration files
+│       ├── hugo.yaml      # Main Hugo configuration
+│       ├── params.yaml    # Site parameters
+│       ├── menus.yaml     # Navigation menus
+│       └── languages.yaml # Language settings
+├── content/
+│   ├── authors/           # Author profiles
+│   ├── publications/      # Research publications
+│   ├── project/           # Research projects
+│   ├── blog/             # Blog posts
+│   ├── post/             # Tutorial posts
+│   ├── _index.md         # Homepage content
+│   └── sections/         # Homepage sections
+├── layouts/
+│   ├── partials/         # Custom partial templates
+│   │   └── project_publications.html  # Auto-links publications to projects
+│   └── project/
+│       └── single.html   # Custom project page layout
+├── static/               # Static files (images, PDFs, etc.)
+├── assets/              # Asset files (CSS, JS)
+└── public/              # Generated site (git ignored)
+```
+
+## Creating New Content
+
+### Adding a New Publication
+
+```bash
+hugo new publications/my-paper/index.md
+```
+
+Edit the frontmatter in `content/publications/my-paper/index.md`:
+
+```yaml
+---
+title: "Your Paper Title"
+date: 2024-01-01T00:00:00Z
+
+# Authors (reference slugs from data/authors/*.yaml)
+authors:
+  - Md-Fahim-Sikder
+  - Other-Author
+
+# Publication type
+publication_types: ["paper-conference"]
+
+# Publication venue
+publication: "*Conference Name 2024*"
+publication_short: "CONF 2024"
+
+# Abstract
+abstract: >
+  Your paper abstract here.
+
+# Link to projects (will automatically show on project pages)
+projects:
+  - fairX
+  - fair-decision-making
+
+# Tags
+tags:
+  - Machine Learning
+  - Fairness
+
+# Links
+links:
+  - name: PDF
+    url: "https://example.com/paper.pdf"
+  - name: Code
+    url: "https://github.com/username/repo"
+  - name: Slides
+    url: "uploads/slides.pdf"
+
+# Featured image
+image:
+  filename: featured.jpg
+  caption: "Figure caption"
+  focal_point: Smart
+
+featured: true
+draft: false
 ---
 
-## Join the Community
+Optional content here (details, additional information, etc.)
+```
 
-Join thousands of creators in our vibrant community to ask questions, share your work, and help us improve.
+**Important:** Add the publication's featured image as `featured.jpg` in the same directory.
 
-- 💬 <a href="https://discord.gg/z8wNYzb">Discord</a>
-- 📚 <a href="https://docs.hugoblox.com/?utm_source=github&utm_medium=readme">Docs & Guides</a>
-- 🐦 <a href="https://x.com/BuildLore">X / Twitter</a>
-- ⭐ <a href="https://github.com/HugoBlox/hugo-blox-builder">Star on GitHub</a>
+### Adding a New Project
 
+```bash
+hugo new project/my-project/index.md
+```
+
+Edit `content/project/my-project/index.md`:
+
+```yaml
+---
+title: "Project Name"
+date: 2024-01-01T00:00:00Z
+
+# Summary for listing cards
+summary: "Brief description of your project."
+
+# Tags
+tags:
+  - Machine Learning
+  - Python
+
+# Featured image
+image:
+  filename: featured.jpg
+  caption: "Project screenshot"
+  focal_point: Smart
+
+# Links
+links:
+  - name: Code
+    url: https://github.com/username/repo
+    icon: brands/github
+  - name: Demo
+    url: https://demo.example.com
+    icon: globe
+
+featured: true
+draft: false
 ---
 
-MIT © 2016-Present [George Cushen](https://georgecushen.com)
+## About This Project
 
-<!--START_SECTION:news-->
-<!--Updated at 2025-10-26T01:58:34.817Z-->
-<!--END_SECTION:news-->
+Detailed description of your project, methodology, results, etc.
+```
+
+**Note:** Publications with `projects: [my-project]` will **automatically appear** on this project's page thanks to the custom template implementation.
+
+### Adding a Blog Post
+
+```bash
+hugo new blog/my-post/index.md
+```
+
+Edit `content/blog/my-post/index.md`:
+
+```yaml
+---
+title: "Post Title"
+date: 2024-01-01T00:00:00Z
+summary: "Brief summary of the post"
+
+# Featured image
+image:
+  filename: featured.jpg
+  caption: "Image caption"
+
+tags:
+  - News
+  - Updates
+
+draft: false
+---
+
+Your blog post content in Markdown...
+```
+
+### Adding an Author Profile
+
+Create a new file in `content/authors/new-author/_index.md`:
+
+```yaml
+---
+title: New Author Name
+role: PhD Student
+
+# Social links
+profiles:
+  - icon: envelope
+    url: mailto:author@example.com
+  - icon: brands/github
+    url: https://github.com/username
+  - icon: brands/linkedin
+    url: https://linkedin.com/in/username
+
+# Organizations
+organizations:
+  - name: University Name
+    url: https://university.edu
+---
+
+Author biography...
+```
+
+Add the author's avatar as `avatar.jpg` in the same directory.
+
+## Custom Features
+
+### Automatic Project-Publication Linking
+
+This site includes a custom implementation that automatically displays publications on project pages:
+
+1. **How it works:** Publications that include a project slug in their `projects:` field will automatically appear on that project's page.
+
+2. **Implementation files:**
+   - `layouts/partials/project_publications.html` - Queries and displays linked publications
+   - `layouts/project/single.html` - Custom project layout that includes the publications section
+
+3. **Usage:** Simply add the project slug to your publication's frontmatter:
+   ```yaml
+   projects:
+     - fairX
+     - fair-decision-making
+   ```
+
+No manual updates to project pages are needed—the linking happens automatically!
+
+## Configuration
+
+### Main Configuration Files
+
+- **`config/_default/hugo.yaml`** - Core Hugo settings, site title, base URL
+- **`config/_default/params.yaml`** - Site parameters, appearance, features
+- **`config/_default/menus.yaml`** - Navigation menu configuration
+- **`config/_default/languages.yaml`** - Language and localization settings
+
+### Updating Site Information
+
+Edit `config/_default/hugo.yaml`:
+```yaml
+title: Your Name
+baseURL: 'https://your-site.com/'
+```
+
+## Common Tasks
+
+### Preview Drafts
+
+```bash
+hugo server --buildDrafts
+```
+
+### Check for Broken Links
+
+```bash
+hugo --printPathWarnings
+```
+
+### Clear Cache
+
+```bash
+hugo --gc
+rm -rf public/ resources/
+```
+
+### Update Theme
+
+```bash
+hugo mod get -u
+hugo mod tidy
+```
+
+## Deployment
+
+### GitHub Pages (Automatic)
+
+This site is configured for automatic deployment via GitHub Actions. Push to the `main` branch to trigger a deployment.
+
+### Manual Deployment
+
+```bash
+# Build the site
+hugo --minify
+
+# Deploy (contents of /public directory)
+# Upload to your hosting provider or push to GitHub Pages
+```
+
+## Troubleshooting
+
+### "Hugo command not found"
+- Ensure Hugo Extended is installed and in your PATH
+- Verify with `hugo version`
+
+### "Port 1313 already in use"
+- Stop other Hugo servers or use a different port:
+  ```bash
+  hugo server --port 1314
+  ```
+
+### Build Errors
+- Clear cache: `hugo --gc && rm -rf public/ resources/`
+- Check Hugo version: Must be v0.152.0+ Extended
+- Verify all frontmatter YAML is valid
+
+### Images Not Displaying
+- Ensure images are in the correct directory (same as `index.md`)
+- Check filename matches frontmatter (e.g., `featured.jpg`)
+- Verify image formats are supported (JPG, PNG, WebP)
+
+## Resources
+
+- **Hugo Documentation:** https://gohugo.io/documentation/
+- **HugoBlox Documentation:** https://docs.hugoblox.com/
+- **Markdown Guide:** https://www.markdownguide.org/
+- **Hugo Academic Theme Guide:** https://docs.ownable.dev/hugoblox/
+
+## License
+
+This site is based on the HugoBlox Academic CV theme.
+
+Original theme: MIT © 2016-Present [George Cushen](https://georgecushen.com)
+
+## Contact
+
+For questions or issues, please contact Md Fahim Sikder or open an issue on the repository.

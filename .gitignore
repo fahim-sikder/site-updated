@@ -65,6 +65,7 @@ static/pagefind/
 # Windows
 Thumbs.db
 Desktop.ini
+.claude/
 
 # Linux
 *~

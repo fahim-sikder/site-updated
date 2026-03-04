@@ -7,9 +7,9 @@ projects:
 
 # Authors (reference data/authors/*.yaml slugs)
 authors:
-  - Resmi-Ramachandranpillai
-  - Md-Fahim-Sikder
-  - Fredrik-Heintz
+  - Resmi Ramachandranpillai
+  - Md Fahim Sikder
+  - Fredrik Heintz
 
 author_notes:
 - "Equal contribution"
