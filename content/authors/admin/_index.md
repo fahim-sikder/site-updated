@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: AI Researcher
+role: Postdoc
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -60,8 +60,8 @@ education:
   - area: Ph.D. in Computer Science
     institution: Linköping University, Sweden
     icon: ""
-    date_start: 2020-04-01
-    date_end: # 2026-01-16
+    date_start: 
+    date_end:  2026-01-16
     summary: |
       Thesis on Representative Synthetic Data for Fair Decision Making.
     button:
@@ -81,26 +81,26 @@ education:
     summary:
 
 work:
-  # - position: Postdoc
-  #   company_name: Linköping University
-  #   company_url: 'https://liu.se/en'
-  #   icon: ''
-  #   date_start: 2026-04-01
-  #   date_end: 
-  #   summary: |2-
-  #       Department of Computer and Information Science (IDA)
+  - position: Postdoc
+    company_name: Linköping University
+    company_url: 'https://liu.se/en'
+    icon: ''
+    date_start: 2026-04-01
+    date_end: 
+    summary: |2-
+        Department of Computer and Information Science (IDA)
         
-  #       Responsibilities include:
+        Responsibilities include:
       
-  #       * Research
-  #       * Supervising Master's Thesis
-  #       * Conducting Labs
+        * Research
+        * Supervising Master's Thesis
+        * Conducting Labs
   - position: Ph.D. Student
     company_name: Linköping University
     company_url: 'https://liu.se/en'
     icon: ''
     date_start: 2020-04-01
-    date_end: # 2026-03-31
+    date_end:  2026-03-31
     summary: |2-
         Department of Computer and Information Science (IDA)
         

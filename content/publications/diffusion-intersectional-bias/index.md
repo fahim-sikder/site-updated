@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "FairRep: Mitigating Intersectional Bias through Fair Representation Learning"
-date: 2025-02-19T19:19:07+01:00
+date: 2026-02-19T19:19:07+01:00
 
 projects:
   - fair-decision-making

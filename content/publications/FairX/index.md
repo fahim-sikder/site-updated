@@ -2,6 +2,7 @@
 title: "FairX: A comprehensive benchmarking tool for model analysis using fairness, utility, and eXplainability"
 date: 2024-05-31T23:19:19+02:00
 projects:
+  - fair-decision-making
   - fairX
 
 # Authors (reference data/authors/*.yaml slugs)

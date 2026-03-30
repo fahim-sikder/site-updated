@@ -1,8 +1,8 @@
 ---
-title: "FairX"
+title: "Fairness Benchmarking Tool"
 date: 2024-05-31T23:19:19+02:00
 # Summary for listing cards
-summary: "An open-source bias benchmarking tool."
+summary: "An open-source fairness benchmarking tool."
 
 # Tags for filtering
 tags:
@@ -49,16 +49,16 @@ draft: false
 
 ## Overview
 
-FairX is a comprehensive open-source Python-based benchmarking tool designed to enable systematic evaluation of machine learning models across three critical dimensions: **fairness**, **utility**, and **explainability** (XAI). As AI systems increasingly impact high-stakes decisions, ensuring models are not only accurate but also fair and interpretable has become essential. FairX provides a unified framework for researchers and practitioners to rigorously assess and compare bias-mitigation techniques.
+FairX is a comprehensive open-source Python-based benchmarking tool designed to enable systematic evaluation of machine learning models across three dimensions: **fairness**, **utility**, and **explainability** (XAI). As AI systems increasingly impact high-stakes decisions, ensuring models are not only accurate but also fair and interpretable has become essential. FairX provides a unified framework for researchers and practitioners to rigorously assess and compare bias-mitigation techniques.
 
-Unlike existing fairness toolkits, FairX uniquely supports the evaluation of **fair generative models** and synthetic data generation, filling a critical gap in the fairness evaluation ecosystem. The tool enables comprehensive benchmarking of both discriminative and generative models, supporting both tabular and image datasets.
+Unlike existing fairness toolkits, FairX uniquely supports the evaluation of **fair generative models** and synthetic data generation, filling an important gap in the fairness evaluation ecosystem. The tool enables comprehensive benchmarking of both predictive and generative models, supporting both tabular and image datasets.
 
 ## Motivation
 
 The rapid deployment of machine learning models in sensitive domains like healthcare, criminal justice, and lending has exposed serious fairness concerns. While numerous bias-mitigation techniques have been proposed, systematic evaluation and comparison remains challenging due to:
 
 1. **Fragmented tooling**: Existing tools focus on either fairness OR utility OR explainability, but rarely integrate all three
-2. **Limited generative model support**: Most fairness tools only evaluate discriminative models, neglecting the growing importance of synthetic data generation
+2. **Limited generative model support**: Most fairness tools only evaluate predictive models, neglecting the growing importance of synthetic data generation
 3. **Inconsistent evaluation**: Lack of standardized evaluation protocols makes comparing different bias-mitigation approaches difficult
 4. **Complexity barriers**: Implementing and evaluating multiple fairness techniques requires significant engineering effort
 
@@ -79,18 +79,15 @@ FairX includes implementations of state-of-the-art bias-mitigation techniques ac
 
 **Fairness Metrics**:
 - Group fairness: Demographic parity, equalized odds, equal opportunity
-- Individual fairness: Lipschitz condition, consistency measures
 - Intersectional fairness: Multi-attribute fairness metrics
 
 **Utility Metrics**:
 - Classification: Accuracy, precision, recall, F1-score, AUC-ROC
-- Synthetic data quality: Fidelity, diversity, privacy preservation
-- Domain-specific metrics: Calibration, reliability
+- Synthetic data quality: Fidelity, diversity, authenticity
 
 **Explainability**:
 - Feature importance analysis
 - Individual prediction explanations (SHAP, LIME)
-- Bias attribution and source identification
 
 ### 3. Synthetic Data Evaluation
 
@@ -99,7 +96,6 @@ A unique capability of FairX is comprehensive evaluation of synthetic data gener
 - **Statistical similarity**: Distribution matching, correlation preservation
 - **Predictive performance**: Downstream task accuracy, train-on-synthetic-test-on-real (TSTR) evaluation
 - **Fairness preservation**: Verification that fairness properties transfer from synthetic to real data
-- **Privacy guarantees**: Membership inference attack resistance
 
 ### 4. Flexible and Extensible
 
@@ -129,7 +125,6 @@ FairX is designed for:
 
 - **Researchers**: Benchmarking new fairness techniques against state-of-the-art baselines
 - **Practitioners**: Evaluating fairness of production ML systems
-- **Educators**: Teaching fairness concepts with hands-on examples
 - **Policymakers**: Auditing AI systems for compliance with fairness regulations
 
 ## Impact
