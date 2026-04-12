@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Postdoc
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -81,7 +81,7 @@ education:
     summary:
 
 work:
-  - position: Postdoc
+  - position: Postdoctoral Researcher
     company_name: Linköping University
     company_url: 'https://liu.se/en'
     icon: ''
