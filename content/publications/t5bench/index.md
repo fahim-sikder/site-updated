@@ -1,12 +1,13 @@
 ---
-title: "StreamFair: Online Fair Adaptation Under Temporal Intersectional Drift"
-date: 2026-05-01T23:35:00+02:00
+title: "T5Bench: Benchmarking Unconditional Time-Series Generation Beyond Fidelity and Usefulness"
+date: 2026-05-10T09:47:06+02:00
 projects:
-  - fair-decision-making
+  - time-series-generation
 # Authors (reference data/authors/*.yaml slugs)
 authors:
+  - David Bergström
   - Md Fahim Sikder
-  - Ericka Johnson
+  - Mattias Tiger
   - Fredrik Heintz
 
 # Publication type
@@ -14,7 +15,7 @@ authors:
 publication_types: ["paper-conference"]
 
 # Publication venue
-publication: "*Accepted at AITC 2026 as an extended abstract*"
+publication: "*Under Review*"
 publication_short: ""
 
 # Abstract
@@ -28,11 +29,8 @@ doi:
 
 # Tags
 tags:
-  - Representation Learning
-  - ML for Healthcare
-  - Data Fairness
-  - Fair Representation Learning
-  - Intersectional Bias
+  - Time Series Generation
+  - Benchmarking
 
 # Featured image
 image:
@@ -69,4 +67,3 @@ featured: false
 # Draft
 draft: false
 ---
-
