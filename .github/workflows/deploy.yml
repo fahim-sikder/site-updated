@@ -46,7 +46,7 @@ jobs:
           sudo dpkg -i hugo_extended_${HUGO_VERSION}_linux-amd64.deb
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build site
         run: hugo --gc --minify
