@@ -1,6 +1,6 @@
 ---
 title: "Predicting Students Yearly Performance using Neural Network: A Case Study of BSMRSTU"
-date: 2024-04-25T01:55:33+01:00
+date: 2016-04-25T01:55:33+01:00
 
 projects:
 
