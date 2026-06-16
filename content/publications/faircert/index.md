@@ -12,8 +12,8 @@ authors:
 publication_types: ["paper-conference"]
 
 # Publication venue
-publication: "*Under Review*"
-publication_short: ""
+publication: "Accepted at Fifth European Conference on Algorithmic Fairness 2026"
+publication_short: "Accepted at ECAF 2026"
 
 # Abstract
 abstract: ""

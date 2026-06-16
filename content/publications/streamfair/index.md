@@ -14,8 +14,8 @@ authors:
 publication_types: ["paper-conference"]
 
 # Publication venue
-publication: "*Accepted at AITC 2026 as an extended abstract*"
-publication_short: ""
+publication: "Accepted at AI Transparency Conference 2026"
+publication_short: "Accepted at AITC 2026"
 
 # Abstract
 abstract: ""
