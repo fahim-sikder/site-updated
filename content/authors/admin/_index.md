@@ -93,7 +93,7 @@ work:
         Responsibilities include:
       
         * Research
-        * Supervising Master's Thesis
+        * Examining & Supervising Master's Thesis
         * Conducting Labs
   - position: Ph.D. Student
     company_name: Linköping University
