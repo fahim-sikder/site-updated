@@ -68,6 +68,18 @@ sections:
       view: citation
       columns: 1
   - block: collection
+    id: talks
+    content:
+      title: Talks
+      filters:
+        folders:
+          - events
+      count: 5
+      order: desc
+    design:
+      view: article-grid
+      columns: 1
+  - block: collection
     id: news
     content:
       title: Recent News
