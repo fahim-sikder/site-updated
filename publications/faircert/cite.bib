@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v350-sikder26a,
+  title = 	 {FairCert: Certifiable Error Rate Fairness for ML and LLM Decision Systems},
+  author =       {Sikder, Md Fahim},
+  booktitle = 	 {Proceedings of Fifth European Conference on Algorithmic Fairness},
+  pages = 	 {8--23},
+  year = 	 {2026},
+  editor = 	 {De Bie, Tijl and Defrance, MaryBeth and Calders, Toon and Nguyen, Dennis},
+  volume = 	 {350},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {02--04 Sep},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v350/main/assets/sikder26a/sikder26a.pdf},
+  url = 	 {https://proceedings.mlr.press/v350/sikder26a.html},
+  abstract = 	 {A small FPR gap on one test set does not certify a classifier as fair. A point estimate has no confidence bound, so the observed gap may just be sampling noise. The issue is worst on intersectional subgroups, where number of samples in per-group are small. Researchers today have two options, and neither is adequate. They can report raw gaps with no statistical guarantee, or use existing methods that need white-box access and cover only individual fairness or single attributes. We present \emph{FairCert}, a black-box auditing framework that produces finite-sample certificates on false positive rate (FPR) and true positive rate (TPR) gaps. It supports binary and multi-class classifiers. The main certificate uses Clopper-Pearson exact intervals with a Bonferroni correction across $K$ intersectional groups. Beside certification, we also add two supplementary tools. A permutation test shuffles group labels among the true negatives and recomputes the gap. Restricting to negatives, keeps Type I error valid when base rates differ across groups. And a bootstrap diagnostic serves as an exploratory alternative. We test FairCert on eight datasets covering finance, criminal justice, and vision. The evaluation covers ML classifiers, seven open-source LLMs from 3B to 30B parameters, and image models. Our experiments show that LLM fairness is domain dependent.  Mistral-24B has an FPR gap of $0.259$ on COMPAS but only $0.009$ on ACS&nbsp;Income. Evaluating one attribute at a time hides intersectional gaps. On Credit Default dataset, certification passes at single sensitive attribute but fails at intersectional settings.}
+}

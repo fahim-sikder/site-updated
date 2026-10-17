@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fairness | Md Fahim Sikder</title><link>https://fahimsikder.com/tags/fairness/</link><atom:link href="https://fahimsikder.com/tags/fairness/index.xml" rel="self" type="application/rss+xml"/><description>Fairness</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate><image><url>https://fahimsikder.com/media/icon_hu_51d43eb3b88ae3d9.png</url><title>Fairness</title><link>https://fahimsikder.com/tags/fairness/</link></image><item><title>Protecting Patient Privacy and Preventing Bias: What Synthetic Data Can Do</title><link>https://fahimsikder.com/events/protecting-patient-privacy-synthetic-data/</link><pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate><guid>https://fahimsikder.com/events/protecting-patient-privacy-synthetic-data/</guid><description>&lt;p&gt;I gave a public lecture titled &lt;strong&gt;&amp;ldquo;Protecting Patient Privacy and Preventing Bias: What Synthetic Data Can Do&amp;rdquo;&lt;/strong&gt; as part of the
+series, organised by the Linköping University Library (LiU Bibliotek).&lt;/p&gt;
+&lt;iframe src="https://play.mediaflowpro.com/ovp/11/12QB784RZC" width="100%" style="aspect-ratio: 16 / 9; border: 0;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Protecting Patient Privacy and Preventing Bias: What Synthetic Data Can Do"&gt;&lt;/iframe&gt;</description></item><item><title>What Makes an Algorithm Fair? Bias, Fairness, Representation Learning and Synthetic Data</title><link>https://fahimsikder.com/events/fairness-algorithm-swecss/</link><pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><guid>https://fahimsikder.com/events/fairness-algorithm-swecss/</guid><description>&lt;p&gt;I gave an invited talk titled &lt;strong&gt;&amp;ldquo;What Makes an Algorithm Fair? Bias, Fairness, Representation Learning and Synthetic Data&amp;rdquo;&lt;/strong&gt; at the &lt;strong&gt;SweCSS Interdisciplinary Dialogue on Inequality and Fairness in AI and Machine Learning&lt;/strong&gt;, organised by the Swedish Excellence Centre for Computational Social Science.&lt;/p&gt;
+&lt;p&gt;The talk introduced algorithmic bias and fairness, how fairness can be measured, and why a model can look fair for each protected attribute on its own yet be unfair where they intersect. I then presented our approaches to tackling this: fair synthetic data generation and fair representation learning.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;
+&lt;img alt="Algorithmic bias compounds: biased history becomes biased predictions, which become new training data"
+srcset="https://fahimsikder.com/events/fairness-algorithm-swecss/bias-feedback-loop_hu_536fa172ae2a1ef8.webp 320w, https://fahimsikder.com/events/fairness-algorithm-swecss/bias-feedback-loop_hu_bc55dabaa7b734b6.webp 480w, https://fahimsikder.com/events/fairness-algorithm-swecss/bias-feedback-loop_hu_b2bb4fda2cd01a31.webp 700w"
+sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px"
+src="https://fahimsikder.com/events/fairness-algorithm-swecss/bias-feedback-loop_hu_536fa172ae2a1ef8.webp"
+width="700"
+height="644"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;</description></item></channel></rss>
