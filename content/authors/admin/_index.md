@@ -48,6 +48,7 @@ profiles:
     url: https://dblp.org/pid/272/9841.html
 
 interests:
+  - Synthetic Data Generation
   - Artificial Intelligence
   - Generative Models
   - Time-Series Generation
@@ -220,7 +221,7 @@ awards:
     summary:
 ---
 
-Md Fahim Sikder is a researcher specializing in algorithmic fairness and generative modeling.  He completed his Ph.D from Reasoning and Learning Lab (ReaL), IDA, Linköping University, Sweden, where his research focused on developing generative models and fair representation learning techniques that address intersectional bias in AI decision-making systems. Before pursuing his doctorate, Fahim served as a Lecturer in the Computer Science and Engineering department at the Institute of Science, Trade, and Technology (ISTT). He also took on the roles of Coordinator of the HEAP Programming Club and Coach of the ACM ICPC team at ISTT.
+Md Fahim Sikder is a researcher specializing in synthetic data, algorithmic fairness and generative modeling.  He completed his Ph.D from Reasoning and Learning Lab (ReaL), IDA, Linköping University, Sweden, where his research focused on developing generative models for fair synthetic data generation and fair representation learning techniques that address intersectional bias in AI decision-making systems. Before pursuing his doctorate, Fahim served as a Lecturer in the Computer Science and Engineering department at the Institute of Science, Trade, and Technology (ISTT). He also took on the roles of Coordinator of the HEAP Programming Club and Coach of the ACM ICPC team at ISTT.
 
 <!-- Fahim's research interests include Artificial Intelligence, Generative Models, Trustworthy AI.
 
