@@ -20,3 +20,5 @@ image:
 I gave a public lecture titled **"Protecting Patient Privacy and Preventing Bias: What Synthetic Data Can Do"** as part of the [**Research Just Around the Corner**](https://liu.se/en/article/research-just-around-the-corner) series, organised by the Linköping University Library (LiU Bibliotek).
 
 <iframe src="https://play.mediaflowpro.com/ovp/11/12QB784RZC" width="100%" style="aspect-ratio: 16 / 9; border: 0;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Protecting Patient Privacy and Preventing Bias: What Synthetic Data Can Do"></iframe>
+
+*Video credit: [**LiU Bibliotek**](https://liu.se/en/article/research-just-around-the-corner) (Linköping University Library)*
