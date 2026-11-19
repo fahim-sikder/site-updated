@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | {{ site.Title }}</title>
+  {{- with .Params.summary }}<meta name="description" content="{{ . }}">{{ end }}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="{{ "css/slides-chroma.css" | relURL }}">
+  <style>
+    :root {
+      --r-main-font-size: 30px;
+      --r-heading-text-transform: none;
+      --r-heading-font-weight: 600;
+      --r-link-color: #0b6aa2;
+      --r-link-color-hover: #08507a;
+      --accent: #0b6aa2;
+    }
+    .reveal h1 { font-size: 1.9em; }
+    .reveal h2 { font-size: 1.35em; color: var(--accent); }
+    .reveal h3 { font-size: 1.05em; }
+    .reveal .slides { text-align: left; }
+    .reveal .slides section { height: 100%; }
+    .reveal ul, .reveal ol { display: block; margin-left: 1.1em; }
+    .reveal li { margin: 0.2em 0; }
+    .reveal blockquote { width: 92%; font-size: 0.9em; padding: 0.5em 0.8em; box-shadow: none; border-left: 4px solid var(--accent); background: #f3f7fa; font-style: normal; }
+    .reveal table { font-size: 0.75em; margin: 0.5em 0; }
+    .reveal table th, .reveal table td { padding: 0.25em 0.6em; }
+    .reveal pre { width: 100%; font-size: 0.62em; line-height: 1.35; box-shadow: none; background: #f6f8fa; border-radius: 6px; }
+    .reveal pre code { max-height: 560px; padding: 0.6em; }
+    .reveal code { font-size: 0.9em; }
+    .reveal .katex-display { margin: 0.5em 0; }
+    .reveal .katex { font-size: 1em; }
+    /* Title slide */
+    .reveal .title-slide { text-align: left; }
+    .reveal .title-slide .kicker { color: var(--accent); font-weight: 600; font-size: 0.75em; letter-spacing: 0.03em; }
+    .reveal .title-slide .meta { font-size: 0.7em; color: #555; margin-top: 1.2em; }
+    /* Slide variants, set on the slide's level-2 heading: ## Heading {.dense} or {.refs} */
+    .reveal section:has(> h2.dense) { font-size: 0.82em; }
+    .reveal section:has(> h2.refs) ul, .reveal section:has(> h2.refs) ol { font-size: 0.55em; }
+    /* Two columns: wrap content in <div class="cols"> ... </div> with blank lines around the Markdown inside */
+    .reveal .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2em; align-items: start; }
+    .reveal .small { font-size: 0.7em; }
+    .reveal .muted { color: #666; }
+    .reveal .mermaid { display: flex; justify-content: center; }
+    .reveal .mermaid svg { max-height: 520px; }
+    .reveal .slide-number { font-size: 14px; }
+    .reveal .footer-note { position: fixed; bottom: 12px; left: 16px; font-size: 13px; color: #888; z-index: 10; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class="title-slide">
+        {{ with .Params.kicker }}<p class="kicker">{{ . }}</p>{{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+        <p class="meta">
+          {{ with .Params.presenter }}{{ . }}{{ end }}
+          {{ with .Params.event }}<br>{{ . | markdownify }}{{ end }}
+        </p>
+      </section>
+      {{- $raw := replaceRE `\r\n` "\n" .RawContent -}}
+      {{- range $chunk := split $raw "\n---\n" -}}
+        {{- $chunk = trim $chunk "\n " -}}
+        {{- if $chunk -}}
+          {{- $parts := split $chunk "\nNote:" -}}
+          {{- $body := index $parts 0 -}}
+          <section>
+            {{ $.Page.RenderString (dict "display" "block") $body }}
+            {{- if gt (len $parts) 1 }}
+            <aside class="notes">{{ $.Page.RenderString (dict "display" "block") (delimit (after 1 $parts) "\nNote:") }}</aside>
+            {{- end }}
+          </section>
+        {{- end -}}
+      {{- end }}
+    </div>
+  </div>
+  {{ with .Params.course_url }}<a class="footer-note" href="{{ . | relURL }}" target="_top">{{ $.Params.course_short | default "Course page" }}</a>{{ end }}
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/zoom/zoom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
+  <script>
+    (async function () {
+      renderMathInElement(document.querySelector('.slides'), {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '\\[', right: '\\]', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false }
+        ],
+        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        throwOnError: false
+      });
+      // Mermaid needs a visible element to measure, so draw each diagram when its slide is shown
+      // (or all at once in print mode, where every slide is visible).
+      const hasMermaid = !!document.querySelector('.mermaid');
+      if (hasMermaid) mermaid.initialize({
+        startOnLoad: false,
+        theme: 'neutral',
+        // SVG text labels are measured in the font they are drawn in, so labels are not clipped.
+        htmlLabels: false,
+        flowchart: { htmlLabels: false, useMaxWidth: false },
+        themeVariables: { fontFamily: '"Source Sans Pro", Helvetica, Arial, sans-serif', fontSize: '22px' }
+      });
+      const drawMermaid = async (root) => {
+        if (!hasMermaid || !root) return;
+        const nodes = Array.from(root.querySelectorAll('.mermaid:not([data-processed])'));
+        if (nodes.length) { try { await mermaid.run({ nodes }); } catch (e) { console.error(e); } }
+      };
+      Reveal.on('ready', (e) => {
+        if (/print-pdf/.test(window.location.search)) drawMermaid(document.querySelector('.slides'));
+        else drawMermaid(e.currentSlide);
+      });
+      Reveal.on('slidechanged', (e) => drawMermaid(e.currentSlide));
+      Reveal.initialize({
+        hash: true,
+        slideNumber: 'c/t',
+        width: 1280,
+        height: 720,
+        margin: 0.06,
+        center: false,
+        transition: 'none',
+        pdfSeparateFragments: false,
+        plugins: [RevealNotes, RevealZoom]
+      });
+    })();
+  </script>
+</body>
+</html>

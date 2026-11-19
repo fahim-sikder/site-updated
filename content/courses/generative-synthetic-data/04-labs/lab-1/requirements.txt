@@ -1,0 +1,29 @@
+# Python packages for Labs 1 to 4 of "Generative Models for Synthetic Data".
+# Tested on Windows 11 with Python 3.11.16 and uv 0.12.18 in November 2026.
+#
+# Install in this order (see the Labs page):
+#   1. CPU-only PyTorch:  uv pip install torch==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cpu
+#   2. This file:         uv pip install -r requirements.txt
+#   3. FairX, without its own pinned requirements:
+#      uv pip install --no-deps "fairx @ git+https://github.com/fahim-sikder/FairX.git@417c3d9f7d29776429950a0f45af8093100de175"
+#
+# synthcity 0.2.12 requires torch < 2.3, so the pins below keep the
+# packages that synthcity pulls in at versions that work with torch 2.2.2.
+
+torch==2.2.2
+torchvision==0.17.2
+ctgan==0.13.0
+synthcity==0.2.12
+opacus==1.5.3
+transformers==4.51.3
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.6.1
+xgboost==2.1.4
+fairlearn==0.15.0
+codecarbon==3.3.2
+einops==0.8.2
+matplotlib==3.11.2
+seaborn==0.13.2
+plotly==7.1.0
+shap==0.49.1

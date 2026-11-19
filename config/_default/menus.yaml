@@ -25,6 +25,9 @@ main:
   - name: Post
     url: /#post
     weight: 15
+  - name: Courses
+    url: courses/
+    weight: 16
   - name: Hobbies
     url: https://photography.fahimsikder.com
     weight: 16

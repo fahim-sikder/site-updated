@@ -1,0 +1,4 @@
+Generator,Fidelity,TSTR accuracy,Privacy (DCR)
+GAN,0.81,0.79,0.42
+VAE,0.77,0.76,0.51
+Diffusion,0.88,0.82,0.38

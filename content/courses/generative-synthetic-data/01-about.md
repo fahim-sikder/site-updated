@@ -1,0 +1,56 @@
+---
+title: About the course
+weight: 10
+---
+
+## Why this course
+
+Synthetic data can ease data scarcity when real data is restricted. It also carries three risks: it can leak private information, amplify bias in the real data, or lose the utility of the real data in downstream tasks. The course prepares you to build synthetic data and to judge it on all three counts.
+
+## Learning outcomes {#learning-outcomes}
+
+After the course, you should be able to:
+
+1. **LO1.** Analyse how the training objectives of the main families of generative models affect the synthetic data they produce.
+2. **LO2.** Evaluate synthetic data from an existing generative model for utility, privacy and fairness.
+3. **LO3.** Assess the privacy and fairness risks of releasing a synthetic dataset.
+4. **LO4.** Design and evaluate a generative model for a domain problem in your own research field.
+5. **LO5.** Reflect on how your own assumptions and practice around synthetic data have changed during the course.
+
+## Who should take this course
+
+The course is mainly for PhD students in computer science who work with data that is hard to access, because of regulation or company restrictions, or who want to understand how generative models work.
+
+PhD students from other fields who work with sensitive data, for example in medicine or the social sciences, are also welcome.
+
+> [!NOTE]
+> Throughout the course, *fairness* refers to algorithmic fairness.
+
+## Prerequisites
+
+- Some background in machine learning or deep learning.
+- Basic programming experience in Python, enough to read and modify the lab code.
+- A personal laptop that can run Docker. No GPU is needed.
+
+Each lab comes with starter code, so you modify working models and do not write them from scratch.
+
+## How the course works
+
+The course combines four kinds of activity over 10 weeks.
+
+- **[Lectures](../03-lectures/)** cover the main families of generative models and how to evaluate them for utility, privacy and fairness. A guest lecture covers synthetic data in healthcare. Read the assigned papers before each lecture.
+- **[Labs](../04-labs/)** let you train generative models and evaluate their output. A Docker container holds the starter code and small public datasets, so the labs run on a laptop CPU or a free cloud server on any operating system. The course leader publishes all lab material before each session, so you can prepare at your own pace.
+- **[Paper seminars](../05-paper-seminars/)**: each participant leads the discussion of one paper, with a short summary and questions for the group.
+- **[Individual project](../06-project/)**: you train a generative model on data from your own domain, evaluate the synthetic data and write a reflection report. If you cannot bring your real data, because of ethical approvals or data agreements, you use a public dataset with a similar structure.
+
+## Topics
+
+- Why synthetic data is needed: data access, data scarcity and regulation
+- Main generative models: variational autoencoders, generative adversarial networks, diffusion models and transformer-based models
+- Generating tabular and time-series data
+- Evaluating synthetic data for fidelity and utility
+- Privacy: differential privacy and privacy attacks
+- Fairness: how synthetic data can carry or amplify bias
+- Release risk: measuring the privacy and fairness risks of releasing a synthetic dataset
+- Synthetic data in healthcare (guest lecture)
+- Energy use of training generative models
