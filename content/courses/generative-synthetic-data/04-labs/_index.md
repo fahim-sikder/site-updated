@@ -3,14 +3,13 @@ title: Labs
 weight: 40
 ---
 
-The four labs run in weeks 4 to 7, each after the lecture or seminar of that week. In the labs you train generative models and evaluate their output for utility, privacy and fairness. Each lab lasts 2 hours.
+The three labs run in weeks 4, 7 and 8, each after the lecture or seminar of that week. In the labs you train generative models and evaluate their output for utility, privacy and fairness. Each lab lasts 2 hours.
 
 | Week | Lab | Learning outcomes | Main tools |
 |:----:|---|---|---|
-| 4 | [Lab 1: Train generative models and compare their output](lab-1/) | LO1 | CTGAN, TVAE, TimeGAN, TransFusion |
-| 5 | [Lab 2: Utility evaluation](lab-2/) | LO2 | scikit-learn, synthcity metrics, FairX |
-| 6 | [Lab 3: Privacy evaluation](lab-3/) | LO2, LO3 | DPGAN (synthcity), DOMIAS, distance to closest record |
-| 7 | [Lab 4: Fairness evaluation](lab-4/) | LO2, LO3 | fairlearn, FairX, TabFairGAN |
+| 4 | [Lab 1: Train generative models and find failure modes](lab-1/) | LO1 | CTGAN, TVAE, TimeGAN, TransFusion |
+| 7 | [Lab 2: Utility and fairness evaluation of synthetic data](lab-2/) | LO2, LO3 | scikit-learn, synthcity metrics, fairlearn, FairX |
+| 8 | [Lab 3: Privacy evaluation of synthetic data](lab-3/) | LO2, LO3 | DPGAN (synthcity), DOMIAS, distance to closest record |
 
 ## How the labs work
 
@@ -18,14 +17,13 @@ Every lab page has the same parts: the goal and learning outcomes, what to do be
 
 The labs come with starter code: one or two Python scripts that you download from the lab page and run from a terminal. You change their arguments, and in some tasks a line of their code, and then explain what changes in the output. You do not write models from scratch.
 
-Lab 1 writes the data splits and the synthetic data that Labs 2, 3 and 4 read, so keep its output folder. We suggest one folder per lab, next to each other:
+Lab 1 writes the data splits and the synthetic data that Labs 2 and 3 read, so keep its output folder. We suggest one folder per lab, next to each other:
 
 ```text
 labs/
   lab-1/   lab1_tabular.py, lab1_timeseries.py, TransFusion/, outputs/, outputs_ts/
-  lab-2/   lab2_utility.py
+  lab-2/   lab2_utility.py, lab2_fairness.py, lab2_tabfairgan.py
   lab-3/   lab3_privacy.py
-  lab-4/   lab4_fairness.py, lab4_tabfairgan.py
 ```
 
 We ran every command on the lab pages on a desktop PC with an AMD Ryzen 5 5500 CPU (6 cores) and 32 GB RAM, under Windows 11, with CPU-only PyTorch. The run times on the lab pages come from that machine. On it, no single training run took more than 4 minutes, and no lab script more than 7 minutes. Your laptop may take longer.
@@ -75,8 +73,8 @@ The first command installs the CPU-only build of PyTorch. FairX pins Linux GPU p
 | [CTGAN](https://github.com/sdv-dev/CTGAN) (`ctgan`) | CTGAN and TVAE for tabular data | 1 | 0.13.0 | Business Source License 1.1 |
 | [synthcity](https://github.com/vanderschaarlab/synthcity) | TimeGAN, DPGAN, alpha-precision, beta-recall, authenticity and DOMIAS | 1, 2, 3 | 0.2.12 | Apache 2.0 |
 | [TransFusion](https://github.com/fahim-sikder/TransFusion) | Diffusion model with a transformer for time series | 1 | commit `7be6389` | Apache 2.0 |
-| [FairX](https://github.com/fahim-sikder/FairX) | Utility, fidelity and fairness metrics; TabFairGAN | 2, 4 | commit `417c3d9` | MIT |
-| [fairlearn](https://fairlearn.org) | Demographic parity, equalised odds, metrics per group | 4 | 0.15.0 | MIT |
+| [FairX](https://github.com/fahim-sikder/FairX) | Utility, fidelity and fairness metrics; TabFairGAN | 2 | commit `417c3d9` | MIT |
+| [fairlearn](https://fairlearn.org) | Demographic parity, equalised odds, metrics per group | 2, 3 | 0.15.0 | MIT |
 | [scikit-learn](https://scikit-learn.org) | Classifiers, encoders, PCA and t-SNE | All | 1.6.1 | BSD 3-Clause |
 | [CodeCarbon](https://github.com/mlco2/codecarbon) | Logging the energy use of each run | All | 3.3.2 | MIT |
 

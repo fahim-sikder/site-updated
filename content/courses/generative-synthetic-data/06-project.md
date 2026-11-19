@@ -3,7 +3,7 @@ title: Individual project
 weight: 60
 ---
 
-In the individual project you develop a generative model, train it on data from your own domain and evaluate the synthetic data for privacy, utility and fairness. The model can be new or taken from the literature. You present the project in week 10 and submit a written reflection report two weeks later. The project covers learning outcomes [LO4 and LO5](../01-about/#learning-outcomes) and draws on LO1 to LO3.
+In the individual project you develop a generative model, train it on data from your own domain and evaluate the synthetic data for privacy, utility and fairness (if applicable). The model can be new or taken from the literature. You present the project in week 10 and submit a written reflection report two weeks later. The project covers learning outcomes [LO4 and LO5](../01-about/#learning-outcomes) and draws on LO1 to LO3.
 
 > [!IMPORTANT] Sensitive data
 > Follow your own ethical approvals and data agreements. Do not share real sensitive data within the course: not in slides, notebooks, figures or the report. If you cannot bring your real data, use a public dataset with a similar structure, and explain in the report how it differs from your real data.
@@ -16,7 +16,7 @@ In the individual project you develop a generative model, train it on data from 
 4. **Evaluation on all three counts.**
    - *Utility and fidelity* with the methods of [Lecture 4](../03-lectures/lecture-4/) and [Lab 2](../04-labs/lab-2/).
    - *Privacy* with the methods of [Lecture 5](../03-lectures/lecture-5/) and [Lab 3](../04-labs/lab-3/): state your threat model, and say whether your model has a formal guarantee such as differential privacy or only empirical evidence.
-   - *Fairness* with the methods of [Lecture 6](../03-lectures/lecture-6/) and [Lab 4](../04-labs/lab-4/): name the protected attributes and the fairness criteria you use, and why.
+   - *Fairness*, if applicable, with the methods of [Lecture 6](../03-lectures/lecture-6/) and [Lab 2](../04-labs/lab-2/): name the protected attributes and the fairness criteria you use, and why. If your data hold no protected attributes, or fairness does not apply to your problem, explain why in the report.
 5. **A release decision.** Would you release this synthetic dataset, to whom, and under which conditions? Base the answer on your privacy and fairness results (LO3).
 6. **Energy use.** Log the energy use of your training runs with CodeCarbon and report it.
 

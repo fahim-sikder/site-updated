@@ -14,7 +14,7 @@ weight: 36
 
 This lecture asks when synthetic data is fair and how you can tell. Throughout the course, fairness means algorithmic fairness: the statistical relationship between a sensitive attribute, such as sex or ethnicity, and the outcomes that data and models produce. We start from the formal definitions developed for classifiers (group, individual and counterfactual fairness) and from the impossibility results that show these definitions conflict. We then trace how bias enters a synthetic data pipeline. A generative model can reproduce or amplify it in three ways: through the training objective itself, through the under-representation of small groups, and through the noise that differential privacy adds.
 
-The second half turns to remedies and evidence. You will compare fair generative models: FairGAN, DECAF, TabFairGAN, Bt-GAN and FLDGM. You will then work through a protocol for evaluating the fairness of a synthetic dataset with FairX, and weigh the fairness risks of releasing such a dataset. The lecture builds on the fidelity and utility metrics of [Lecture 4](../lecture-4/) and on the differential privacy of [Lecture 5](../lecture-5/). It prepares you for [Lab 4](../../04-labs/lab-4/).
+The second half turns to remedies and evidence. You will compare fair generative models: FairGAN, DECAF, TabFairGAN, Bt-GAN and FLDGM. You will then work through a protocol for evaluating the fairness of a synthetic dataset with FairX, and weigh the fairness risks of releasing such a dataset. The lecture builds on the fidelity and utility metrics of [Lecture 4](../lecture-4/) and on the differential privacy of [Lecture 5](../lecture-5/). It prepares you for [Lab 2](../../04-labs/lab-2/).
 
 ## Learning goals
 
@@ -32,7 +32,7 @@ Read these two papers before the lecture.
 
 - Ramachandranpillai, R., Sikder, M. F., Bergström, D., & Heintz, F. (2024). Bt-GAN: Generating Fair Synthetic Healthdata via Bias-transforming Generative Adversarial Networks. *Journal of Artificial Intelligence Research*, 79, 1313–1341. [doi:10.1613/jair.1.15317](https://doi.org/10.1613/jair.1.15317) · [Publication page](/publications/bias-transforming-gan/)
   *What to look for:* the two kinds of bias the paper separates (correlation bias and representation bias), the three training stages, and which fairness definition the mutual information penalty enforces.
-- Sikder, M. F., Ramachandranpillai, R., de Leng, D., & Heintz, F. (2024). FairX: A comprehensive benchmarking tool for model analysis using fairness, utility, and explainability. *Fairness and Bias in AI 2024 (AEQUITAS 2024), co-located with ECAI 2024*, CEUR Workshop Proceedings, Vol. 3808. [Paper](https://ceur-ws.org/Vol-3808/paper16.pdf) · [arXiv:2406.14281](https://arxiv.org/abs/2406.14281) · [Code](https://github.com/fahim-sikder/FairX) · [Publication page](/publications/FairX/)
+- Sikder, M. F., Ramachandranpillai, R., de Leng, D., & Heintz, F. (2024). FairX: A comprehensive benchmarking tool for model analysis using fairness, utility, and explainability. *Fairness and Bias in AI 2024 (AEQUITAS 2024), co-located with ECAI 2024*, CEUR Workshop Proceedings, Vol. 3808. [Paper](https://ceur-ws.org/Vol-3808/paper16.pdf) · [arXiv:2406.14281](https://arxiv.org/abs/2406.14281) · [Code](https://github.com/fahim-sikder/FairX) · [Publication page](/publications/fairx/)
   *What to look for:* the evaluation workflow, which bias-mitigation models the tool wraps, which metrics it reports, and the fact that its fairness metrics are computed on a classifier trained on the data you pass in.
 
 > [!NOTE]
@@ -342,4 +342,4 @@ Documentation is the main control. Datasheets for Datasets ([Gebru et al., 2021]
 - Wyllie, S., Shumailov, I., & Papernot, N. (2024). Fairness Feedback Loops: Training on Synthetic Data Amplifies Bias. *Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency*, 2113–2147. [doi:10.1145/3630106.3659029](https://doi.org/10.1145/3630106.3659029)
 - Xu, D., Yuan, S., Zhang, L., & Wu, X. (2018). FairGAN: Fairness-aware Generative Adversarial Networks. *2018 IEEE International Conference on Big Data*, 570–575. [doi:10.1109/BigData.2018.8622525](https://doi.org/10.1109/BigData.2018.8622525)
 
-[Lab 4: Fairness evaluation](../../04-labs/lab-4/) follows this lecture in the same week. There you evaluate synthetic data with FairX and log the energy use of training with CodeCarbon.
+[Lab 2: Utility and fairness evaluation](../../04-labs/lab-2/) follows this lecture in the same week. There you evaluate synthetic data with fairlearn and FairX and log the energy use of training with CodeCarbon.

@@ -1,6 +1,6 @@
 ---
-title: "Lecture 3: Diffusion and transformer-based models"
-linkTitle: "L3: Diffusion and transformers"
+title: "Lecture 3: Diffusion models, transformers and LLMs"
+linkTitle: "L3: Diffusion, transformers, LLMs"
 weight: 33
 ---
 
@@ -14,7 +14,7 @@ weight: 33
 
 [Lecture 2](../lecture-2/) covered two families that produce a sample in one network pass: the variational autoencoder (VAE) and the generative adversarial network (GAN). This lecture covers two families that generate step by step. A diffusion model learns to reverse a fixed process that turns data into Gaussian noise, so it produces a sample through many denoising passes. An autoregressive transformer produces a sequence one token at a time, each token conditioned on the ones before it. Transformers also serve as the denoising network inside diffusion models; TransFusion uses this design to generate long time series.
 
-The lecture follows the question behind LO1: how does the training objective shape the synthetic data? You derive the diffusion objective from a variational bound and see what the common simplification gives up. You then see how diffusion is adapted to mixed-type tables and to time series, and how a table can be written as text for a language model. The lecture closes with a comparison of the four families on likelihood, sample quality, mode coverage, sampling cost, conditioning, memorisation and energy. Evaluation metrics are only named here: [Lecture 4](../lecture-4/) treats them in depth, and [Lecture 5](../lecture-5/) and [Lecture 6](../lecture-6/) cover privacy and fairness.
+The lecture follows the question behind LO1: how does the training objective shape the synthetic data? You derive the diffusion objective from a variational bound and see what the common simplification gives up. You then see how diffusion is adapted to mixed-type tables and to time series, and how a table can be written as text for a large language model (LLM). The lecture closes with a comparison of the four families on likelihood, sample quality, mode coverage, sampling cost, conditioning, memorisation and energy. Evaluation metrics are only named here: [Lecture 4](../lecture-4/) treats them in depth, and [Lecture 5](../lecture-5/) and [Lecture 6](../lecture-6/) cover privacy and fairness.
 
 ## Learning goals
 
@@ -28,7 +28,7 @@ After this lecture, you should be able to:
 
 ## Before the lecture
 
-Read these two papers before the lecture.
+Read these three papers before the lecture.
 
 - Ho, J., Jain, A., & Abbeel, P. (2020). Denoising Diffusion Probabilistic Models. *Advances in Neural Information Processing Systems*, 33, 6840–6851. [Proceedings](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html) · [arXiv:2006.11239](https://arxiv.org/abs/2006.11239)
 
@@ -36,6 +36,9 @@ Read these two papers before the lecture.
 - Sikder, M. F., Ramachandranpillai, R., & Heintz, F. (2025). TransFusion: Generating long, high fidelity time series using diffusion models with transformers. *Machine Learning with Applications*, 20, 100652. [doi:10.1016/j.mlwa.2025.100652](https://doi.org/10.1016/j.mlwa.2025.100652) · [arXiv:2307.12667](https://arxiv.org/abs/2307.12667) · [Code](https://github.com/fahim-sikder/TransFusion) · [Publication page](/publications/diffusion-time-series/)
 
   *What to look for:* which part of the DDPM pipeline the transformer encoder replaces, and how the two proposed scores (LDS and LPS) are computed.
+- Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is All you Need. *Advances in Neural Information Processing Systems*, 30. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html) · [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)
+
+  *What to look for:* how scaled dot-product attention and the positional encoding work in Section 3, since both reappear in TransFusion and in the language models that generate tables as text.
 
 ## Lecture notes
 

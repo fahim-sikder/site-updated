@@ -28,10 +28,11 @@ After this lecture you should be able to:
 
 ## Before the lecture
 
-Read these two works. The note after each one says what to look for.
+Read these three works. The note after each one says what to look for.
 
 - Dwork, C., & Roth, A. (2014). The Algorithmic Foundations of Differential Privacy. *Foundations and Trends in Theoretical Computer Science*, 9(3–4), 211–407. [doi:10.1561/0400000042](https://doi.org/10.1561/0400000042). Read Chapters 1 and 2, above all Sections 2.3.1 to 2.3.3 on what DP promises, what it does not promise and the granularity of privacy. Then read Section 3.3 on the Laplace mechanism, Section 3.5 on composition (including 3.5.3 on Laplace versus Gaussian noise) and Appendix A on the Gaussian mechanism. Look for why the definition quantifies over all neighbouring databases, and why $\delta$ must be much smaller than $1/n$.
 - Jordon, J., Yoon, J., & van der Schaar, M. (2019). PATE-GAN: Generating Synthetic Data with Differential Privacy Guarantees. *International Conference on Learning Representations (ICLR 2019)*. [OpenReview](https://openreview.net/forum?id=S1zk9iRqF7). Find out which networks read real data, which network the generator learns from, and why the post-processing property then makes the generator private.
+- Zhang, Z., Wang, T., Li, N., Honorio, J., Backes, M., He, S., Chen, J., & Zhang, Y. (2021). PrivSyn: Differentially Private Data Synthesis. *30th USENIX Security Symposium*, 929–946. [USENIX](https://www.usenix.org/conference/usenixsecurity21/presentation/zhang-zhikun). Look for how PrivSyn chooses which marginals to measure under a fixed privacy budget, and how it generates records that agree with the noisy marginals.
 
 > [!TIP] A companion to PATE-GAN
 > After the original paper, skim the summary of Ganev, Annamalai and De Cristofaro ([2025](https://arxiv.org/abs/2406.13985)). They re-ran six public PATE-GAN implementations and show how far code can drift from a paper's guarantee.
@@ -279,4 +280,4 @@ An audit gives a lower bound on leakage under one threat model; a stronger attac
 - Yousefpour, A., Shilov, I., Sablayrolles, A., Testuggine, D., Prasad, K., Malek, M., Nguyen, J., Ghosh, S., Bharadwaj, A., Zhao, J., Cormode, G., & Mironov, I. (2021). Opacus: User-Friendly Differential Privacy Library in PyTorch. Privacy in Machine Learning (PriML) workshop, NeurIPS 2021. [arXiv:2109.12298](https://arxiv.org/abs/2109.12298)
 - Zhang, J., Cormode, G., Procopiuc, C. M., Srivastava, D., & Xiao, X. (2017). PrivBayes: Private Data Release via Bayesian Networks. *ACM Transactions on Database Systems*, 42(4), Article 25. [doi:10.1145/3134428](https://doi.org/10.1145/3134428)
 
-[Lab 3: Privacy evaluation](../../04-labs/lab-3/) follows this lecture in the same week.
+[Lab 3: Privacy evaluation](../../04-labs/lab-3/) in week 8 puts this lecture into practice.

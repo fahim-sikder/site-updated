@@ -33,6 +33,7 @@ Read these before the session.
 1. Jordon, J., et al. (2022). [Synthetic Data – what, why and how?](https://arxiv.org/abs/2205.03257) Read Sections 1 to 5. Look for the definition of synthetic data in Section 2 and for the separation of utility, fidelity and privacy in Section 5.
 2. Stadler, T., Oprisanu, B., & Troncoso, C. (2022). [Synthetic Data – Anonymisation Groundhog Day](https://www.usenix.org/conference/usenixsecurity22/presentation/stadler). Read Sections 1, 3 and 7. Look for how the privacy gain is defined and which records stay exposed.
 3. The GDPR, [Regulation (EU) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj): Recital 26, Article 4(1) and (5), Article 9 and Article 89(1), about two pages in all. Look for the phrase "means reasonably likely to be used" and ask who the person using those means could be.
+4. European Data Protection Board (2026). [Guidelines 02/2026 on Anonymisation](https://www.edpb.europa.eu/system/files_en?file=2026-09/edpb_guidelines_202602_anonymisation_v1_en_0.pdf). Look for how the guidelines judge whether data are anonymous, and what they say about synthetic data.
 
 > [!TIP] Start your reflection now
 > Before the lecture, write three or four sentences on what you believe synthetic data can and cannot do for your own research. Keep the note. In the [reflection report](../../06-project/#reflection-report) you compare it with your views at the end of the course (LO5).
@@ -142,7 +143,7 @@ Jordon et al. (2022) name three properties of synthetic data. Utility is usefuln
 flowchart TD
   U["Utility and fidelity<br/>Lecture 4, Lab 2"]
   P["Privacy<br/>Lecture 5, Lab 3"]
-  F["Fairness<br/>Lecture 6, Lab 4"]
+  F["Fairness<br/>Lecture 6, Lab 2"]
   U ---|"higher fidelity, more leakage"| P
   P ---|"privacy noise hits small groups"| F
   F ---|"fair data departs from biased data"| U
@@ -191,12 +192,12 @@ The documentation is open about error ([CodeCarbon, 2026](https://docs.codecarbo
 |:----:|---|---|
 | 1 | Lecture 1 | Data access, regulation, the three properties |
 | 2 | [Lecture 2: VAEs and GANs](../lecture-2/) | Training objectives and their output (LO1) |
-| 3 | [Lecture 3: Diffusion and transformer-based models](../lecture-3/) | Newer model families (LO1) |
-| 4 | [Paper seminar 1](../../05-paper-seminars/#paper-seminar-1-generative-model-families), [Lab 1](../../04-labs/lab-1/) | CTGAN, TimeGAN and TransFusion compared |
-| 5 | [Lecture 4](../lecture-4/), [Lab 2](../../04-labs/lab-2/) | Fidelity and utility (LO2) |
-| 6 | [Lecture 5](../lecture-5/), [Lab 3](../../04-labs/lab-3/) | Differential privacy and attacks (LO2, LO3) |
-| 7 | [Lecture 6](../lecture-6/), [Lab 4](../../04-labs/lab-4/) | Fairness (LO2, LO3) |
-| 8 | [Guest lecture](../guest-lecture/) | Synthetic data in healthcare (LO3) |
+| 3 | [Lecture 3: Diffusion models, transformers and LLMs](../lecture-3/) | Newer model families (LO1) |
+| 4 | [Paper seminar 1](../../05-paper-seminars/#paper-seminar-1-generative-model-families), [Lab 1](../../04-labs/lab-1/) | Failure modes of CTGAN, TVAE, TimeGAN and TransFusion (LO1) |
+| 5 | [Lecture 4](../lecture-4/) | Fidelity and utility (LO2) |
+| 6 | [Lecture 5](../lecture-5/) | Differential privacy and attacks (LO2, LO3) |
+| 7 | [Lecture 6](../lecture-6/), [Lab 2](../../04-labs/lab-2/) | Fairness; utility and fairness evaluation (LO2, LO3) |
+| 8 | [Guest lecture](../guest-lecture/), [Lab 3](../../04-labs/lab-3/) | Synthetic data in healthcare; privacy evaluation (LO2, LO3) |
 | 9 | [Paper seminar 2](../../05-paper-seminars/#paper-seminar-2-privacy-and-fairness) | Privacy and fairness papers |
 | 10 | [Project presentations](../../06-project/#presentation) | Your own domain problem (LO4, LO5) |
 

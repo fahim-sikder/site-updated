@@ -9,7 +9,7 @@ The papers come from the pools below. The course leader assigns each participant
 
 ## Paper seminar 1: generative model families {#paper-seminar-1-generative-model-families}
 
-**Week 4.** These papers extend [Lecture 2](../03-lectures/lecture-2/) (VAEs and GANs) and [Lecture 3](../03-lectures/lecture-3/) (diffusion and transformer-based models). Each one changes a training objective, an architecture or a sampling procedure; ask what that change does to the synthetic data (LO1).
+**Week 4.** These papers extend [Lecture 2](../03-lectures/lecture-2/) (VAEs and GANs) and [Lecture 3](../03-lectures/lecture-3/) (diffusion models, transformers and LLMs). Each one changes a training objective, an architecture or a sampling procedure; ask what that change does to the synthetic data (LO1).
 
 | # | Paper | Theme |
 |:-:|---|---|

@@ -3,7 +3,7 @@ title: Reading list
 weight: 80
 ---
 
-The course literature consists of peer-reviewed papers and selected book chapters. This page collects the required reading for every lecture, the paper pools for the two [paper seminars](../05-paper-seminars/) and background reading by topic. Each [lecture page](../03-lectures/) also lists further reading and a full set of references for that lecture.
+The course literature mainly consists of peer-reviewed research articles, with selected book chapters and regulatory guidance. This page collects the required reading for every lecture, the paper pools for the two [paper seminars](../05-paper-seminars/) and background reading by topic. Each [lecture page](../03-lectures/) also lists further reading and a full set of references for that lecture.
 
 > [!NOTE]
 > The reading list changes with each course run, since generative modelling moves quickly.
@@ -17,6 +17,7 @@ Read these before the lecture. The lecture pages say which sections to read and 
 - Jordon, J., Szpruch, L., Houssiau, F., Bottarelli, M., Cherubin, G., Maple, C., Cohen, S. N., & Weller, A. (2022). Synthetic Data – what, why and how? *arXiv:2205.03257*. [arXiv](https://arxiv.org/abs/2205.03257)
 - Stadler, T., Oprisanu, B., & Troncoso, C. (2022). Synthetic Data – Anonymisation Groundhog Day. *31st USENIX Security Symposium*, 1451–1468. [USENIX](https://www.usenix.org/conference/usenixsecurity22/presentation/stadler)
 - Regulation (EU) 2016/679 (General Data Protection Regulation): Recital 26, Article 4(1) and (5), Article 9 and Article 89(1). [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+- European Data Protection Board (2026). Guidelines 02/2026 on Anonymisation, version 1.0. [PDF](https://www.edpb.europa.eu/system/files_en?file=2026-09/edpb_guidelines_202602_anonymisation_v1_en_0.pdf)
 
 ### Lecture 2: VAEs and GANs (week 2)
 
@@ -25,20 +26,22 @@ Read these before the lecture. The lecture pages say which sections to read and 
 - Xu, L., Skoularidou, M., Cuesta-Infante, A., & Veeramachaneni, K. (2019). Modeling Tabular data using Conditional GAN. *Advances in Neural Information Processing Systems*, 32. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2019/hash/254ed7d2de3b23ab10936522dd547b78-Abstract.html) · [arXiv:1907.00503](https://arxiv.org/abs/1907.00503)
 - Yoon, J., Jarrett, D., & van der Schaar, M. (2019). Time-series Generative Adversarial Networks. *Advances in Neural Information Processing Systems*, 32. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2019/hash/c9efe5f26cd17ba6216bbe2a7d26d490-Abstract.html)
 
-### Lecture 3: Diffusion and transformer-based models (week 3)
+### Lecture 3: Diffusion models, transformers and LLMs (week 3)
 
 - Ho, J., Jain, A., & Abbeel, P. (2020). Denoising Diffusion Probabilistic Models. *Advances in Neural Information Processing Systems*, 33, 6840–6851. [Proceedings](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html) · [arXiv:2006.11239](https://arxiv.org/abs/2006.11239)
+- Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is All you Need. *Advances in Neural Information Processing Systems*, 30. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html) · [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)
 - Sikder, M. F., Ramachandranpillai, R., & Heintz, F. (2025). TransFusion: Generating long, high fidelity time series using diffusion models with transformers. *Machine Learning with Applications*, 20, 100652. [doi:10.1016/j.mlwa.2025.100652](https://doi.org/10.1016/j.mlwa.2025.100652) · [arXiv:2307.12667](https://arxiv.org/abs/2307.12667) · [Publication page](/publications/diffusion-time-series/)
 
 ### Lecture 4: Evaluating synthetic data: fidelity and utility (week 5)
 
 - Alaa, A., van Breugel, B., Saveliev, E. S., & van der Schaar, M. (2022). How Faithful is your Synthetic Data? Sample-level Metrics for Evaluating and Auditing Generative Models. *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162, 290–306. [PMLR](https://proceedings.mlr.press/v162/alaa22a.html) · [arXiv:2102.08921](https://arxiv.org/abs/2102.08921)
-- Sikder, M. F., Ramachandranpillai, R., de Leng, D., & Heintz, F. (2024). FairX: A comprehensive benchmarking tool for model analysis using fairness, utility, and explainability. *Proceedings of the 2nd Workshop on Fairness and Bias in AI (AEQUITAS 2024), co-located with ECAI 2024*, CEUR Workshop Proceedings, Vol. 3808. [PDF](https://ceur-ws.org/Vol-3808/paper16.pdf) · [arXiv:2406.14281](https://arxiv.org/abs/2406.14281) · [Publication page](/publications/FairX/)
+- Sikder, M. F., Ramachandranpillai, R., de Leng, D., & Heintz, F. (2024). FairX: A comprehensive benchmarking tool for model analysis using fairness, utility, and explainability. *Proceedings of the 2nd Workshop on Fairness and Bias in AI (AEQUITAS 2024), co-located with ECAI 2024*, CEUR Workshop Proceedings, Vol. 3808. [PDF](https://ceur-ws.org/Vol-3808/paper16.pdf) · [arXiv:2406.14281](https://arxiv.org/abs/2406.14281) · [Publication page](/publications/fairx/)
 
 ### Lecture 5: Privacy: differential privacy and attacks (week 6)
 
 - Dwork, C., & Roth, A. (2014). The Algorithmic Foundations of Differential Privacy. *Foundations and Trends in Theoretical Computer Science*, 9(3–4), 211–407. [doi:10.1561/0400000042](https://doi.org/10.1561/0400000042)
 - Jordon, J., Yoon, J., & van der Schaar, M. (2019). PATE-GAN: Generating Synthetic Data with Differential Privacy Guarantees. *International Conference on Learning Representations (ICLR 2019)*. [OpenReview](https://openreview.net/forum?id=S1zk9iRqF7)
+- Zhang, Z., Wang, T., Li, N., Honorio, J., Backes, M., He, S., Chen, J., & Zhang, Y. (2021). PrivSyn: Differentially Private Data Synthesis. *30th USENIX Security Symposium*, 929–946. [USENIX](https://www.usenix.org/conference/usenixsecurity21/presentation/zhang-zhikun)
 
 ### Lecture 6: Fairness in synthetic data (week 7)
 

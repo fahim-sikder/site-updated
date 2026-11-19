@@ -19,7 +19,7 @@ course_short: "Lecture page"
 7. Evaluating fairness, trade-offs and release risk
 
 Note:
-Fairness in this course always means algorithmic fairness: the statistical relationship between a sensitive attribute and the outcomes that data and models produce. The lecture serves LO2 (evaluate synthetic data for fairness) and LO3 (assess the fairness risk of releasing it). We build on Lecture 4 for fidelity and utility, and on Lecture 5 for differential privacy. Lab 4 later this week puts the evaluation part into practice with FairX.
+Fairness in this course always means algorithmic fairness: the statistical relationship between a sensitive attribute and the outcomes that data and models produce. The lecture serves LO2 (evaluate synthetic data for fairness) and LO3 (assess the fairness risk of releasing it). We build on Lecture 4 for fidelity and utility, and on Lecture 5 for differential privacy. Lab 2 later this week puts the evaluation part into practice with fairlearn and FairX.
 
 ---
 
@@ -377,7 +377,7 @@ Bt-GAN recommends choosing protected attributes with domain experts, because enf
 - Explanations with SHAP; plots of outcomes across two attributes
 
 Note:
-Correlation Remover is pre-processing, TabFairGAN, DECAF and FairDisCo are listed as in-processing, and the Threshold Optimizer is post-processing. Correlation Remover and Threshold Optimizer wrap their Fairlearn implementations, and DECAF runs through the synthcity library. The README lists FLDGMs, the knowledge distillation model and an intersectional bias metric as planned, not yet implemented. Lab 4 uses FairX on this workflow.
+Correlation Remover is pre-processing, TabFairGAN, DECAF and FairDisCo are listed as in-processing, and the Threshold Optimizer is post-processing. Correlation Remover and Threshold Optimizer wrap their Fairlearn implementations, and DECAF runs through the synthcity library. The README lists FLDGMs, the knowledge distillation model and an intersectional bias metric as planned, not yet implemented. Lab 2 uses fairlearn and FairX on this workflow.
 
 ---
 

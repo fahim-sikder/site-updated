@@ -18,7 +18,7 @@ course_short: "Lecture page"
 6. Tools, pitfalls and a reporting checklist
 
 Note:
-This lecture serves learning outcome LO2. Lab 2 later this week uses the sample-level metrics of Alaa et al. and FairX, so the second half of the lecture prepares you for it. Privacy metrics come in Lecture 5 and fairness metrics in Lecture 6.
+This lecture serves learning outcome LO2. Lab 2 in week 7 uses the sample-level metrics of Alaa et al. and FairX, so the second half of the lecture prepares you for it. Privacy metrics come in Lecture 5 and fairness metrics in Lecture 6.
 
 ---
 

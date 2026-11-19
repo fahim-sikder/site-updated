@@ -1,6 +1,6 @@
 ---
-title: "Lab 1: Train generative models and compare their output"
-linkTitle: "Lab 1: Train and compare"
+title: "Lab 1: Train generative models and find failure modes"
+linkTitle: "Lab 1: Failure modes"
 weight: 41
 ---
 
@@ -8,15 +8,15 @@ weight: 41
 
 ## Goal
 
-You train four generative models from three families on the same data and compare what they produce. CTGAN (a GAN) and TVAE (a variational autoencoder) learn the Adult census table. TimeGAN (a GAN for sequences) and TransFusion (a diffusion model with a transformer) learn a set of sine sequences. You then link each difference you find to the training objective of the model, its training budget or its data encoding.
+You train four generative models from three families on the same data and look for their failure modes: what each model gets wrong in the data it produces. CTGAN (a GAN) and TVAE (a variational autoencoder) learn the Adult census table. TimeGAN (a GAN for sequences) and TransFusion (a diffusion model with a transformer) learn a set of sine sequences. You then link each failure you find, such as a missing category or a set of near-identical samples, to the training objective of the model, its training budget or its data encoding.
 
 ## Learning outcomes
 
-The lab supports [LO1](../../01-about/#learning-outcomes): analyse how the training objectives of the main families of generative models affect the synthetic data they produce. After the lab you should be able to:
+The lab supports [LO1](../../01-about/#learning-outcomes): analyse how the training objectives of the main families of generative models relate to their failure modes. After the lab you should be able to:
 
 - train tabular and time-series generative models from the command line and log their energy use;
 - compare real and synthetic data with marginal plots, differences in pairwise association and 2D projections;
-- explain an observed difference, such as a missing category or a set of near-identical samples, through the model's objective, its training budget or its data encoding.
+- find failure modes in synthetic data, such as a missing category, a collapsed mode or a set of near-identical samples, and explain each through the model's objective, its training budget or its data encoding.
 
 ## Before the lab
 
@@ -40,7 +40,7 @@ git -C TransFusion checkout 7be6389a083152dfe7067198bc797b3f8bcfd8f9
 
 Run every command in this lab from the `lab-1` folder, with the course environment active.
 
-**Data.** The tabular script downloads the Adult data set (Becker and Kohavi, 1996) from [OpenML (data set 1590)](https://www.openml.org/d/1590) through scikit-learn on its first run and caches it in your home folder. The [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/2/adult) publishes Adult under the CC BY 4.0 licence, and OpenML lists it as public. The script drops the census sampling weight `fnlwgt` and the rows with missing values, which leaves 45,222 rows. It then draws three disjoint sets of 5,000 rows with a fixed seed: a training set, a holdout set and a reference set. Labs 2, 3 and 4 reuse these files, so keep the `outputs` folder. The sine sequences are generated in the script with the same recipe as the [TimeGAN code](https://github.com/jsyoon0823/TimeGAN): each of the five features is sin(*f t* + *p*), with *f* and *p* drawn from U(0, 0.1), rescaled to [0, 1].
+**Data.** The tabular script downloads the Adult data set (Becker and Kohavi, 1996) from [OpenML (data set 1590)](https://www.openml.org/d/1590) through scikit-learn on its first run and caches it in your home folder. The [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/2/adult) publishes Adult under the CC BY 4.0 licence, and OpenML lists it as public. The script drops the census sampling weight `fnlwgt` and the rows with missing values, which leaves 45,222 rows. It then draws three disjoint sets of 5,000 rows with a fixed seed: a training set, a holdout set and a reference set. Labs 2 and 3 reuse these files, so keep the `outputs` folder. The sine sequences are generated in the script with the same recipe as the [TimeGAN code](https://github.com/jsyoon0823/TimeGAN): each of the five features is sin(*f t* + *p*), with *f* and *p* drawn from U(0, 0.1), rescaled to [0, 1].
 
 > [!NOTE] Our test machine
 > We ran every command on this page on a desktop PC with an AMD Ryzen 5 5500 CPU (6 cores) and 32 GB RAM, under Windows 11, with CPU-only PyTorch. The run times we report come from that machine. A laptop may take longer; every script has arguments that make the runs smaller.
@@ -227,7 +227,7 @@ Open `outputs/emissions.csv` and `outputs_ts/emissions.csv`. Compare `energy_con
 
 ## Completing the lab
 
-Completing all four labs is part of the [examination](../../07-examination/). As evidence for this lab, the course leader may ask for short lab notes: your answers to the questions above, with the tables and figures they refer to, and the energy figures from `emissions.csv`. Follow the course leader's instructions for the format and the deadline.
+Completing all three labs is part of the [examination](../../07-examination/). As evidence for this lab, the course leader may ask for short lab notes: your answers to the questions above, with the tables and figures they refer to, and the energy figures from `emissions.csv`. Follow the course leader's instructions for the format and the deadline.
 
 ## Further reading
 

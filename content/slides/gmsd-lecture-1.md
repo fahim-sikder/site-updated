@@ -399,15 +399,16 @@ The lab instructions give the exact set-up. A container on Windows or macOS runs
 | Week | Session | Focus |
 |:---:|---|---|
 | 2, 3 | Lectures 2 and 3 | Model families and their objectives (LO1) |
-| 4 | Paper seminar 1, Lab 1 | CTGAN, TimeGAN, TransFusion |
-| 5 | Lecture 4, Lab 2 | Fidelity and utility (LO2) |
-| 6 | Lecture 5, Lab 3 | Differential privacy, attacks (LO2, LO3) |
-| 7 | Lecture 6, Lab 4 | Fairness (LO2, LO3) |
-| 8, 9 | Guest lecture, paper seminar 2 | Healthcare; privacy and fairness |
+| 4 | Paper seminar 1, Lab 1 | Failure modes of CTGAN, TimeGAN, TransFusion |
+| 5 | Lecture 4 | Fidelity and utility (LO2) |
+| 6 | Lecture 5 | Differential privacy, attacks (LO2, LO3) |
+| 7 | Lecture 6, Lab 2 | Fairness; utility and fairness lab (LO2, LO3) |
+| 8 | Guest lecture, Lab 3 | Healthcare; privacy lab (LO2, LO3) |
+| 9 | Paper seminar 2 | Privacy and fairness papers |
 | 10 | Project presentations | Your own domain (LO4, LO5) |
 
 Note:
-Lecture 2 covers VAEs and GANs, Lecture 3 diffusion and transformer-based models. The guest lecture on synthetic data in healthcare is in week 8. Energy logging runs through all labs and the project.
+Lecture 2 covers VAEs and GANs, Lecture 3 diffusion models, transformers and LLMs. The guest lecture on synthetic data in healthcare is in week 8. Energy logging runs through all labs and the project.
 
 ---
 

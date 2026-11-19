@@ -1,5 +1,5 @@
 ---
-title: "Diffusion and transformer-based models"
+title: "Diffusion models, transformers and LLMs"
 kicker: "Lecture 3 · Week 3"
 subtitle: "Generative Models for Synthetic Data: Privacy, Fairness and Utility"
 presenter: "Md Fahim Sikder"

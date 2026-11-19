@@ -1,14 +1,14 @@
 ---
-title: "Lab 3: Privacy evaluation"
+title: "Lab 3: Privacy evaluation of synthetic data"
 linkTitle: "Lab 3: Privacy"
 weight: 43
 ---
 
-**Week 6** · 2 hours · Learning outcomes [LO2 and LO3](../../01-about/#learning-outcomes)
+**Week 8** · 2 hours · Learning outcomes [LO2 and LO3](../../01-about/#learning-outcomes)
 
 ## Goal
 
-You train a differentially private generative model at two privacy budgets and measure what the privacy costs in utility. You then evaluate how much the synthetic data reveal about the training rows, with a distance to the closest record and with the DOMIAS membership inference attack, for private and non-private models. The lab ends with a short assessment of the privacy risks of releasing a synthetic data set.
+You train a differentially private generative model at two privacy budgets and measure what the privacy costs in utility. You then evaluate how much the synthetic data reveal about the training rows, with a distance to the closest record and with the DOMIAS membership inference attack, for private and non-private models. The lab ends with a release assessment that combines these privacy results with the fairness risks you noted in [Lab 2](../lab-2/).
 
 ## Learning outcomes
 
@@ -16,12 +16,13 @@ The lab supports [LO2 and LO3](../../01-about/#learning-outcomes). After the lab
 
 - train a differentially private generator and explain what its privacy budget covers and what it does not;
 - run a distance-based privacy check and a membership inference attack, and explain why neither proves that data are private;
-- assess and document the privacy risks of releasing a synthetic data set.
+- assess whether a synthetic data set can be released, based on its measured privacy and fairness risks.
 
 ## Before the lab
 
-- Attend or review [Lecture 5](../../03-lectures/lecture-5/), which runs earlier the same week.
+- Attend or review [Lecture 5](../../03-lectures/lecture-5/) (week 6) on differential privacy and attacks.
 - Complete [Lab 1](../lab-1/). This lab reads the Lab 1 files in `outputs/`: the training, holdout and reference rows and the CTGAN and TVAE data.
+- Complete [Lab 2](../lab-2/). The release assessment uses your notes on the fairness risks, and an optional task reuses `lab2_fairness.py`.
 
 ## Set-up
 
@@ -109,9 +110,19 @@ On our test machine this took about 6 minutes (369 s). In our run, the TSTR AURO
 > [!WARNING] DPGAN results change from run to run
 > DPGAN gave different data when we ran the same command twice with the same seed on the same machine. In our first run of the default command, the TSTR AUROC was 0.512 at ε = 1 and 0.676 at ε = 10; in the second run, which the table above shows, it was 0.744 and 0.341. Expect your numbers to differ from ours.
 
-### Write a privacy release assessment
+### Optional: check the fairness of the private data
 
-Choose one synthetic data set from this lab, and imagine your research group plans to publish it with a paper. Write half a page that covers: what an attacker could learn and about whom; which of your measurements support or weaken that risk, and which risks they cannot rule out; what the formal guarantee covers, if there is one; and whether you would release the data, with which safeguards.
+Add the DPGAN data at ε = 1 to the fairness comparison of Lab 2:
+
+```bash
+python ../lab-2/lab2_fairness.py --data-dir ../lab-1/outputs --extra outputs_lab3/synthetic_dpgan_eps1.csv --out outputs_lab3_fairness
+```
+
+Read the accuracy next to DPD and EOD.
+
+### Write a release assessment
+
+Choose one synthetic data set from Lab 2 or this lab, and imagine your research group plans to publish it with a paper. Write half a page that covers: what an attacker could learn and about whom; which of your measurements support or weaken that risk, and which risks they cannot rule out; what the formal guarantee covers, if there is one; which fairness risks you noted in Lab 2; and whether you would release the data, with which safeguards.
 
 {{% /steps %}}
 
@@ -124,6 +135,7 @@ Choose one synthetic data set from this lab, and imagine your research group pla
 5. DPGAN at ε = 10 has a formal guarantee, yet in our second run its distance share was 0.255, far from 0.5. In that run, 46% of its rows had the same training row as their nearest neighbour. Why does the share then say little about memorisation? What does this imply for distance checks on synthetic data of low quality?
 6. Read `synthcity/plugins/privacy/plugin_dpgan.py`, `synthcity/plugins/core/models/tabular_gan.py` and `gan.py` in your environment. Which steps use the real training rows outside the DP-SGD updates of the discriminator? Look at how the data encoder is fitted and at the default `patience_metric`. What does the ε of DPGAN cover, and what does it not cover?
 7. Is synthcity's default δ, one over the number of training rows, small enough? What could a mechanism with δ = 1/n do and still meet the definition?
+8. If you did the optional fairness check: in our run, the classifier trained on the DPGAN data predicted `>50K` for every person in the holdout set, so its DPD and EOD were 0 and its accuracy was 0.253. Why is this classifier not fair in any useful sense? Ganev et al. (2022) report that differential privacy can have a disparate impact on synthetic data. What would you need to test that claim on Adult?
 
 ## Energy use
 
@@ -133,7 +145,7 @@ The script tracks each DPGAN run with `OfflineEmissionsTracker(country_iso_code=
 
 ## Completing the lab
 
-Completing all four labs is part of the [examination](../../07-examination/). As evidence for this lab, the course leader may ask for short lab notes: your answers to the questions above, your privacy release assessment, and the energy figures from `emissions.csv`. Follow the course leader's instructions for the format and the deadline.
+Completing all three labs is part of the [examination](../../07-examination/). As evidence for this lab, the course leader may ask for short lab notes: your answers to the questions above, your release assessment, and the energy figures from `emissions.csv`. Follow the course leader's instructions for the format and the deadline.
 
 ## Further reading
 
@@ -144,3 +156,4 @@ Completing all four labs is part of the [examination](../../07-examination/). As
 - van Breugel, B., Sun, H., Qian, Z., & van der Schaar, M. (2023). Membership Inference Attacks against Synthetic Data through Overfitting Detection. *Proceedings of the 26th International Conference on Artificial Intelligence and Statistics*, PMLR 206, 3493–3514. [Proceedings page](https://proceedings.mlr.press/v206/breugel23a.html)
 - Stadler, T., Oprisanu, B., & Troncoso, C. (2022). Synthetic Data – Anonymisation Groundhog Day. *31st USENIX Security Symposium*, 1451–1468. [Proceedings page](https://www.usenix.org/conference/usenixsecurity22/presentation/stadler)
 - Ganev, G., & De Cristofaro, E. (2025). The Inadequacy of Similarity-Based Privacy Metrics: Privacy Attacks Against "Truly Anonymous" Synthetic Datasets. *2025 IEEE Symposium on Security and Privacy*, 4007–4025. [doi:10.1109/SP61157.2025.00218](https://doi.org/10.1109/SP61157.2025.00218)
+- Ganev, G., Oprisanu, B., & De Cristofaro, E. (2022). Robin Hood and Matthew Effects: Differential Privacy Has Disparate Impact on Synthetic Data. *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162, 6944–6959. [Proceedings page](https://proceedings.mlr.press/v162/ganev22a.html)

@@ -1,12 +1,12 @@
-"""Lab 4, task 4: train TabFairGAN with FairX and save its synthetic data.
+"""Lab 2, optional extra: train TabFairGAN with FairX and save its synthetic data.
 
-    python lab4_tabfairgan.py --epochs 15
+    python lab2_tabfairgan.py --epochs 15
 
 FairX's TabFairGAN loads the full Adult data from OpenML with its own loader,
 trains on a random 90% of it, prints FairX's alpha-precision, beta-recall and
 authenticity, and writes the synthetic rows to a CSV file. This script runs
 the documented FairX example inside a CodeCarbon tracker and moves the CSV to
---out, so that lab4_fairness.py can read it with --extra.
+--out, so that lab2_fairness.py can read it with --extra.
 """
 
 import argparse
@@ -23,7 +23,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--epochs", type=int, default=15,
                         help="FairX trains the last 10 epochs for fairness, so use more than 10")
-    parser.add_argument("--out", type=Path, default=Path("outputs_lab4"))
+    parser.add_argument("--out", type=Path, default=Path("outputs_lab2_tabfairgan"))
     args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
 
@@ -31,7 +31,7 @@ def main():
     tabfairgan = TabFairGAN("Female", ">50K")  # the underprivileged group and the desired label
 
     tracker = OfflineEmissionsTracker(
-        country_iso_code="SWE", project_name="lab4-tabfairgan", output_dir=str(args.out), log_level="error"
+        country_iso_code="SWE", project_name="lab2-tabfairgan", output_dir=str(args.out), log_level="error"
     )
     tracker.start()
     start = time.perf_counter()

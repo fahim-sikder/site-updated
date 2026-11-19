@@ -1,8 +1,8 @@
-"""Lab 4: does synthetic data carry or amplify bias in the real data?
+"""Lab 2, part 2: does synthetic data carry or amplify bias in the real data?
 
-Run from a terminal after Lab 1 (and, if you want the private models too, Lab 3):
+Run from a terminal after Lab 1. Lab 3 reuses this script for its private data:
 
-    python lab4_fairness.py --data-dir ../lab-1/outputs --extra ../lab-3/outputs_lab3/synthetic_dpgan_eps1.csv
+    python lab2_fairness.py --data-dir ../lab-1/outputs --extra ../lab-3/outputs_lab3/synthetic_dpgan_eps1.csv
 
 Task 1 compares group sizes and base rates in real and synthetic data.
 Task 2 trains classifiers on real and on synthetic data and measures their
@@ -125,7 +125,7 @@ def main():
     parser.add_argument("--data-dir", type=Path, default=Path("../lab-1/outputs"))
     parser.add_argument("--extra", type=Path, nargs="*", default=[], help="more synthetic CSV files")
     parser.add_argument("--drop-protected", action="store_true", help="train without sex and race")
-    parser.add_argument("--out", type=Path, default=Path("outputs_lab4"))
+    parser.add_argument("--out", type=Path, default=Path("outputs_lab2_fairness"))
     args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
     pd.set_option("display.width", 200)
@@ -141,7 +141,7 @@ def main():
         datasets[path.stem.replace("synthetic_", "")] = pd.read_csv(path)
 
     tracker = OfflineEmissionsTracker(
-        country_iso_code="SWE", project_name="lab4-evaluation", output_dir=str(args.out), log_level="error"
+        country_iso_code="SWE", project_name="lab2-fairness", output_dir=str(args.out), log_level="error"
     )
     tracker.start()
     start = time.perf_counter()

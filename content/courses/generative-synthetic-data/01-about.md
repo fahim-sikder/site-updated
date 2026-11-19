@@ -5,21 +5,23 @@ weight: 10
 
 ## Why this course
 
-Synthetic data can ease data scarcity when real data is restricted. It also carries three risks: it can leak private information, amplify bias in the real data, or lose the utility of the real data in downstream tasks. The course prepares you to build synthetic data and to judge it on all three counts.
+Synthetic data can ease data scarcity when real data is restricted, but it can still leak sensitive information, amplify bias in the real data or lose the utility of the real data in downstream tasks. The main goal of the course is to prepare you to use the main families of generative models to generate synthetic data, and to evaluate it for privacy, fairness and utility.
+
+This is a new course; it has not been given before.
 
 ## Learning outcomes {#learning-outcomes}
 
 After the course, you should be able to:
 
-1. **LO1.** Analyse how the training objectives of the main families of generative models affect the synthetic data they produce.
-2. **LO2.** Evaluate synthetic data from an existing generative model for utility, privacy and fairness.
-3. **LO3.** Assess the privacy and fairness risks of releasing a synthetic dataset.
+1. **LO1.** Analyse how the training objectives of the main families of generative models relate to their failure modes.
+2. **LO2.** Evaluate synthetic data for utility, privacy and fairness.
+3. **LO3.** Assess whether a synthetic dataset can be released based on its measured privacy and fairness risks.
 4. **LO4.** Design and evaluate a generative model for a domain problem in your own research field.
 5. **LO5.** Reflect on how your own assumptions and practice around synthetic data have changed during the course.
 
 ## Who should take this course
 
-The course is mainly for PhD students in computer science who work with data that is hard to access, because of regulation or company restrictions, or who want to understand how generative models work.
+The course is intended for PhD students in computer science who work with data that is challenging to access due to regulations or restrictions, or who want to understand how generative models work.
 
 PhD students from other fields who work with sensitive data, for example in medicine or the social sciences, are also welcome.
 
@@ -29,8 +31,8 @@ PhD students from other fields who work with sensitive data, for example in medi
 ## Prerequisites
 
 - Some background in machine learning or deep learning.
-- Basic programming experience in Python, enough to read and modify the lab code.
-- A personal laptop that can run Docker. No GPU is needed.
+- Basic programming experience in Python, enough to run and modify the lab code.
+- A personal laptop that can run Docker (instructions are on the [Labs](../04-labs/#set-up) page). No GPU is needed.
 
 Each lab comes with starter code, so you modify working models and do not write them from scratch.
 
@@ -45,12 +47,11 @@ The course combines four kinds of activity over 10 weeks.
 
 ## Topics
 
-- Why synthetic data is needed: data access, data scarcity and regulation
+- Why synthetic data is needed: data access, scarcity and regulation
 - Main generative models: variational autoencoders, generative adversarial networks, diffusion models and transformer-based models
-- Generating tabular and time-series data
-- Evaluating synthetic data for fidelity and utility
+- Generation and evaluation of synthetic data for fidelity and utility
 - Privacy: differential privacy and privacy attacks
 - Fairness: how synthetic data can carry or amplify bias
-- Release risk: measuring the privacy and fairness risks of releasing a synthetic dataset
-- Synthetic data in healthcare (guest lecture)
-- Energy use of training generative models
+- Synthetic data release risk: measuring the privacy and fairness risks of releasing a synthetic dataset
+
+The guest lecture adds synthetic data in healthcare, and the labs and the project log the energy use of training with CodeCarbon.
