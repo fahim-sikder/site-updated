@@ -3,9 +3,9 @@ title: Paper seminars
 weight: 50
 ---
 
-The course has two paper seminars of 2 hours each. In the seminars, each participant leads the discussion of one paper, with a short summary and questions for the group. Leading one discussion is part of the [examination](../07-examination/).
+The course has two paper seminars of 2 hours each. Each participant presents in only one of them: you lead the discussion of one paper, with a short summary and questions for the group. In the other seminar, you take part in the discussion. Leading one discussion is part of the [examination](../07-examination/).
 
-The papers come from the pools below. The course leader assigns each participant one paper at the start of the course, when you receive the full reading list. Read every paper that is discussed in your seminar, not only your own, so that the group can discuss them.
+The papers come from the pools below. At the start of the course, when you receive the full reading list, the examiner assigns each participant one paper, and with it the seminar in which you present. Before each seminar, read every paper that is discussed in it, not only your own, so that the group can discuss them.
 
 ## Paper seminar 1: generative model families {#paper-seminar-1-generative-model-families}
 

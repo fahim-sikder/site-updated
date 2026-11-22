@@ -15,7 +15,7 @@ cascade:
 
 The course has six lectures and one guest lecture, run alongside three labs and two paper seminars. Each lecture lasts 2 hours. Read the required papers for each lecture before the session.
 
-**Lecturer:** Md Fahim Sikder. The guest lecturer on synthetic data in healthcare is to be confirmed.
+**Lecturer:** Md Fahim Sikder. The guest lecturer is to be confirmed.
 
 - Lecture 1: Why synthetic data? Data access and regulations
 - Lecture 2: VAEs and GANs
@@ -23,6 +23,6 @@ The course has six lectures and one guest lecture, run alongside three labs and 
 - Lecture 4: Evaluating synthetic data: fidelity and utility
 - Lecture 5: Privacy: differential privacy and attacks
 - Lecture 6: Fairness in synthetic data
-- Guest lecture: synthetic data in healthcare
+- Guest lecture: synthetic data
 
-The course leader publishes the lecture material during the course. The [reading list](../08-reading-list/) collects the required reading of all lectures.
+The examiner publishes the lecture material during the course. The [reading list](../08-reading-list/) collects the required reading of all lectures.

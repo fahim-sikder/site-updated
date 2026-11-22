@@ -48,7 +48,7 @@ Read these before the lecture.
 - Ramachandranpillai, R., Sikder, M. F., Bergström, D., & Heintz, F. (2024). Bt-GAN: Generating Fair Synthetic Healthdata via Bias-transforming Generative Adversarial Networks. *Journal of Artificial Intelligence Research*, 79, 1313–1341. [doi:10.1613/jair.1.15317](https://doi.org/10.1613/jair.1.15317) · [Publication page](/publications/bias-transforming-gan/)
 - Sikder, M. F., Ramachandranpillai, R., de Leng, D., & Heintz, F. (2024). FairX (see Lecture 4).
 
-### Guest lecture: synthetic data in healthcare
+### Guest lecture: synthetic data
 
 The background reading follows once the guest lecturer is confirmed.
 
@@ -97,7 +97,7 @@ The [paper seminars page](../05-paper-seminars/) lists the paper pools for semin
 - Strubell, E., Ganesh, A., & McCallum, A. (2019). Energy and Policy Considerations for Deep Learning in NLP. *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics*, 3645–3650. [ACL Anthology](https://aclanthology.org/P19-1355/)
 - CodeCarbon documentation: methodology. [docs.codecarbon.io](https://docs.codecarbon.io/latest/explanation/methodology/)
 
-### Work by the course leader on these topics
+### Work by the examiner on these topics
 
 - Ramachandranpillai, R., Sikder, M. F., & Heintz, F. (2023). Fair Latent Deep Generative Models (FLDGMs) for Syntax-Agnostic and Fair Synthetic Data Generation. *ECAI 2023*, Frontiers in Artificial Intelligence and Applications, Vol. 372, 1938–1945. [doi:10.3233/FAIA230484](https://doi.org/10.3233/FAIA230484) · [Publication page](/publications/fair-latent-generative-models/)
 - Sikder, M. F., Ramachandranpillai, R., de Leng, D., & Heintz, F. (2025). Promoting Intersectional Fairness Through Knowledge Distillation. *ECAI 2025*, Frontiers in Artificial Intelligence and Applications, Vol. 413, 3427–3434. [doi:10.3233/FAIA251214](https://doi.org/10.3233/FAIA251214) · [Publication page](/publications/promoting-intersectional-fainress/)

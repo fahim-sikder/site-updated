@@ -36,7 +36,7 @@ Read these two papers before the lecture.
   *What to look for:* the evaluation workflow, which bias-mitigation models the tool wraps, which metrics it reports, and the fact that its fairness metrics are computed on a classifier trained on the data you pass in.
 
 > [!NOTE]
-> The course leader is a co-author of both papers. Read them as critically as any other paper; two of the discussion questions ask you to find their limits.
+> The examiner is a co-author of both papers. Read them as critically as any other paper; two of the discussion questions ask you to find their limits.
 
 ## Lecture notes
 

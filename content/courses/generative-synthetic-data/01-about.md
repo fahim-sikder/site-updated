@@ -40,9 +40,9 @@ Each lab comes with starter code, so you modify working models and do not write 
 
 The course combines four kinds of activity.
 
-- **[Lectures](../03-lectures/)** cover the main families of generative models and how to evaluate them for utility, privacy and fairness. A guest lecture covers synthetic data in healthcare. Read the assigned papers before each lecture.
-- **[Labs](../04-labs/)** let you train generative models and evaluate their output. A Docker container holds the starter code and small public datasets, so the labs run on a laptop CPU or a free cloud server on any operating system. The course leader publishes all lab material before each session, so you can prepare at your own pace.
-- **[Paper seminars](../05-paper-seminars/)**: each participant leads the discussion of one paper, with a short summary and questions for the group.
+- **[Lectures](../03-lectures/)** cover the main families of generative models and how to evaluate them for utility, privacy and fairness. A guest lecturer gives one more lecture on synthetic data. Read the assigned papers before each lecture.
+- **[Labs](../04-labs/)** let you train generative models and evaluate their output. A Docker container holds the starter code and small public datasets, so the labs run on a laptop CPU or a free cloud server on any operating system. The examiner publishes all lab material before each session, so you can prepare at your own pace.
+- **[Paper seminars](../05-paper-seminars/)**: each participant leads the discussion of one paper in one of the two seminars, with a short summary and questions for the group.
 - **[Individual project](../06-project/)**: you train a generative model on data from your own domain, evaluate the synthetic data and write a reflection report. If you cannot bring your real data, because of ethical approvals or data agreements, you use a public dataset with a similar structure.
 
 ## Topics
@@ -54,4 +54,4 @@ The course combines four kinds of activity.
 - Fairness: how synthetic data can carry or amplify bias
 - Synthetic data release risk: measuring the privacy and fairness risks of releasing a synthetic dataset
 
-The guest lecture adds synthetic data in healthcare, and the labs and the project log the energy use of training with CodeCarbon.
+The labs and the project log the energy use of training with CodeCarbon.

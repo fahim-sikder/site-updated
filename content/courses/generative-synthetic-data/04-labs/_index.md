@@ -29,8 +29,8 @@ The labs come with starter code: Python scripts that you run from a terminal. Yo
 
 The labs use the public Adult census data (Becker and Kohavi, 1996) and sine sequences generated in code. No lab uses personal data beyond this public data set.
 
-The course leader publishes all lab material before each session, so you can prepare at your own pace.
+The examiner publishes all lab material before each session, so you can prepare at your own pace.
 
 ## Set-up {#set-up}
 
-You need a laptop that can run Docker, or a free cloud server. No GPU is needed. Install [Docker Desktop](https://docs.docker.com/get-started/get-docker/) on Windows or macOS, or Docker Engine on Linux. The course leader provides a Docker container with the starter code, the Python packages and the data, and explains how to download and start it before Lab 1.
+You need a laptop that can run Docker, or a free cloud server. No GPU is needed. Install [Docker Desktop](https://docs.docker.com/get-started/get-docker/) on Windows or macOS, or Docker Engine on Linux. The examiner provides a Docker container with the starter code, the Python packages and the data, and explains how to download and start it before Lab 1.

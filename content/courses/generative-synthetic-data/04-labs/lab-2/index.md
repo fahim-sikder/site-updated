@@ -298,7 +298,7 @@ Each script tracks its work with `OfflineEmissionsTracker(country_iso_code="SWE"
 
 ## Completing the lab
 
-Completing all three labs is part of the [examination](../../07-examination/). As evidence for this lab, the course leader may ask for short lab notes: your answers to the questions above, with the tables they refer to, your notes on the fairness risks, and the energy figures from `emissions.csv`. Follow the course leader's instructions for the format and the deadline.
+Completing all three labs is part of the [examination](../../07-examination/). As evidence for this lab, the examiner may ask for short lab notes: your answers to the questions above, with the tables they refer to, your notes on the fairness risks, and the energy figures from `emissions.csv`. Follow the examiner's instructions for the format and the deadline.
 
 ## Further reading
 

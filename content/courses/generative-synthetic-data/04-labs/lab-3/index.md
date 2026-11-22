@@ -145,7 +145,7 @@ The script tracks each DPGAN run with `OfflineEmissionsTracker(country_iso_code=
 
 ## Completing the lab
 
-Completing all three labs is part of the [examination](../../07-examination/). As evidence for this lab, the course leader may ask for short lab notes: your answers to the questions above, your release assessment, and the energy figures from `emissions.csv`. Follow the course leader's instructions for the format and the deadline.
+Completing all three labs is part of the [examination](../../07-examination/). As evidence for this lab, the examiner may ask for short lab notes: your answers to the questions above, your release assessment, and the energy figures from `emissions.csv`. Follow the examiner's instructions for the format and the deadline.
 
 ## Further reading
 

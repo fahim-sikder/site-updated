@@ -403,12 +403,12 @@ The lab instructions give the exact set-up. A container on Windows or macOS runs
 | Lecture 4 | Fidelity and utility (ILO2) |
 | Lecture 5, Lab 2 | Differential privacy, attacks; utility and privacy lab (ILO2, ILO3) |
 | Lecture 6, Lab 3 | Fairness; fairness lab (ILO2, ILO3) |
-| Guest lecture | Healthcare (ILO3) |
+| Guest lecture | Synthetic data (ILO3) |
 | Paper seminar 2 | Privacy and fairness papers |
 | Project presentations | Your own domain (ILO4, ILO5) |
 
 Note:
-Lecture 2 covers VAEs and GANs, Lecture 3 diffusion models, transformers and basics of LLMs. The guest lecture on synthetic data in healthcare comes after Lecture 6. Energy logging runs through all labs and the project.
+Lecture 2 covers VAEs and GANs, Lecture 3 diffusion models, transformers and basics of LLMs. The guest lecture on synthetic data comes after Lecture 6. Energy logging runs through all labs and the project.
 
 ---
 

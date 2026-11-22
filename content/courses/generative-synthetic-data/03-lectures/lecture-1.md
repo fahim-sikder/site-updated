@@ -197,7 +197,7 @@ The documentation is open about error ([CodeCarbon, 2026](https://docs.codecarbo
 | [Lecture 4](../lecture-4/) | Fidelity and utility (ILO2) |
 | [Lecture 5](../lecture-5/), [Lab 2](../../04-labs/lab-2/) | Differential privacy and attacks; utility and privacy evaluation (ILO2, ILO3) |
 | [Lecture 6](../lecture-6/), [Lab 3](../../04-labs/lab-3/) | Fairness; fairness evaluation (ILO2, ILO3) |
-| [Guest lecture](../guest-lecture/) | Synthetic data in healthcare (ILO3) |
+| [Guest lecture](../guest-lecture/) | Synthetic data (ILO3) |
 | [Paper seminar 2](../../05-paper-seminars/#paper-seminar-2-privacy-and-fairness) | Privacy and fairness papers |
 | [Project presentations](../../06-project/#presentation) | Your own domain problem (ILO4, ILO5) |
 

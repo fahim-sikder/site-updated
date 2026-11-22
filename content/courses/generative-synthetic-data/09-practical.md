@@ -17,12 +17,12 @@ You log the energy use of your training runs with [CodeCarbon](https://github.co
 
 ## Online and hybrid participation
 
-The course can be given online or in hybrid form if there are participants from outside Linköping. Contact the course leader if you would like to take part remotely.
+The course can be given online or in hybrid form if there are participants from outside Linköping. Contact the examiner if you would like to take part remotely.
 
 ## Course evaluation
 
-You give feedback at mid-course and at the end of the course. The course leader uses this feedback to revise the next course run.
+You give feedback at mid-course and at the end of the course. The examiner uses this feedback to revise the next course run.
 
 ## Contact
 
-The course leader and examiner is Md Fahim Sikder, at IDA, Linköping University. Contact details are on the [home page](/).
+The examiner is Md Fahim Sikder, at IDA, Linköping University. Contact details are on the [home page](/).
