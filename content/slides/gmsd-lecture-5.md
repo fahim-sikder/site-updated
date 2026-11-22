@@ -1,6 +1,6 @@
 ---
 title: "Privacy: differential privacy and attacks"
-kicker: "Lecture 5 · Week 6"
+kicker: "Lecture 5"
 subtitle: "Generative Models for Synthetic Data: Privacy, Fairness and Utility"
 presenter: "Md Fahim Sikder"
 event: "PhD course · IDA, Linköping University"
@@ -17,7 +17,7 @@ course_short: "Lecture page"
 5. Similarity metrics, auditing and release risk
 
 Note:
-This lecture serves LO2 (evaluate synthetic data for privacy) and LO3 (assess the risk of a release). The first half gives you upper bounds on leakage: differential privacy. The second half gives you lower bounds: attacks. A release decision needs both, plus an explicit threat model. Lab 3 later this week puts both into practice.
+This lecture serves ILO2 (evaluate synthetic data for privacy) and ILO3 (assess the risk of a release). The first half gives you upper bounds on leakage: differential privacy. The second half gives you lower bounds: attacks. A release decision needs both, plus an explicit threat model. Lab 2 follows this lecture and puts both into practice.
 
 ---
 
@@ -397,7 +397,7 @@ flowchart TD
 ```
 
 Note:
-This is the workflow for LO3 and for your project report. Defining the release includes whether you publish the model or only the data, and how many records. Utility checks come from Lecture 4; subgroup checks lead into Lecture 6.
+This is the workflow for ILO3 and for your project report. Defining the release includes whether you publish the model or only the data, and how many records. Utility checks come from Lecture 4; subgroup checks lead into Lecture 6.
 
 ---
 

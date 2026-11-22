@@ -4,7 +4,7 @@ linkTitle: "Lab 2: Utility and fairness"
 weight: 42
 ---
 
-**Week 7** · 2 hours · Learning outcomes [LO2 and LO3](../../01-about/#learning-outcomes)
+**2 hours** · Learning outcomes [ILO2 and ILO3](../../01-about/#learning-outcomes)
 
 ## Goal
 
@@ -12,7 +12,7 @@ You evaluate the synthetic Adult data from Lab 1 in two parts. In the first part
 
 ## Learning outcomes
 
-The lab supports [LO2](../../01-about/#learning-outcomes), evaluate synthetic data for utility, privacy and fairness, and prepares [LO3](../../01-about/#learning-outcomes), assess whether a synthetic data set can be released. This lab covers utility and fairness; [Lab 3](../lab-3/) covers privacy. After the lab you should be able to:
+The lab supports [ILO2](../../01-about/#learning-outcomes), evaluate synthetic data for utility, privacy and fairness, and prepares [ILO3](../../01-about/#learning-outcomes), assess whether a synthetic data set can be released. This lab covers utility and fairness; [Lab 3](../lab-3/) covers privacy. After the lab you should be able to:
 
 - run TSTR and TRTS evaluations with a real holdout set and read them correctly;
 - compute alpha-precision, beta-recall and authenticity, and explain what each one measures;
@@ -24,7 +24,7 @@ Throughout the course, fairness means algorithmic fairness: whether a model's de
 
 ## Before the lab
 
-- Attend or review [Lecture 4](../../03-lectures/lecture-4/) (week 5) on fidelity and utility and [Lecture 6](../../03-lectures/lecture-6/), which runs earlier the same week, on fairness.
+- Attend or review [Lecture 4](../../03-lectures/lecture-4/) on fidelity and utility and [Lecture 6](../../03-lectures/lecture-6/) on fairness.
 - Read Sections 1 to 3 of Alaa et al. (2022), listed under [Further reading](#further-reading).
 - Complete [Lab 1](../lab-1/). This lab reads `adult_train.csv`, `adult_holdout.csv`, `synthetic_ctgan.csv` and `synthetic_tvae.csv` from the Lab 1 folder `outputs/`.
 

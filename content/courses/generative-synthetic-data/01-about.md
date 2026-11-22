@@ -9,15 +9,15 @@ Synthetic data can ease data scarcity when real data is restricted, but it can s
 
 This is a new course; it has not been given before.
 
-## Learning outcomes {#learning-outcomes}
+## Intended learning outcomes {#learning-outcomes}
 
 After the course, you should be able to:
 
-1. **LO1.** Analyse how the training objectives of the main families of generative models relate to their failure modes.
-2. **LO2.** Evaluate synthetic data for utility, privacy and fairness.
-3. **LO3.** Assess whether a synthetic dataset can be released based on its measured privacy and fairness risks.
-4. **LO4.** Design and evaluate a generative model for a domain problem in your own research field.
-5. **LO5.** Reflect on how your own assumptions and practice around synthetic data have changed during the course.
+1. **ILO1.** Analyse how the training objectives of the main families of generative models relate to their failure modes.
+2. **ILO2.** Evaluate synthetic data for utility, privacy and fairness.
+3. **ILO3.** Assess whether a synthetic dataset can be released based on its measured privacy and fairness risks.
+4. **ILO4.** Design and evaluate a generative model for a domain problem in your own research field.
+5. **ILO5.** Reflect on how your own assumptions and practice around synthetic data have changed during the course.
 
 ## Who should take this course
 
@@ -38,7 +38,7 @@ Each lab comes with starter code, so you modify working models and do not write 
 
 ## How the course works
 
-The course combines four kinds of activity over 10 weeks.
+The course combines four kinds of activity.
 
 - **[Lectures](../03-lectures/)** cover the main families of generative models and how to evaluate them for utility, privacy and fairness. A guest lecture covers synthetic data in healthcare. Read the assigned papers before each lecture.
 - **[Labs](../04-labs/)** let you train generative models and evaluate their output. A Docker container holds the starter code and small public datasets, so the labs run on a laptop CPU or a free cloud server on any operating system. The course leader publishes all lab material before each session, so you can prepare at your own pace.

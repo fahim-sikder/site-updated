@@ -4,7 +4,7 @@ linkTitle: "Lab 3: Privacy"
 weight: 43
 ---
 
-**Week 8** · 2 hours · Learning outcomes [LO2 and LO3](../../01-about/#learning-outcomes)
+**2 hours** · Learning outcomes [ILO2 and ILO3](../../01-about/#learning-outcomes)
 
 ## Goal
 
@@ -12,7 +12,7 @@ You train a differentially private generative model at two privacy budgets and m
 
 ## Learning outcomes
 
-The lab supports [LO2 and LO3](../../01-about/#learning-outcomes). After the lab you should be able to:
+The lab supports [ILO2 and ILO3](../../01-about/#learning-outcomes). After the lab you should be able to:
 
 - train a differentially private generator and explain what its privacy budget covers and what it does not;
 - run a distance-based privacy check and a membership inference attack, and explain why neither proves that data are private;
@@ -20,7 +20,7 @@ The lab supports [LO2 and LO3](../../01-about/#learning-outcomes). After the lab
 
 ## Before the lab
 
-- Attend or review [Lecture 5](../../03-lectures/lecture-5/) (week 6) on differential privacy and attacks.
+- Attend or review [Lecture 5](../../03-lectures/lecture-5/) on differential privacy and attacks.
 - Complete [Lab 1](../lab-1/). This lab reads the Lab 1 files in `outputs/`: the training, holdout and reference rows and the CTGAN and TVAE data.
 - Complete [Lab 2](../lab-2/). The release assessment uses your notes on the fairness risks, and an optional task reuses `lab2_fairness.py`.
 

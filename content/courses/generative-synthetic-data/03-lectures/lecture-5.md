@@ -4,7 +4,7 @@ linkTitle: "L5: Privacy"
 weight: 35
 ---
 
-**Week 6** · 2 hours · Learning outcomes [LO2 and LO3](../../01-about/#learning-outcomes)
+**2 hours** · Learning outcomes [ILO2 and ILO3](../../01-about/#learning-outcomes)
 
 ## Slides
 
@@ -14,17 +14,17 @@ weight: 35
 
 Lecture 4 asked whether synthetic data is faithful to the real data and useful for a task. This lecture asks what the synthetic data reveals about the people in the training data, and how you can bound or measure that leakage. We start from the failure of de-identification, define differential privacy (DP) and its main tools, and follow how DP enters a generative model through DP-SGD, PATE-GAN and marginal-based mechanisms. We then change sides and study the attacks: membership inference, attribute inference, and the similarity heuristics that are often used in place of a guarantee.
 
-The two halves meet in the release decision. A DP guarantee is an upper bound on what any attacker can learn; a successful attack is a lower bound on what one attacker did learn. To assess the privacy risk of releasing a synthetic dataset (LO3) you need both, and both mean something only under a threat model that you state explicitly.
+The two halves meet in the release decision. A DP guarantee is an upper bound on what any attacker can learn; a successful attack is a lower bound on what one attacker did learn. To assess the privacy risk of releasing a synthetic dataset (ILO3) you need both, and both mean something only under a threat model that you state explicitly.
 
 ## Learning goals
 
 After this lecture you should be able to:
 
-1. State the definition of $(\varepsilon, \delta)$-differential privacy, including the neighbouring relation and the unit of privacy, and interpret $\varepsilon$ as a bound on an attacker's true and false positive rates (LO3).
-2. Explain how DP-SGD, PATE-GAN and marginal-based mechanisms such as MST and AIM make a generator differentially private, and where each loses utility or breaks its guarantee in practice (LO2, LO3).
-3. Specify a threat model for a synthetic data release and choose membership and attribute inference attacks to audit it, reporting the true positive rate at a low false positive rate (LO2).
-4. Explain why similarity-based metrics such as distance to closest record give no privacy guarantee (LO2, LO3).
-5. Draft a privacy risk assessment for a release, covering the unit of privacy, $\varepsilon$ and $\delta$, the scope of the privacy accounting, audit results and documentation (LO3).
+1. State the definition of $(\varepsilon, \delta)$-differential privacy, including the neighbouring relation and the unit of privacy, and interpret $\varepsilon$ as a bound on an attacker's true and false positive rates (ILO3).
+2. Explain how DP-SGD, PATE-GAN and marginal-based mechanisms such as MST and AIM make a generator differentially private, and where each loses utility or breaks its guarantee in practice (ILO2, ILO3).
+3. Specify a threat model for a synthetic data release and choose membership and attribute inference attacks to audit it, reporting the true positive rate at a low false positive rate (ILO2).
+4. Explain why similarity-based metrics such as distance to closest record give no privacy guarantee (ILO2, ILO3).
+5. Draft a privacy risk assessment for a release, covering the unit of privacy, $\varepsilon$ and $\delta$, the scope of the privacy accounting, audit results and documentation (ILO3).
 
 ## Before the lecture
 
@@ -169,7 +169,7 @@ For DP-SGD, Nasr et al. show that attacks by the strongest adversary give lower 
 
 ### 9. Assessing the risk of a release
 
-The workflow below combines the two halves of the lecture into a release assessment (LO3).
+The workflow below combines the two halves of the lecture into a release assessment (ILO3).
 
 ```mermaid
 flowchart TD
@@ -280,4 +280,4 @@ An audit gives a lower bound on leakage under one threat model; a stronger attac
 - Yousefpour, A., Shilov, I., Sablayrolles, A., Testuggine, D., Prasad, K., Malek, M., Nguyen, J., Ghosh, S., Bharadwaj, A., Zhao, J., Cormode, G., & Mironov, I. (2021). Opacus: User-Friendly Differential Privacy Library in PyTorch. Privacy in Machine Learning (PriML) workshop, NeurIPS 2021. [arXiv:2109.12298](https://arxiv.org/abs/2109.12298)
 - Zhang, J., Cormode, G., Procopiuc, C. M., Srivastava, D., & Xiao, X. (2017). PrivBayes: Private Data Release via Bayesian Networks. *ACM Transactions on Database Systems*, 42(4), Article 25. [doi:10.1145/3134428](https://doi.org/10.1145/3134428)
 
-[Lab 3: Privacy evaluation](../../04-labs/lab-3/) in week 8 puts this lecture into practice.
+[Lab 2: Utility and privacy evaluation](../../04-labs/lab-2/) follows this lecture and puts it into practice.

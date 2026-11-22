@@ -7,11 +7,11 @@ The course is graded pass/fail and gives 8 hp (8 ECTS). To pass, you must meet a
 
 | Part | What is required | Learning outcomes |
 |---|---|---|
-| Lectures and seminars | Attendance and active participation in the [lectures](../03-lectures/) and [paper seminars](../05-paper-seminars/). | LO1–LO3 |
-| Labs | Completion of all three [lab sessions](../04-labs/). | LO1–LO3 |
-| Paper seminar | Leading the discussion of one paper in a [paper seminar](../05-paper-seminars/). | LO1–LO3 |
-| Individual project | Develop a generative model (new, or taken from the literature), train it on data from your own domain, and evaluate the synthetic data for privacy, utility and fairness (if applicable). You present the project in week 10. See the [project page](../06-project/). | LO1–LO4 |
-| Reflection report | A written report, following the [given instructions](../06-project/#reflection-report), due two weeks after the final presentations. It documents the project findings and reflects on how your assumptions and practice around synthetic data have changed. | LO4, LO5 |
+| Lectures and seminars | Attendance and active participation in the [lectures](../03-lectures/) and [paper seminars](../05-paper-seminars/). | ILO1–ILO3 |
+| Labs | Completion of all three [lab sessions](../04-labs/). | ILO1–ILO3 |
+| Paper seminar | Leading the discussion of one paper in a [paper seminar](../05-paper-seminars/). | ILO1–ILO3 |
+| Individual project | Develop a generative model (new, or taken from the literature), train it on data from your own domain, and evaluate the synthetic data for privacy, utility and fairness (if applicable). You present the project in the final session. See the [project page](../06-project/). | ILO1–ILO4 |
+| Reflection report | A written report, following the [given instructions](../06-project/#reflection-report), due two weeks after the final presentations. It documents the project findings and reflects on how your assumptions and practice around synthetic data have changed. | ILO4, ILO5 |
 
 The [project page](../06-project/#pass-criteria) states the pass criteria for the project and the report.
 

@@ -1,6 +1,6 @@
 ---
 title: "Evaluating synthetic data: fidelity and utility"
-kicker: "Lecture 4 · Week 5"
+kicker: "Lecture 4"
 subtitle: "Generative Models for Synthetic Data: Privacy, Fairness and Utility"
 presenter: "Md Fahim Sikder"
 event: "PhD course · IDA, Linköping University"
@@ -18,7 +18,7 @@ course_short: "Lecture page"
 6. Tools, pitfalls and a reporting checklist
 
 Note:
-This lecture serves learning outcome LO2. Lab 2 in week 7 uses the sample-level metrics of Alaa et al. and FairX, so the second half of the lecture prepares you for it. Privacy metrics come in Lecture 5 and fairness metrics in Lecture 6.
+This lecture serves learning outcome ILO2. Lab 2, after Lecture 5, uses the sample-level metrics of Alaa et al. and FairX, so the second half of the lecture prepares you for it. Privacy metrics come in Lecture 5 and fairness metrics in Lecture 6.
 
 ---
 

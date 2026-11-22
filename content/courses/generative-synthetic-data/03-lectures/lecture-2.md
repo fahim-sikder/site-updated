@@ -4,7 +4,7 @@ linkTitle: "L2: VAEs and GANs"
 weight: 32
 ---
 
-**Week 2** · 2 hours · Learning outcome [LO1](../../01-about/#learning-outcomes)
+**2 hours** · Learning outcome [ILO1](../../01-about/#learning-outcomes)
 
 ## Slides
 
@@ -14,17 +14,17 @@ weight: 32
 
 This lecture covers variational autoencoders (VAEs) and generative adversarial networks (GANs), the two families behind the tabular and time-series generators you train in Lab 1. For each family you derive the training objective, see which divergence it minimises when the networks have unlimited capacity, and follow what that implies for the records the model produces. The lecture then applies both families to the two data types of this course: tabular data, through CTGAN and TVAE, and time series, through RCGAN and TimeGAN.
 
-The thread through the lecture is learning outcome LO1. A training objective decides which errors a model pays for and which it tolerates. Maximum likelihood pays heavily for missing any part of the data and little for implausible samples; the GAN objectives in common use tend to do the reverse. For synthetic data this decides whether rare subgroups survive and how closely the model copies its training records. Lecture 3 continues with diffusion and transformer-based models, and Lectures 4, 5 and 6 return to evaluation, privacy and fairness.
+The thread through the lecture is learning outcome ILO1. A training objective decides which errors a model pays for and which it tolerates. Maximum likelihood pays heavily for missing any part of the data and little for implausible samples; the GAN objectives in common use tend to do the reverse. For synthetic data this decides whether rare subgroups survive and how closely the model copies its training records. Lecture 3 continues with diffusion and transformer-based models, and Lectures 4, 5 and 6 return to evaluation, privacy and fairness.
 
 ## Learning goals
 
 After this lecture you should be able to:
 
-1. Derive the evidence lower bound (ELBO) and the reparameterisation trick, and explain what the gap between the bound and the log-likelihood means for a trained VAE (LO1).
-2. Derive the optimal discriminator and the Jensen–Shannon result of the original GAN, and state which quantity the non-saturating, f-divergence and Wasserstein variants minimise instead (LO1).
-3. Explain each design choice in CTGAN, TVAE and TimeGAN as an answer to a specific property of tabular or time-series data (LO1, and in preparation for LO4).
-4. Predict from a model's objective whether it tends to cover or drop rare modes, and whether it gives a per-record likelihood. Relate these predictions to the privacy and fairness risks of a release (LO1, LO3).
-5. Identify where the literature disagrees about why VAE samples blur and why GANs collapse, and say what evidence each side offers (LO1).
+1. Derive the evidence lower bound (ELBO) and the reparameterisation trick, and explain what the gap between the bound and the log-likelihood means for a trained VAE (ILO1).
+2. Derive the optimal discriminator and the Jensen–Shannon result of the original GAN, and state which quantity the non-saturating, f-divergence and Wasserstein variants minimise instead (ILO1).
+3. Explain each design choice in CTGAN, TVAE and TimeGAN as an answer to a specific property of tabular or time-series data (ILO1, and in preparation for ILO4).
+4. Predict from a model's objective whether it tends to cover or drop rare modes, and whether it gives a per-record likelihood. Relate these predictions to the privacy and fairness risks of a release (ILO1, ILO3).
+5. Identify where the literature disagrees about why VAE samples blur and why GANs collapse, and say what evidence each side offers (ILO1).
 
 ## Before the lecture
 
@@ -335,4 +335,4 @@ Hold the divergence fixed and change the optimisation, and the reverse. For exam
 - Yoon, J., Jarrett, D., & van der Schaar, M. (2019). Time-series Generative Adversarial Networks. *Advances in Neural Information Processing Systems*, 32. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2019/hash/c9efe5f26cd17ba6216bbe2a7d26d490-Abstract.html)
 - Zhao, S., Song, J., & Ermon, S. (2017). Towards Deeper Understanding of Variational Autoencoding Models. [arXiv:1702.08658](https://arxiv.org/abs/1702.08658)
 
-You train CTGAN, TVAE and TimeGAN in [Lab 1](../../04-labs/lab-1/) in week 4.
+You train CTGAN, TVAE and TimeGAN in [Lab 1](../../04-labs/lab-1/).

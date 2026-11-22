@@ -4,7 +4,7 @@ linkTitle: "Lab 1: Failure modes"
 weight: 41
 ---
 
-**Week 4** · 2 hours · Learning outcome [LO1](../../01-about/#learning-outcomes)
+**2 hours** · Learning outcome [ILO1](../../01-about/#learning-outcomes)
 
 ## Goal
 
@@ -12,7 +12,7 @@ You train four generative models from three families on the same data and look f
 
 ## Learning outcomes
 
-The lab supports [LO1](../../01-about/#learning-outcomes): analyse how the training objectives of the main families of generative models relate to their failure modes. After the lab you should be able to:
+The lab supports [ILO1](../../01-about/#learning-outcomes): analyse how the training objectives of the main families of generative models relate to their failure modes. After the lab you should be able to:
 
 - train tabular and time-series generative models from the command line and log their energy use;
 - compare real and synthetic data with marginal plots, differences in pairwise association and 2D projections;
@@ -20,7 +20,7 @@ The lab supports [LO1](../../01-about/#learning-outcomes): analyse how the train
 
 ## Before the lab
 
-- Attend or review [Lecture 2](../../03-lectures/lecture-2/) on VAEs and GANs and [Lecture 3](../../03-lectures/lecture-3/) on diffusion and transformer-based models. [Paper seminar 1](../../05-paper-seminars/#paper-seminar-1-generative-model-families), earlier the same week, covers the same model families.
+- Attend or review [Lecture 2](../../03-lectures/lecture-2/) on VAEs and GANs and [Lecture 3](../../03-lectures/lecture-3/) on diffusion and transformer-based models. [Paper seminar 1](../../05-paper-seminars/#paper-seminar-1-generative-model-families), which comes before this lab, covers the same model families.
 - Set up the environment as described on the [Labs](../#set-up) page.
 - Read the README of [CTGAN](https://github.com/sdv-dev/CTGAN) and of [TransFusion](https://github.com/fahim-sikder/TransFusion).
 

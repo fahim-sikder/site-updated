@@ -1,6 +1,6 @@
 ---
 title: "VAEs and GANs"
-kicker: "Lecture 2 · Week 2"
+kicker: "Lecture 2"
 subtitle: "Generative Models for Synthetic Data: Privacy, Fairness and Utility"
 presenter: "Md Fahim Sikder"
 event: "PhD course · IDA, Linköping University"
@@ -18,7 +18,7 @@ course_short: "Lecture page"
 - How the objective shapes the synthetic data
 
 Note:
-The thread through today is learning outcome LO1. A training objective decides which errors a model pays for and which it tolerates. Maximum likelihood pays heavily for missing any part of the data and little for implausible samples; the GAN objectives in common use tend to do the reverse. For synthetic data, this decides whether rare subgroups survive and how much the model copies. Keep that question in mind for every model we see.
+The thread through today is learning outcome ILO1. A training objective decides which errors a model pays for and which it tolerates. Maximum likelihood pays heavily for missing any part of the data and little for implausible samples; the GAN objectives in common use tend to do the reverse. For synthetic data, this decides whether rare subgroups survive and how much the model copies. Keep that question in mind for every model we see.
 
 ---
 
@@ -432,7 +432,7 @@ Look at the integrand of each KL direction to see where the cost explodes. The t
 | TimeGAN | Latent adversarial plus stepwise supervised loss | None | Inherits the adversarial behaviour |
 
 Note:
-This table summarises LO1 for the two families. Read each row as a prediction to test in Lab 1, not as a guarantee.
+This table summarises ILO1 for the two families. Read each row as a prediction to test in Lab 1, not as a guarantee.
 
 ---
 
@@ -454,7 +454,7 @@ A high likelihood does not rule out copying. A likelihood does let you measure m
 - Mode seeking: a small subgroup can be dropped at little cost
 - Minor categories are hard for the discriminator to see (Xu et al., 2019)
 - Likelihood-based: the subgroup is kept, but sparse records may be memorised
-- Training-by-sampling shows rare rows more often: a privacy cost? Test it in Lab 3
+- Training-by-sampling shows rare rows more often: a privacy cost? Test it in Lab 2
 - Lecture 6: measuring the effect on downstream algorithmic fairness
 
 Note:
@@ -472,7 +472,7 @@ Fairness here means algorithmic fairness. If a protected subgroup forms a small 
 - The objective predicts coverage, copying and the fate of rare subgroups
 
 Note:
-Next week, Lecture 3 covers diffusion and transformer-based models, and asks the same LO1 questions of them.
+Next, Lecture 3 covers diffusion and transformer-based models, and asks the same ILO1 questions of them.
 
 ---
 

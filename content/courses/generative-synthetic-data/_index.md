@@ -7,16 +7,13 @@ sidebar:
   open: true
 ---
 
-This new elective PhD course teaches you to train generative models for synthetic data and to evaluate the result for utility, privacy and fairness. Over 10 weeks it combines lectures, hands-on labs, paper seminars and an individual project on data from your own research field.
-
-> [!NOTE] Next course run
-> The term and the weekday of the sessions are to be announced. Contact the course leader if you would like to take the course.
+This new elective PhD course teaches you to train generative models for synthetic data and to evaluate the result for utility, privacy and fairness. It combines lectures, hands-on labs, paper seminars and an individual project on data from your own research field.
 
 ## At a glance
 
 - **Credits:** 8 hp (8 ECTS), graded pass/fail
 - **Level:** PhD, elective
-- **Length:** 10 weeks of sessions, then 2 weeks to write the reflection report
+- **Pace:** one class every two weeks; the reflection report is due 2 weeks after the final presentations
 - **Sessions:** 13 sessions of 2 hours (26 contact hours): 6 lectures, 1 guest lecture, 3 labs, 2 paper seminars and 1 project presentation seminar
 - **Department:** IDA (Department of Computer and Information Science), Linköping University
 - **Examiner and lecturer:** Md Fahim Sikder
@@ -27,7 +24,7 @@ This new elective PhD course teaches you to train generative models for syntheti
 
 {{< cards cols="2" >}}
   {{< card url="01-about/" icon="information-circle" title="About the course" subtitle="Goals, learning outcomes, prerequisites and topics." >}}
-  {{< card url="02-schedule/" icon="calendar-days" title="Schedule" subtitle="All 13 sessions, week by week." >}}
+  {{< card url="02-schedule/" icon="calendar-days" title="Schedule" subtitle="All 13 sessions, in order." >}}
   {{< card url="03-lectures/" icon="presentation-chart-bar" title="Lectures" subtitle="Six lectures and one guest lecture, with reading." >}}
   {{< card url="04-labs/" icon="beaker" title="Labs" subtitle="Three hands-on labs in a Docker container." >}}
   {{< card url="05-paper-seminars/" icon="chat-bubble-left-right" title="Paper seminars" subtitle="Each participant leads the discussion of one paper." >}}

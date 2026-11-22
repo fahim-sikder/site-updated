@@ -4,7 +4,7 @@ linkTitle: "L1: Why synthetic data?"
 weight: 31
 ---
 
-**Week 1** · 2 hours · Background for all learning outcomes; prepares [LO3](../../01-about/#learning-outcomes)
+**2 hours** · Background for all learning outcomes; prepares [ILO3](../../01-about/#learning-outcomes)
 
 ## Slides
 
@@ -14,17 +14,17 @@ weight: 31
 
 This lecture sets out why researchers turn to synthetic data and what synthetic data can and cannot do for them. We start from the limits on access to real data. These include the General Data Protection Regulation (GDPR), the European Health Data Space (EHDS) Regulation, the AI Act and Swedish ethical review, as well as data-sharing agreements and commercial interests. We then define synthetic data, trace its origins in statistical disclosure control and survey its main uses.
 
-The second half asks whether synthetic data is anonymous. Law and the privacy literature answer this question in different ways, and the gap between them motivates the three properties that structure the course: utility, privacy and fairness. We close with a topic that has no lecture of its own, the energy use of training generative models, and with a roadmap of the course. The lecture gives background for all five learning outcomes and prepares LO3 in particular: you cannot assess the risk of releasing a synthetic dataset until you know which rules decide what counts as a risk.
+The second half asks whether synthetic data is anonymous. Law and the privacy literature answer this question in different ways, and the gap between them motivates the three properties that structure the course: utility, privacy and fairness. We close with a topic that has no lecture of its own, the energy use of training generative models, and with a roadmap of the course. The lecture gives background for all five learning outcomes and prepares ILO3 in particular: you cannot assess the risk of releasing a synthetic dataset until you know which rules decide what counts as a risk.
 
 ## Learning goals
 
 After this lecture, you should be able to:
 
-1. State the GDPR definitions of personal data and pseudonymisation and the Recital 26 test for anonymous information, and apply them to a proposed release of synthetic data (prepares LO3).
-2. Explain what the AI Act and the EHDS Regulation say about synthetic, anonymised and pseudonymised data, and name the questions they leave open (prepares LO3).
-3. Distinguish fully from partially synthetic data, and match each main use of synthetic data to the property of the real data it must preserve (background for LO1 and LO2).
-4. Argue from published attacks why synthetic data is not anonymous by construction, and describe the trade-offs between utility, privacy and fairness that you evaluate later in the course (LO2 and LO3).
-5. Explain how CodeCarbon estimates energy use and emissions, where its estimates can go wrong, and how to report them so that comparisons between your models hold (supports LO4).
+1. State the GDPR definitions of personal data and pseudonymisation and the Recital 26 test for anonymous information, and apply them to a proposed release of synthetic data (prepares ILO3).
+2. Explain what the AI Act and the EHDS Regulation say about synthetic, anonymised and pseudonymised data, and name the questions they leave open (prepares ILO3).
+3. Distinguish fully from partially synthetic data, and match each main use of synthetic data to the property of the real data it must preserve (background for ILO1 and ILO2).
+4. Argue from published attacks why synthetic data is not anonymous by construction, and describe the trade-offs between utility, privacy and fairness that you evaluate later in the course (ILO2 and ILO3).
+5. Explain how CodeCarbon estimates energy use and emissions, where its estimates can go wrong, and how to report them so that comparisons between your models hold (supports ILO4).
 
 ## Before the lecture
 
@@ -36,7 +36,7 @@ Read these before the session.
 4. European Data Protection Board (2026). [Guidelines 02/2026 on Anonymisation](https://www.edpb.europa.eu/system/files_en?file=2026-09/edpb_guidelines_202602_anonymisation_v1_en_0.pdf). Look for how the guidelines judge whether data are anonymous, and what they say about synthetic data.
 
 > [!TIP] Start your reflection now
-> Before the lecture, write three or four sentences on what you believe synthetic data can and cannot do for your own research. Keep the note. In the [reflection report](../../06-project/#reflection-report) you compare it with your views at the end of the course (LO5).
+> Before the lecture, write three or four sentences on what you believe synthetic data can and cannot do for your own research. Keep the note. In the [reflection report](../../06-project/#reflection-report) you compare it with your views at the end of the course (ILO5).
 
 ## Lecture notes
 
@@ -142,8 +142,8 @@ Jordon et al. (2022) name three properties of synthetic data. Utility is usefuln
 ```mermaid
 flowchart TD
   U["Utility and fidelity<br/>Lecture 4, Lab 2"]
-  P["Privacy<br/>Lecture 5, Lab 3"]
-  F["Fairness<br/>Lecture 6, Lab 2"]
+  P["Privacy<br/>Lecture 5, Lab 2"]
+  F["Fairness<br/>Lecture 6, Lab 3"]
   U ---|"higher fidelity, more leakage"| P
   P ---|"privacy noise hits small groups"| F
   F ---|"fair data departs from biased data"| U
@@ -188,18 +188,18 @@ The documentation is open about error ([CodeCarbon, 2026](https://docs.codecarbo
 
 ### Course roadmap
 
-| Week | Session | Focus |
-|:----:|---|---|
-| 1 | Lecture 1 | Data access, regulation, the three properties |
-| 2 | [Lecture 2: VAEs and GANs](../lecture-2/) | Training objectives and their output (LO1) |
-| 3 | [Lecture 3: Diffusion models, transformers and LLMs](../lecture-3/) | Newer model families (LO1) |
-| 4 | [Paper seminar 1](../../05-paper-seminars/#paper-seminar-1-generative-model-families), [Lab 1](../../04-labs/lab-1/) | Failure modes of CTGAN, TVAE, TimeGAN and TransFusion (LO1) |
-| 5 | [Lecture 4](../lecture-4/) | Fidelity and utility (LO2) |
-| 6 | [Lecture 5](../lecture-5/) | Differential privacy and attacks (LO2, LO3) |
-| 7 | [Lecture 6](../lecture-6/), [Lab 2](../../04-labs/lab-2/) | Fairness; utility and fairness evaluation (LO2, LO3) |
-| 8 | [Guest lecture](../guest-lecture/), [Lab 3](../../04-labs/lab-3/) | Synthetic data in healthcare; privacy evaluation (LO2, LO3) |
-| 9 | [Paper seminar 2](../../05-paper-seminars/#paper-seminar-2-privacy-and-fairness) | Privacy and fairness papers |
-| 10 | [Project presentations](../../06-project/#presentation) | Your own domain problem (LO4, LO5) |
+| Session | Focus |
+|---|---|
+| Lecture 1 | Data access, regulation, the three properties |
+| [Lecture 2: VAEs and GANs](../lecture-2/) | Training objectives and their output (ILO1) |
+| [Lecture 3: Diffusion models, transformers and basics of LLMs](../lecture-3/) | Newer model families (ILO1) |
+| [Paper seminar 1](../../05-paper-seminars/#paper-seminar-1-generative-model-families), [Lab 1](../../04-labs/lab-1/) | Failure modes of CTGAN, TVAE, TimeGAN and TransFusion (ILO1) |
+| [Lecture 4](../lecture-4/) | Fidelity and utility (ILO2) |
+| [Lecture 5](../lecture-5/), [Lab 2](../../04-labs/lab-2/) | Differential privacy and attacks; utility and privacy evaluation (ILO2, ILO3) |
+| [Lecture 6](../lecture-6/), [Lab 3](../../04-labs/lab-3/) | Fairness; fairness evaluation (ILO2, ILO3) |
+| [Guest lecture](../guest-lecture/) | Synthetic data in healthcare (ILO3) |
+| [Paper seminar 2](../../05-paper-seminars/#paper-seminar-2-privacy-and-fairness) | Privacy and fairness papers |
+| [Project presentations](../../06-project/#presentation) | Your own domain problem (ILO4, ILO5) |
 
 ## Discussion questions
 

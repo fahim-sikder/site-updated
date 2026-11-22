@@ -9,7 +9,7 @@ The papers come from the pools below. The course leader assigns each participant
 
 ## Paper seminar 1: generative model families {#paper-seminar-1-generative-model-families}
 
-**Week 4.** These papers extend [Lecture 2](../03-lectures/lecture-2/) (VAEs and GANs) and [Lecture 3](../03-lectures/lecture-3/) (diffusion models, transformers and LLMs). Each one changes a training objective, an architecture or a sampling procedure; ask what that change does to the synthetic data (LO1).
+These papers extend Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, transformers and basics of LLMs). Each one changes a training objective, an architecture or a sampling procedure; ask what that change does to the synthetic data (ILO1).
 
 | # | Paper | Theme |
 |:-:|---|---|
@@ -28,7 +28,7 @@ The papers come from the pools below. The course leader assigns each participant
 
 ## Paper seminar 2: privacy and fairness {#paper-seminar-2-privacy-and-fairness}
 
-**Week 9.** These papers extend [Lecture 5](../03-lectures/lecture-5/) (privacy) and [Lecture 6](../03-lectures/lecture-6/) (fairness), and several of them study both at once. For each paper, ask what it implies for the decision to release a synthetic dataset (LO3).
+These papers extend Lecture 5 (privacy) and Lecture 6 (fairness), and several of them study both at once. For each paper, ask what it implies for the decision to release a synthetic dataset (ILO3).
 
 | # | Paper | Theme |
 |:-:|---|---|

@@ -1,6 +1,6 @@
 ---
 title: "Fairness in synthetic data"
-kicker: "Lecture 6 · Week 7"
+kicker: "Lecture 6"
 subtitle: "Generative Models for Synthetic Data: Privacy, Fairness and Utility"
 presenter: "Md Fahim Sikder"
 event: "PhD course · IDA, Linköping University"
@@ -19,7 +19,7 @@ course_short: "Lecture page"
 7. Evaluating fairness, trade-offs and release risk
 
 Note:
-Fairness in this course always means algorithmic fairness: the statistical relationship between a sensitive attribute and the outcomes that data and models produce. The lecture serves LO2 (evaluate synthetic data for fairness) and LO3 (assess the fairness risk of releasing it). We build on Lecture 4 for fidelity and utility, and on Lecture 5 for differential privacy. Lab 2 later this week puts the evaluation part into practice with fairlearn and FairX.
+Fairness in this course always means algorithmic fairness: the statistical relationship between a sensitive attribute and the outcomes that data and models produce. The lecture serves ILO2 (evaluate synthetic data for fairness) and ILO3 (assess the fairness risk of releasing it). We build on Lecture 4 for fidelity and utility, and on Lecture 5 for differential privacy. Lab 3 follows this lecture and puts the evaluation part into practice with fairlearn and FairX.
 
 ---
 
@@ -177,7 +177,7 @@ These are Propositions 2 to 4 in the classification chapter of Fairness and Mach
 - Equalising base rates **chooses** a point on the trade-off for every user
 
 Note:
-This is the main conceptual point for LO3. Fixing base rates in the synthetic data does not dissolve the impossibility; it moves the decision upstream to the data producer, who makes it for all downstream users at once. That is a normative choice and should be documented as one.
+This is the main conceptual point for ILO3. Fixing base rates in the synthetic data does not dissolve the impossibility; it moves the decision upstream to the data producer, who makes it for all downstream users at once. That is a normative choice and should be documented as one.
 
 ---
 
@@ -408,7 +408,7 @@ Cummings, Gupta, Kimpara and Morgenstern show that even with full distributional
 
 ---
 
-## Fairness release risk (LO3)
+## Fairness release risk (ILO3)
 
 - Downstream models that are unfair on the real population
 - Missing or distorted subgroups lead to wrong conclusions about them

@@ -4,7 +4,7 @@ linkTitle: "Guest lecture: Healthcare"
 weight: 37
 ---
 
-**Week 8** · 2 hours · Learning outcome [LO3](../../01-about/#learning-outcomes)
+**2 hours** · Learning outcome [ILO3](../../01-about/#learning-outcomes)
 
 **Guest lecturer:** to be confirmed.
 

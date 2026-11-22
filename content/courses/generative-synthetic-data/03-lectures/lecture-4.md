@@ -4,7 +4,7 @@ linkTitle: "L4: Fidelity and utility"
 weight: 34
 ---
 
-**Week 5** · 2 hours · Learning outcome [LO2](../../01-about/#learning-outcomes)
+**2 hours** · Learning outcome [ILO2](../../01-about/#learning-outcomes)
 
 ## Slides
 
@@ -20,11 +20,11 @@ The lecture moves from simple to structured metrics: statistics of single column
 
 After this lecture you should be able to:
 
-1. Define the univariate, pairwise and distribution-level fidelity metrics of this lecture, and construct for each one a synthetic dataset that scores well but is wrong ([LO2](../../01-about/#learning-outcomes)).
-2. Define precision, recall, density, coverage, $\alpha$-precision, $\beta$-recall and authenticity, and explain how they depend on the embedding and, where used, on the neighbourhood size $k$ ([LO2](../../01-about/#learning-outcomes)).
-3. Relate failures that follow from a model's training objective, such as mode collapse, to the metrics that detect them ([LO1](../../01-about/#learning-outcomes)).
-4. Design a utility evaluation with TSTR, TRTS and ranking agreement around a real holdout set ([LO2](../../01-about/#learning-outcomes)).
-5. Choose and report a set of metrics for your own project data, with reference values and uncertainty ([LO4](../../01-about/#learning-outcomes)).
+1. Define the univariate, pairwise and distribution-level fidelity metrics of this lecture, and construct for each one a synthetic dataset that scores well but is wrong ([ILO2](../../01-about/#learning-outcomes)).
+2. Define precision, recall, density, coverage, $\alpha$-precision, $\beta$-recall and authenticity, and explain how they depend on the embedding and, where used, on the neighbourhood size $k$ ([ILO2](../../01-about/#learning-outcomes)).
+3. Relate failures that follow from a model's training objective, such as mode collapse, to the metrics that detect them ([ILO1](../../01-about/#learning-outcomes)).
+4. Design a utility evaluation with TSTR, TRTS and ranking agreement around a real holdout set ([ILO2](../../01-about/#learning-outcomes)).
+5. Choose and report a set of metrics for your own project data, with reference values and uncertainty ([ILO4](../../01-about/#learning-outcomes)).
 
 ## Before the lecture
 
@@ -356,4 +356,4 @@ Start from the sample-size results in this lecture: the bias of FID, the varianc
 - van Breugel, B., Qian, Z., & van der Schaar, M. (2023). Synthetic Data, Real Errors: How (Not) to Publish and Use Synthetic Data. *Proceedings of the 40th International Conference on Machine Learning*, PMLR 202, 34793–34808. [PMLR](https://proceedings.mlr.press/v202/van-breugel23a.html)
 - Yoon, J., Jarrett, D., & van der Schaar, M. (2019). Time-series Generative Adversarial Networks. *Advances in Neural Information Processing Systems*, 32. [NeurIPS](https://proceedings.neurips.cc/paper/2019/hash/c9efe5f26cd17ba6216bbe2a7d26d490-Abstract.html) · [Code](https://github.com/jsyoon0823/TimeGAN)
 
-[Lab 2: Utility and fairness evaluation](../../04-labs/lab-2/) in week 7, after [Lecture 6](../lecture-6/), puts these metrics into practice.
+[Lab 2: Utility and privacy evaluation](../../04-labs/lab-2/), after [Lecture 5](../lecture-5/), puts these metrics into practice.

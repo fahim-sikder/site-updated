@@ -4,7 +4,7 @@ linkTitle: "L6: Fairness"
 weight: 36
 ---
 
-**Week 7** · 2 hours · Learning outcomes [LO2 and LO3](../../01-about/#learning-outcomes)
+**2 hours** · Learning outcomes [ILO2 and ILO3](../../01-about/#learning-outcomes)
 
 ## Slides
 
@@ -14,17 +14,17 @@ weight: 36
 
 This lecture asks when synthetic data is fair and how you can tell. Throughout the course, fairness means algorithmic fairness: the statistical relationship between a sensitive attribute, such as sex or ethnicity, and the outcomes that data and models produce. We start from the formal definitions developed for classifiers (group, individual and counterfactual fairness) and from the impossibility results that show these definitions conflict. We then trace how bias enters a synthetic data pipeline. A generative model can reproduce or amplify it in three ways: through the training objective itself, through the under-representation of small groups, and through the noise that differential privacy adds.
 
-The second half turns to remedies and evidence. You will compare fair generative models: FairGAN, DECAF, TabFairGAN, Bt-GAN and FLDGM. You will then work through a protocol for evaluating the fairness of a synthetic dataset with FairX, and weigh the fairness risks of releasing such a dataset. The lecture builds on the fidelity and utility metrics of [Lecture 4](../lecture-4/) and on the differential privacy of [Lecture 5](../lecture-5/). It prepares you for [Lab 2](../../04-labs/lab-2/).
+The second half turns to remedies and evidence. You will compare fair generative models: FairGAN, DECAF, TabFairGAN, Bt-GAN and FLDGM. You will then work through a protocol for evaluating the fairness of a synthetic dataset with FairX, and weigh the fairness risks of releasing such a dataset. The lecture builds on the fidelity and utility metrics of [Lecture 4](../lecture-4/) and on the differential privacy of [Lecture 5](../lecture-5/). It prepares you for [Lab 3](../../04-labs/lab-3/).
 
 ## Learning goals
 
 After this lecture, you should be able to:
 
-1. Define demographic parity, equalised odds, equal opportunity, calibration within groups, individual fairness and counterfactual fairness, and state which of them you can check on a dataset without training a model (LO2).
-2. State the impossibility results of Kleinberg, Mullainathan and Raghavan and of Chouldechova, and explain why the fairness target of a generator is a normative choice made for every downstream user (LO3).
-3. Explain how the training objective, under-representation and differential privacy can make synthetic data less fair than the real data it came from (LO1, LO3).
-4. Compare how FairGAN, DECAF, TabFairGAN and Bt-GAN intervene in data generation, and name the assumption each one rests on (LO1, LO2).
-5. Design a fairness evaluation of a synthetic dataset that covers intersectional subgroups and statistical uncertainty, and use it to argue for or against release (LO2, LO3).
+1. Define demographic parity, equalised odds, equal opportunity, calibration within groups, individual fairness and counterfactual fairness, and state which of them you can check on a dataset without training a model (ILO2).
+2. State the impossibility results of Kleinberg, Mullainathan and Raghavan and of Chouldechova, and explain why the fairness target of a generator is a normative choice made for every downstream user (ILO3).
+3. Explain how the training objective, under-representation and differential privacy can make synthetic data less fair than the real data it came from (ILO1, ILO3).
+4. Compare how FairGAN, DECAF, TabFairGAN and Bt-GAN intervene in data generation, and name the assumption each one rests on (ILO1, ILO2).
+5. Design a fairness evaluation of a synthetic dataset that covers intersectional subgroups and statistical uncertainty, and use it to argue for or against release (ILO2, ILO3).
 
 ## Before the lecture
 
@@ -342,4 +342,4 @@ Documentation is the main control. Datasheets for Datasets ([Gebru et al., 2021]
 - Wyllie, S., Shumailov, I., & Papernot, N. (2024). Fairness Feedback Loops: Training on Synthetic Data Amplifies Bias. *Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency*, 2113–2147. [doi:10.1145/3630106.3659029](https://doi.org/10.1145/3630106.3659029)
 - Xu, D., Yuan, S., Zhang, L., & Wu, X. (2018). FairGAN: Fairness-aware Generative Adversarial Networks. *2018 IEEE International Conference on Big Data*, 570–575. [doi:10.1109/BigData.2018.8622525](https://doi.org/10.1109/BigData.2018.8622525)
 
-[Lab 2: Utility and fairness evaluation](../../04-labs/lab-2/) follows this lecture in the same week. There you evaluate synthetic data with fairlearn and FairX and log the energy use of training with CodeCarbon.
+[Lab 3: Fairness evaluation](../../04-labs/lab-3/) follows this lecture. There you evaluate synthetic data with fairlearn and FairX and log the energy use of training with CodeCarbon.

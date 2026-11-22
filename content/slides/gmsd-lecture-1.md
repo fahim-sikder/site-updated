@@ -1,6 +1,6 @@
 ---
 title: "Why synthetic data? Data access and regulations"
-kicker: "Lecture 1 · Week 1"
+kicker: "Lecture 1"
 subtitle: "Generative Models for Synthetic Data: Privacy, Fairness and Utility"
 presenter: "Md Fahim Sikder"
 event: "PhD course · IDA, Linköping University"
@@ -396,19 +396,19 @@ The lab instructions give the exact set-up. A container on Windows or macOS runs
 
 ## Course roadmap
 
-| Week | Session | Focus |
-|:---:|---|---|
-| 2, 3 | Lectures 2 and 3 | Model families and their objectives (LO1) |
-| 4 | Paper seminar 1, Lab 1 | Failure modes of CTGAN, TimeGAN, TransFusion |
-| 5 | Lecture 4 | Fidelity and utility (LO2) |
-| 6 | Lecture 5 | Differential privacy, attacks (LO2, LO3) |
-| 7 | Lecture 6, Lab 2 | Fairness; utility and fairness lab (LO2, LO3) |
-| 8 | Guest lecture, Lab 3 | Healthcare; privacy lab (LO2, LO3) |
-| 9 | Paper seminar 2 | Privacy and fairness papers |
-| 10 | Project presentations | Your own domain (LO4, LO5) |
+| Session | Focus |
+|---|---|
+| Lectures 2 and 3 | Model families and their objectives (ILO1) |
+| Paper seminar 1, Lab 1 | Failure modes of CTGAN, TimeGAN, TransFusion |
+| Lecture 4 | Fidelity and utility (ILO2) |
+| Lecture 5, Lab 2 | Differential privacy, attacks; utility and privacy lab (ILO2, ILO3) |
+| Lecture 6, Lab 3 | Fairness; fairness lab (ILO2, ILO3) |
+| Guest lecture | Healthcare (ILO3) |
+| Paper seminar 2 | Privacy and fairness papers |
+| Project presentations | Your own domain (ILO4, ILO5) |
 
 Note:
-Lecture 2 covers VAEs and GANs, Lecture 3 diffusion models, transformers and LLMs. The guest lecture on synthetic data in healthcare is in week 8. Energy logging runs through all labs and the project.
+Lecture 2 covers VAEs and GANs, Lecture 3 diffusion models, transformers and basics of LLMs. The guest lecture on synthetic data in healthcare comes after Lecture 6. Energy logging runs through all labs and the project.
 
 ---
 
@@ -422,7 +422,7 @@ Lecture 2 covers VAEs and GANs, Lecture 3 diffusion models, transformers and LLM
 - Measure energy, and compare within one machine
 
 Note:
-Link back to the learning goals on the lecture page. Before next week, read the Lecture 2 papers on VAEs and GANs.
+Link back to the learning goals on the lecture page. Before the next lecture, read the Lecture 2 papers on VAEs and GANs.
 
 ---
 

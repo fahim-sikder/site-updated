@@ -1,10 +1,10 @@
 ---
-title: "Lecture 3: Diffusion models, transformers and LLMs"
-linkTitle: "L3: Diffusion, transformers, LLMs"
+title: "Lecture 3: Diffusion models, transformers and basics of LLMs"
+linkTitle: "L3: Diffusion, transformers, LLM basics"
 weight: 33
 ---
 
-**Week 3** · 2 hours · Learning outcome [LO1](../../01-about/#learning-outcomes)
+**2 hours** · Learning outcome [ILO1](../../01-about/#learning-outcomes)
 
 ## Slides
 
@@ -14,17 +14,17 @@ weight: 33
 
 [Lecture 2](../lecture-2/) covered two families that produce a sample in one network pass: the variational autoencoder (VAE) and the generative adversarial network (GAN). This lecture covers two families that generate step by step. A diffusion model learns to reverse a fixed process that turns data into Gaussian noise, so it produces a sample through many denoising passes. An autoregressive transformer produces a sequence one token at a time, each token conditioned on the ones before it. Transformers also serve as the denoising network inside diffusion models; TransFusion uses this design to generate long time series.
 
-The lecture follows the question behind LO1: how does the training objective shape the synthetic data? You derive the diffusion objective from a variational bound and see what the common simplification gives up. You then see how diffusion is adapted to mixed-type tables and to time series, and how a table can be written as text for a large language model (LLM). The lecture closes with a comparison of the four families on likelihood, sample quality, mode coverage, sampling cost, conditioning, memorisation and energy. Evaluation metrics are only named here: [Lecture 4](../lecture-4/) treats them in depth, and [Lecture 5](../lecture-5/) and [Lecture 6](../lecture-6/) cover privacy and fairness.
+The lecture follows the question behind ILO1: how does the training objective shape the synthetic data? You derive the diffusion objective from a variational bound and see what the common simplification gives up. You then see how diffusion is adapted to mixed-type tables and to time series, and how a table can be written as text for a large language model (LLM). The lecture closes with a comparison of the four families on likelihood, sample quality, mode coverage, sampling cost, conditioning, memorisation and energy. Evaluation metrics are only named here: [Lecture 4](../lecture-4/) treats them in depth, and [Lecture 5](../lecture-5/) and [Lecture 6](../lecture-6/) cover privacy and fairness.
 
 ## Learning goals
 
 After this lecture, you should be able to:
 
-1. Derive the closed form of $q(x_t \mid x_0)$ and the noise-prediction loss of Ho et al. (2020) from the variational bound, and explain what the simplified loss changes in the synthetic data (LO1).
-2. Relate noise prediction to score estimation, and explain how DDIM sampling and classifier-free guidance change the sampling cost and the diversity of the samples (LO1).
-3. Describe how TabDDPM, TabSyn, CSDI, Diffusion-TS, TransFusion and GReaT handle mixed-type tables and time series, and argue which of them suits a dataset from your own field (LO1, LO4).
-4. Explain what the long-sequence discriminative and predictive scores of TransFusion measure, and what they cannot detect (LO2).
-5. Compare VAEs, GANs, diffusion models and autoregressive transformers on likelihood, sample quality, sampling cost and memorisation, and judge what the memorisation evidence implies for releasing a synthetic dataset (LO1, LO3).
+1. Derive the closed form of $q(x_t \mid x_0)$ and the noise-prediction loss of Ho et al. (2020) from the variational bound, and explain what the simplified loss changes in the synthetic data (ILO1).
+2. Relate noise prediction to score estimation, and explain how DDIM sampling and classifier-free guidance change the sampling cost and the diversity of the samples (ILO1).
+3. Describe how TabDDPM, TabSyn, CSDI, Diffusion-TS, TransFusion and GReaT handle mixed-type tables and time series, and argue which of them suits a dataset from your own field (ILO1, ILO4).
+4. Explain what the long-sequence discriminative and predictive scores of TransFusion measure, and what they cannot detect (ILO2).
+5. Compare VAEs, GANs, diffusion models and autoregressive transformers on likelihood, sample quality, sampling cost and memorisation, and judge what the memorisation evidence implies for releasing a synthetic dataset (ILO1, ILO3).
 
 ## Before the lecture
 

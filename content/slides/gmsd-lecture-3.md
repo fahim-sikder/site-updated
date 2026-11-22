@@ -1,6 +1,6 @@
 ---
-title: "Diffusion models, transformers and LLMs"
-kicker: "Lecture 3 · Week 3"
+title: "Diffusion models, transformers and basics of LLMs"
+kicker: "Lecture 3"
 subtitle: "Generative Models for Synthetic Data: Privacy, Fairness and Utility"
 presenter: "Md Fahim Sikder"
 event: "PhD course · IDA, Linköping University"
@@ -18,7 +18,7 @@ course_short: "Lecture page"
 - Transformers as generators; comparing the families
 
 Note:
-The guiding question is the one behind LO1: how does the training objective shape the synthetic data? We derive the diffusion objective, see what the common simplification gives up, and then look at how the models are adapted to tables and time series. The last part compares VAEs, GANs, diffusion models and autoregressive transformers.
+The guiding question is the one behind ILO1: how does the training objective shape the synthetic data? We derive the diffusion objective, see what the common simplification gives up, and then look at how the models are adapted to tables and time series. The last part compares VAEs, GANs, diffusion models and autoregressive transformers.
 
 ---
 
@@ -446,7 +446,7 @@ The comparisons between TabDDPM and TabSyn cited here come from the authors of t
 - Main release concerns: memorisation and sampling cost
 
 Note:
-Next week: Paper seminar 1 on the generative model families, and Lab 1, where you train CTGAN, TimeGAN and TransFusion and compare their output.
+Next: Paper seminar 1 on the generative model families, and Lab 1, where you train CTGAN, TimeGAN and TransFusion and compare their output.
 
 ---
 
