@@ -25,4 +25,6 @@ Participants give feedback at mid-course and at the end of the course. The exami
 
 ## Contact
 
-The examiner is Md Fahim Sikder, at IDA, Linköping University. Contact details are on the [home page](/).
+The examiner is Md Fahim Sikder, at IDA, Linköping University.
+
+**Email:** [md.fahim.sikder@liu.se](mailto:md.fahim.sikder@liu.se)
