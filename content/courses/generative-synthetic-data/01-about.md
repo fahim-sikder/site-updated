@@ -38,7 +38,7 @@ Each lab comes with starter code, so participants modify working models rather t
 
 The course combines four kinds of activity.
 
-- **[Lectures](../03-lectures/)** cover the main families of generative models and how to evaluate them for utility, privacy and fairness. A guest lecturer gives one more lecture on synthetic data. Read the assigned papers before each lecture.
+- **[Lectures](../03-lectures/)** cover the main families of generative models and how to evaluate them for utility, privacy and fairness. Read the assigned papers before each lecture.
 - **[Labs](../04-labs/)** let participants train generative models and evaluate their output. A Docker container holds the starter code and small public datasets, so the labs run on a laptop CPU or a free cloud server on any operating system. The examiner publishes all lab material before each session, so participants can prepare at their own pace.
 - **[Paper seminars](../05-paper-seminars/)**: each participant chooses one paper on one of the two seminar topics and leads its discussion, with a short summary and questions for the group.
 - **[Individual project](../06-project/)**: each participant trains a generative model on data from their own domain, evaluates the synthetic data and writes a reflection report. Participants who cannot bring their real data, because of ethical approvals or data agreements, use a public dataset with a similar structure.
