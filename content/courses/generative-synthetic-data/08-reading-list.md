@@ -3,7 +3,7 @@ title: Reading list
 weight: 80
 ---
 
-The course literature mainly consists of peer-reviewed research articles, with selected book chapters and regulatory guidance. This page collects the required reading for every lecture.
+The course literature mainly consists of peer-reviewed research articles, with some regulatory guidance. This page contains the required reading for every lecture.
 
 > [!NOTE]
 > The reading list changes with each course run, since generative modelling moves quickly.

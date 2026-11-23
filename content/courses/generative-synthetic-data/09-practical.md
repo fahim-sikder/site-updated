@@ -5,7 +5,7 @@ weight: 90
 
 ## Computing resources
 
-The labs use small public datasets, so they run on a laptop CPU or a free cloud server. No GPU access is required. Each participant needs a personal laptop that can run Docker; the [Labs](../04-labs/) page explains the set-up.
+The [Labs](../04-labs/#set-up) page explains what participants need for the labs.
 
 ## Sensitive data
 

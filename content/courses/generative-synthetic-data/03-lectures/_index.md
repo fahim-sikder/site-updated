@@ -13,7 +13,7 @@ cascade:
     list: never
 ---
 
-The course has six lectures and one guest lecture, run alongside three labs and two paper seminars. Each lecture lasts 2 hours. Read the required papers for each lecture before the session.
+The course has six lectures and one guest lecture, run alongside three labs and two paper seminars. Each lecture lasts 2 hours.
 
 **Lecturer:** Md Fahim Sikder. The guest lecturer is to be confirmed.
 
