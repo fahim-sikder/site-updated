@@ -13,7 +13,7 @@ This seminar extends Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, 
 
 ## Paper seminar 2: privacy and fairness {#paper-seminar-2-privacy-and-fairness}
 
-This seminar extends Lecture 5 (privacy) and Lecture 6 (fairness). A paper fits the topic if it studies the privacy or the fairness of synthetic data, or both. For each paper, ask what it implies for the decision to release a synthetic dataset (ILO3).
+This seminar extends Lecture 5 (privacy) and Lecture 6 (fairness). Participants choose a paper on one of these topics.
 
 ## Leading a discussion
 
