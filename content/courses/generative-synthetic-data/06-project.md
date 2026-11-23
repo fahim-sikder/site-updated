@@ -37,4 +37,4 @@ Cover at least these points:
 - What the participant will do differently in their own research practice, for example in how they evaluate, document or release synthetic data.
 
 > [!TIP]
-> Participants should write down their assumptions about synthetic data before the first lecture. Comparing them with their view at the end of the course is the core of Part 2.
+> Participants should write down their assumptions about synthetic data before the first lecture. This makes Part 2 easier to write.
