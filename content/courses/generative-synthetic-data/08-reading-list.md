@@ -3,7 +3,7 @@ title: Reading list
 weight: 80
 ---
 
-The course literature mainly consists of peer-reviewed research articles, with selected book chapters and regulatory guidance. This page collects the required reading for every lecture, suggested papers for the two [paper seminars](../05-paper-seminars/) and background reading by topic.
+The course literature mainly consists of peer-reviewed research articles, with selected book chapters and regulatory guidance. This page collects the required reading for every lecture and background reading by topic.
 
 > [!NOTE]
 > The reading list changes with each course run, since generative modelling moves quickly.
@@ -55,7 +55,7 @@ The background reading follows once the guest lecturer is confirmed.
 
 ## Paper seminars
 
-The [paper seminars page](../05-paper-seminars/) lists the topics and suggested papers for seminar 1 (generative model families) and seminar 2 (privacy and fairness).
+Participants choose their own papers for the two [paper seminars](../05-paper-seminars/), on generative model families (seminar 1) and on privacy and fairness (seminar 2).
 
 ## Background reading by topic
 
