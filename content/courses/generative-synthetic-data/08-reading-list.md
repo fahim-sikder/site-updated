@@ -3,7 +3,7 @@ title: Reading list
 weight: 80
 ---
 
-The course literature mainly consists of peer-reviewed research articles, with selected book chapters and regulatory guidance. This page collects the required reading for every lecture, the paper pools for the two [paper seminars](../05-paper-seminars/) and background reading by topic.
+The course literature mainly consists of peer-reviewed research articles, with selected book chapters and regulatory guidance. This page collects the required reading for every lecture, suggested papers for the two [paper seminars](../05-paper-seminars/) and background reading by topic.
 
 > [!NOTE]
 > The reading list changes with each course run, since generative modelling moves quickly.
@@ -28,19 +28,21 @@ Read these before the lecture.
 ### Lecture 3: Diffusion models, transformers and basics of LLMs
 
 - Ho, Jonathan, Ajay Jain, and Pieter Abbeel. 2020. “Denoising Diffusion Probabilistic Models.” Pp. 6840–51 in Advances in Neural Information Processing Systems. Vol. 33. Curran Associates, Inc. [Link](https://proceedings.neurips.cc/paper_files/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
-- Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is All you Need. *Advances in Neural Information Processing Systems*, 30. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html) · [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)
-- Sikder, M. F., Ramachandranpillai, R., & Heintz, F. (2025). TransFusion: Generating long, high fidelity time series using diffusion models with transformers. *Machine Learning with Applications*, 20, 100652. [doi:10.1016/j.mlwa.2025.100652](https://doi.org/10.1016/j.mlwa.2025.100652) · [arXiv:2307.12667](https://arxiv.org/abs/2307.12667) · [Publication page](/publications/diffusion-time-series/)
+- Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Ł. ukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” in Advances in Neural Information Processing Systems. Vol. 30. Curran Associates, Inc. [Link](https://papers.nips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)
+- Sikder, Md Fahim, Resmi Ramachandranpillai, and Fredrik Heintz. 2025. “TransFusion: Generating Long, High Fidelity Time Series Using Diffusion Models with Transformers.” Machine Learning with Applications 100652. doi:10.1016/j.mlwa.2025.100652. [Link](https://www.sciencedirect.com/science/article/pii/S2666827025000350)
 
 ### Lecture 4: Evaluating synthetic data: fidelity and utility
 
-- Alaa, A., van Breugel, B., Saveliev, E. S., & van der Schaar, M. (2022). How Faithful is your Synthetic Data? Sample-level Metrics for Evaluating and Auditing Generative Models. *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162, 290–306. [PMLR](https://proceedings.mlr.press/v162/alaa22a.html) · [arXiv:2102.08921](https://arxiv.org/abs/2102.08921)
-- Sikder, M. F., Ramachandranpillai, R., de Leng, D., & Heintz, F. (2024). FairX: A comprehensive benchmarking tool for model analysis using fairness, utility, and explainability. *Proceedings of the 2nd Workshop on Fairness and Bias in AI (AEQUITAS 2024), co-located with ECAI 2024*, CEUR Workshop Proceedings, Vol. 3808. [PDF](https://ceur-ws.org/Vol-3808/paper16.pdf) · [arXiv:2406.14281](https://arxiv.org/abs/2406.14281) · [Publication page](/publications/fairx/)
+- Alaa, Ahmed, Boris Van Breugel, Evgeny S. Saveliev, and Mihaela van der Schaar. 2022. “How Faithful Is Your Synthetic Data? Sample-Level Metrics for Evaluating and Auditing Generative Models.” Pp. 290–306 in Proceedings of the 39th International Conference on Machine Learning. PMLR. [Link](https://proceedings.mlr.press/v162/alaa22a.html)
+- Weerts, Hilde, Miroslav Dudík, Richard Edgar, Adrin Jalali, Roman Lutz, and Michael Madaio. 2023. “Fairlearn: Assessing and Improving Fairness of AI Systems.” Journal of Machine Learning Research 24(257):1–8. [Link](https://www.jmlr.org/papers/v24/23-0389.html)
+- Sikder, Md Fahim, Resmi Ramachandranpillai, Daniel de Leng, and Fredrik Heintz. 2024. “FairX: A Comprehensive Benchmarking Tool for Model Analysis Using Fairness, Utility, and Explainability.” in Proceedings of the 2nd Workshop on Fairness and Bias in AI. Vol. 3808, CEUR Workshop Proceedings, edited by R. Calegari, V. Dignum, and B. O’Sullivan. Santiago de Compostela, Spain: CEUR. [Link](https://ceur-ws.org/Vol-3808/paper16.pdf)
 
 ### Lecture 5: Privacy: differential privacy and attacks
 
-- Dwork, C., & Roth, A. (2014). The Algorithmic Foundations of Differential Privacy. *Foundations and Trends in Theoretical Computer Science*, 9(3–4), 211–407. [doi:10.1561/0400000042](https://doi.org/10.1561/0400000042)
-- Jordon, J., Yoon, J., & van der Schaar, M. (2019). PATE-GAN: Generating Synthetic Data with Differential Privacy Guarantees. *International Conference on Learning Representations (ICLR 2019)*. [OpenReview](https://openreview.net/forum?id=S1zk9iRqF7)
-- Zhang, Z., Wang, T., Li, N., Honorio, J., Backes, M., He, S., Chen, J., & Zhang, Y. (2021). PrivSyn: Differentially Private Data Synthesis. *30th USENIX Security Symposium*, 929–946. [USENIX](https://www.usenix.org/conference/usenixsecurity21/presentation/zhang-zhikun)
+- Abadi, Martin, Andy Chu, Ian Goodfellow, H. Brendan McMahan, Ilya Mironov, Kunal Talwar, and Li Zhang. 2016. “Deep Learning with Differential Privacy.” Pp. 308–18 in Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security. Vienna Austria: ACM. [Link](https://dl.acm.org/doi/abs/10.1145/2976749.2978318)
+- Jordon, James, Jinsung Yoon, and Mihaela van der Schaar. 2018. “PATE-GAN: Generating Synthetic Data with Differential Privacy Guarantees.” [Link](https://openreview.net/forum?id=S1zk9iRqF7)
+- Zhang, Zhikun, Tianhao Wang, Ninghui Li, Jean Honorio, Michael Backes, Shibo He, Jiming Chen, and Yang Zhang. 2021. “PrivSyn: Differentially Private Data Synthesis.” Pp. 929–46 in 30th USENIX security symposium (USENIX security 21). USENIX Association. [Link](https://www.usenix.org/conference/usenixsecurity21/presentation/zhang-zhikun)
+- McKenna, Ryan, Gerome Miklau, and Daniel Sheldon. 2021. “Winning the NIST Contest: A Scalable and General Approach to Differentially Private Synthetic Data.” Journal of Privacy and Confidentiality 11(3). doi:10.29012/jpc.778. [Link](https://journalprivacyconfidentiality.org/index.php/jpc/article/view/778)
 
 ### Lecture 6: Fairness in synthetic data
 
@@ -53,7 +55,7 @@ The background reading follows once the guest lecturer is confirmed.
 
 ## Paper seminars
 
-The [paper seminars page](../05-paper-seminars/) lists the paper pools for seminar 1 (generative model families) and seminar 2 (privacy and fairness).
+The [paper seminars page](../05-paper-seminars/) lists the topics and suggested papers for seminar 1 (generative model families) and seminar 2 (privacy and fairness).
 
 ## Background reading by topic
 

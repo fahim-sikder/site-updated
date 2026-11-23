@@ -5,11 +5,11 @@ weight: 50
 
 The course has two paper seminars of 2 hours each. Each participant presents in only one of them, leading the discussion of one paper with a short summary and questions for the group. In the other seminar, participants take part in the discussion. Leading one discussion is part of the [examination](../07-examination/).
 
-The papers come from the pools below. At the start of the course, when participants receive the full reading list, the examiner assigns each participant one paper, and with it the seminar in which they present. Before each seminar, all participants read every paper that is discussed in it, not only their own, so that the group can discuss them.
+Each participant chooses one paper on one of the two seminar topics, and with it the seminar in which they present. The paper can come from the suggested papers below or from elsewhere, as long as it fits the topic. Participants send their choice to the examiner at the start of the course. The examiner confirms each choice, so that no paper is presented twice, and shares the list of chosen papers. Before each seminar, all participants read every paper that is discussed in it, not only their own, so that the group can discuss them.
 
 ## Paper seminar 1: generative model families {#paper-seminar-1-generative-model-families}
 
-These papers extend Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, transformers and basics of LLMs). Each one changes a training objective, an architecture or a sampling procedure; ask what that change does to the synthetic data (ILO1).
+This seminar extends Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, transformers and basics of LLMs). A paper fits the topic if it changes the training objective, the architecture or the sampling procedure of a generative model, or studies how such a model behaves. For each paper, ask how it affects the synthetic data (ILO1). The papers below are suggestions.
 
 | # | Paper | Theme |
 |:-:|---|---|
@@ -28,7 +28,7 @@ These papers extend Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, t
 
 ## Paper seminar 2: privacy and fairness {#paper-seminar-2-privacy-and-fairness}
 
-These papers extend Lecture 5 (privacy) and Lecture 6 (fairness), and several of them study both at once. For each paper, ask what it implies for the decision to release a synthetic dataset (ILO3).
+This seminar extends Lecture 5 (privacy) and Lecture 6 (fairness). A paper fits the topic if it studies the privacy or the fairness of synthetic data, or both. For each paper, ask what it implies for the decision to release a synthetic dataset (ILO3). The papers below are suggestions.
 
 | # | Paper | Theme |
 |:-:|---|---|
@@ -51,7 +51,7 @@ These papers extend Lecture 5 (privacy) and Lecture 6 (fairness), and several of
 
 ### Read the paper closely
 
-Read the assigned paper twice: once for its argument, once for its assumptions, its evaluation and what it leaves out.
+Read the paper twice: once for its argument, once for its assumptions, its evaluation and what it leaves out.
 
 ### Prepare a short summary
 

@@ -26,7 +26,7 @@ This new PhD course teaches participants to train generative models for syntheti
   {{< card url="02-schedule/" icon="calendar-days" title="Schedule" subtitle="All 13 sessions, in order." >}}
   {{< card url="03-lectures/" icon="presentation-chart-bar" title="Lectures" subtitle="Six lectures and one guest lecture, with reading." >}}
   {{< card url="04-labs/" icon="beaker" title="Labs" subtitle="Three hands-on labs in a Docker container." >}}
-  {{< card url="05-paper-seminars/" icon="chat-bubble-left-right" title="Paper seminars" subtitle="Each participant presents one paper, in one of the two seminars." >}}
+  {{< card url="05-paper-seminars/" icon="chat-bubble-left-right" title="Paper seminars" subtitle="Each participant presents a paper of their choice, in one of the two seminars." >}}
   {{< card url="06-project/" icon="command-line" title="Individual project" subtitle="Synthetic data for the participant's own research field." >}}
   {{< card url="07-examination/" icon="clipboard-document-check" title="Examination" subtitle="What is required to pass." >}}
   {{< card url="08-reading-list/" icon="book-open" title="Reading list" subtitle="Papers on models, evaluation, privacy and fairness." >}}
