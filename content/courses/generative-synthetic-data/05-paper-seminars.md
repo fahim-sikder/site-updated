@@ -9,7 +9,7 @@ Each participant chooses one paper on one of the two seminar topics below, and w
 
 ## Paper seminar 1: generative model families {#paper-seminar-1-generative-model-families}
 
-This seminar extends Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, transformers and basics of LLMs). A paper fits the topic if it changes the training objective, the architecture or the sampling procedure of a generative model, or studies how such a model behaves. For each paper, ask how it affects the synthetic data (ILO1).
+This seminar extends Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, transformers and basics of LLMs).
 
 ## Paper seminar 2: privacy and fairness {#paper-seminar-2-privacy-and-fairness}
 
