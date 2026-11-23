@@ -3,7 +3,7 @@ title: Reading list
 weight: 80
 ---
 
-The course literature mainly consists of peer-reviewed research articles, with selected book chapters and regulatory guidance. This page collects the required reading for every lecture and background reading by topic.
+The course literature mainly consists of peer-reviewed research articles, with selected book chapters and regulatory guidance. This page collects the required reading for every lecture.
 
 > [!NOTE]
 > The reading list changes with each course run, since generative modelling moves quickly.
@@ -20,7 +20,7 @@ Read these before the lecture.
 
 ### Lecture 2: VAEs and GANs
 
-- Kingma, Diederik P., and Max Welling. 2022. “Auto-Encoding Variational Bayes.”, ICLR 2014 [Link](https://arxiv.org/abs/1312.6114)
+- Kingma, Diederik P., and Max Welling. 2013. “Auto-Encoding Variational Bayes.”, [Link](https://arxiv.org/abs/1312.6114)
 - Goodfellow, Ian J., Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. 2014. “Generative Adversarial Nets.” in Advances in Neural Information Processing Systems. Vol. 27. Curran Associates, Inc. [Link](https://papers.nips.cc/paper_files/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html)
 - Xu, Lei, Maria Skoularidou, Alfredo Cuesta-Infante, and Kalyan Veeramachaneni. 2019. “Modeling Tabular Data Using Conditional GAN.” in Advances in Neural Information Processing Systems. Vol. 32. Curran Associates, Inc. [Link](https://proceedings.neurips.cc/paper_files/paper/2019/hash/254ed7d2de3b23ab10936522dd547b78-Abstract.html)
 - Arjovsky, Martin, Soumith Chintala, and Léon Bottou. 2017. “Wasserstein Generative Adversarial Networks.” Pp. 214–23 in Proceedings of the 34th International Conference on Machine Learning. PMLR. [Link](https://proceedings.mlr.press/v70/arjovsky17a.html)
@@ -29,7 +29,7 @@ Read these before the lecture.
 ### Lecture 3: Diffusion models, transformers and basics of LLMs
 
 - Ho, Jonathan, Ajay Jain, and Pieter Abbeel. 2020. “Denoising Diffusion Probabilistic Models.” Pp. 6840–51 in Advances in Neural Information Processing Systems. Vol. 33. Curran Associates, Inc. [Link](https://proceedings.neurips.cc/paper_files/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
-- Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Ł. ukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” in Advances in Neural Information Processing Systems. Vol. 30. Curran Associates, Inc. [Link](https://papers.nips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)
+- Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” in Advances in Neural Information Processing Systems. Vol. 30. Curran Associates, Inc. [Link](https://papers.nips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)
 - Sikder, Md Fahim, Resmi Ramachandranpillai, and Fredrik Heintz. 2025. “TransFusion: Generating Long, High Fidelity Time Series Using Diffusion Models with Transformers.” Machine Learning with Applications 100652. doi:10.1016/j.mlwa.2025.100652. [Link](https://www.sciencedirect.com/science/article/pii/S2666827025000350)
 - Shumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. “AI Models Collapse When Trained on Recursively Generated Data.” Nature 631(8022):755–59. doi:10.1038/s41586-024-07566-y. [Link](https://www.nature.com/articles/s41586-024-07566-y)
 - Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. 2021. “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜.” Pp. 610–23 in Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency. Virtual Event Canada: ACM. [Link](https://dl.acm.org/doi/abs/10.1145/3442188.3445922)
