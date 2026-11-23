@@ -14,21 +14,20 @@ Read these before the lecture.
 
 ### Lecture 1: Why synthetic data?
 
-- Jordon, J., Szpruch, L., Houssiau, F., Bottarelli, M., Cherubin, G., Maple, C., Cohen, S. N., & Weller, A. (2022). Synthetic Data – what, why and how? *arXiv:2205.03257*. [arXiv](https://arxiv.org/abs/2205.03257)
-- Stadler, T., Oprisanu, B., & Troncoso, C. (2022). Synthetic Data – Anonymisation Groundhog Day. *31st USENIX Security Symposium*, 1451–1468. [USENIX](https://www.usenix.org/conference/usenixsecurity22/presentation/stadler)
-- Regulation (EU) 2016/679 (General Data Protection Regulation): Recital 26, Article 4(1) and (5), Article 9 and Article 89(1). [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+- Jordon, James, Lukasz Szpruch, Florimond Houssiau, Mirko Bottarelli, Giovanni Cherubin, Carsten Maple, Samuel N. Cohen, and Adrian Weller. 2022. “Synthetic Data -- What, Why and How?” [Link](https://arxiv.org/abs/2205.03257)
+- Stadler, Theresa, Bristena Oprisanu, and Carmela Troncoso. 2022. “Synthetic Data – Anonymisation Groundhog Day.” Pp. 1451–68 in 31st USENIX Security Symposium (USENIX Security 22). Boston, MA: USENIX Association. [Link](https://www.usenix.org/conference/usenixsecurity22/presentation/stadler)
 - European Data Protection Board (2026). Guidelines 02/2026 on Anonymisation, version 1.0. [PDF](https://www.edpb.europa.eu/system/files_en?file=2026-09/edpb_guidelines_202602_anonymisation_v1_en_0.pdf)
 
 ### Lecture 2: VAEs and GANs
 
-- Kingma, D. P., & Welling, M. (2014). Auto-Encoding Variational Bayes. *International Conference on Learning Representations (ICLR 2014)*. [arXiv:1312.6114](https://arxiv.org/abs/1312.6114)
-- Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., & Bengio, Y. (2014). Generative Adversarial Nets. *Advances in Neural Information Processing Systems*, 27. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html) · [arXiv:1406.2661](https://arxiv.org/abs/1406.2661)
-- Xu, L., Skoularidou, M., Cuesta-Infante, A., & Veeramachaneni, K. (2019). Modeling Tabular data using Conditional GAN. *Advances in Neural Information Processing Systems*, 32. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2019/hash/254ed7d2de3b23ab10936522dd547b78-Abstract.html) · [arXiv:1907.00503](https://arxiv.org/abs/1907.00503)
-- Yoon, J., Jarrett, D., & van der Schaar, M. (2019). Time-series Generative Adversarial Networks. *Advances in Neural Information Processing Systems*, 32. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2019/hash/c9efe5f26cd17ba6216bbe2a7d26d490-Abstract.html)
+- Kingma, Diederik P., and Max Welling. 2022. “Auto-Encoding Variational Bayes.”, ICLR 2014 [Link](https://arxiv.org/abs/1312.6114)
+- Goodfellow, Ian J., Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. 2014. “Generative Adversarial Nets.” in Advances in Neural Information Processing Systems. Vol. 27. Curran Associates, Inc. [Link](https://papers.nips.cc/paper_files/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html)
+- Xu, Lei, Maria Skoularidou, Alfredo Cuesta-Infante, and Kalyan Veeramachaneni. 2019. “Modeling Tabular Data Using Conditional GAN.” in Advances in Neural Information Processing Systems. Vol. 32. Curran Associates, Inc. [Link](https://proceedings.neurips.cc/paper_files/paper/2019/hash/254ed7d2de3b23ab10936522dd547b78-Abstract.html)
+- Yoon, Jinsung, Daniel Jarrett, and Mihaela van der Schaar. 2019. “Time-Series Generative Adversarial Networks.” in Advances in Neural Information Processing Systems. Vol. 32. Curran Associates, Inc. [Link](https://proceedings.neurips.cc/paper_files/paper/2019/hash/c9efe5f26cd17ba6216bbe2a7d26d490-Abstract.html)
 
 ### Lecture 3: Diffusion models, transformers and basics of LLMs
 
-- Ho, J., Jain, A., & Abbeel, P. (2020). Denoising Diffusion Probabilistic Models. *Advances in Neural Information Processing Systems*, 33, 6840–6851. [Proceedings](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html) · [arXiv:2006.11239](https://arxiv.org/abs/2006.11239)
+- Ho, Jonathan, Ajay Jain, and Pieter Abbeel. 2020. “Denoising Diffusion Probabilistic Models.” Pp. 6840–51 in Advances in Neural Information Processing Systems. Vol. 33. Curran Associates, Inc. [Link](https://proceedings.neurips.cc/paper_files/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
 - Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is All you Need. *Advances in Neural Information Processing Systems*, 30. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html) · [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)
 - Sikder, M. F., Ramachandranpillai, R., & Heintz, F. (2025). TransFusion: Generating long, high fidelity time series using diffusion models with transformers. *Machine Learning with Applications*, 20, 100652. [doi:10.1016/j.mlwa.2025.100652](https://doi.org/10.1016/j.mlwa.2025.100652) · [arXiv:2307.12667](https://arxiv.org/abs/2307.12667) · [Publication page](/publications/diffusion-time-series/)
 
