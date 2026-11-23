@@ -14,25 +14,3 @@ This seminar extends Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, 
 ## Paper seminar 2: privacy and fairness {#paper-seminar-2-privacy-and-fairness}
 
 This seminar extends Lecture 5 (privacy) and Lecture 6 (fairness). Participants choose a paper on one of these topics.
-
-## Leading a discussion
-
-{{% steps %}}
-
-### Read the paper closely
-
-Read the paper twice: once for its argument, once for its assumptions, its evaluation and what it leaves out.
-
-### Prepare a short summary
-
-Summarise the problem the paper addresses, its method and its main results. Connect it to the lecture it extends.
-
-### Prepare questions for the group
-
-Write questions that open a discussion, for example on the paper's assumptions, its threat model or fairness definition, its evaluation, or what it means for the datasets participants work with.
-
-### Lead the discussion
-
-Present the summary, then lead the group through the questions.
-
-{{% /steps %}}
