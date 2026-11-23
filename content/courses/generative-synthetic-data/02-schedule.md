@@ -3,7 +3,7 @@ title: Schedule
 weight: 20
 ---
 
-Classes take place every two weeks. The course has 13 sessions of 2 hours each: 6 lectures, 1 guest lecture, 3 labs, 2 paper seminars and 1 project presentation seminar. In three of the classes, a lecture or seminar is followed by a lab. The reflection report is due four weeks after the final presentations.
+The course has 13 sessions of 2 hours each: 6 lectures, 1 guest lecture, 3 labs, 2 paper seminars and 1 project presentation seminar. The reflection report is due four weeks after the final presentations.
 
 > [!NOTE]
 > Dates, times and rooms are to be announced.

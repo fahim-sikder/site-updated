@@ -3,9 +3,9 @@ title: Paper seminars
 weight: 50
 ---
 
-The course has two paper seminars of 2 hours each. Each participant presents in only one of them: you lead the discussion of one paper, with a short summary and questions for the group. In the other seminar, you take part in the discussion. Leading one discussion is part of the [examination](../07-examination/).
+The course has two paper seminars of 2 hours each. Each participant presents in only one of them, leading the discussion of one paper with a short summary and questions for the group. In the other seminar, participants take part in the discussion. Leading one discussion is part of the [examination](../07-examination/).
 
-The papers come from the pools below. At the start of the course, when you receive the full reading list, the examiner assigns each participant one paper, and with it the seminar in which you present. Before each seminar, read every paper that is discussed in it, not only your own, so that the group can discuss them.
+The papers come from the pools below. At the start of the course, when participants receive the full reading list, the examiner assigns each participant one paper, and with it the seminar in which they present. Before each seminar, all participants read every paper that is discussed in it, not only their own, so that the group can discuss them.
 
 ## Paper seminar 1: generative model families {#paper-seminar-1-generative-model-families}
 
@@ -51,7 +51,7 @@ These papers extend Lecture 5 (privacy) and Lecture 6 (fairness), and several of
 
 ### Read the paper closely
 
-Read your paper twice: once for its argument, once for its assumptions, its evaluation and what it leaves out.
+Read the assigned paper twice: once for its argument, once for its assumptions, its evaluation and what it leaves out.
 
 ### Prepare a short summary
 
@@ -59,10 +59,10 @@ Summarise the problem the paper addresses, its method and its main results. Conn
 
 ### Prepare questions for the group
 
-Write questions that open a discussion, for example on the paper's assumptions, its threat model or fairness definition, its evaluation, or what it means for a dataset you work with.
+Write questions that open a discussion, for example on the paper's assumptions, its threat model or fairness definition, its evaluation, or what it means for the datasets participants work with.
 
 ### Lead the discussion
 
-Present your summary, then lead the group through your questions.
+Present the summary, then lead the group through the questions.
 
 {{% /steps %}}
