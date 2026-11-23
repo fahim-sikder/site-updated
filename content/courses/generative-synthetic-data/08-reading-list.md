@@ -23,6 +23,7 @@ Read these before the lecture.
 - Kingma, Diederik P., and Max Welling. 2022. “Auto-Encoding Variational Bayes.”, ICLR 2014 [Link](https://arxiv.org/abs/1312.6114)
 - Goodfellow, Ian J., Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. 2014. “Generative Adversarial Nets.” in Advances in Neural Information Processing Systems. Vol. 27. Curran Associates, Inc. [Link](https://papers.nips.cc/paper_files/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html)
 - Xu, Lei, Maria Skoularidou, Alfredo Cuesta-Infante, and Kalyan Veeramachaneni. 2019. “Modeling Tabular Data Using Conditional GAN.” in Advances in Neural Information Processing Systems. Vol. 32. Curran Associates, Inc. [Link](https://proceedings.neurips.cc/paper_files/paper/2019/hash/254ed7d2de3b23ab10936522dd547b78-Abstract.html)
+- Arjovsky, Martin, Soumith Chintala, and Léon Bottou. 2017. “Wasserstein Generative Adversarial Networks.” Pp. 214–23 in Proceedings of the 34th International Conference on Machine Learning. PMLR. [Link](https://proceedings.mlr.press/v70/arjovsky17a.html)
 - Yoon, Jinsung, Daniel Jarrett, and Mihaela van der Schaar. 2019. “Time-Series Generative Adversarial Networks.” in Advances in Neural Information Processing Systems. Vol. 32. Curran Associates, Inc. [Link](https://proceedings.neurips.cc/paper_files/paper/2019/hash/c9efe5f26cd17ba6216bbe2a7d26d490-Abstract.html)
 
 ### Lecture 3: Diffusion models, transformers and basics of LLMs
@@ -30,6 +31,10 @@ Read these before the lecture.
 - Ho, Jonathan, Ajay Jain, and Pieter Abbeel. 2020. “Denoising Diffusion Probabilistic Models.” Pp. 6840–51 in Advances in Neural Information Processing Systems. Vol. 33. Curran Associates, Inc. [Link](https://proceedings.neurips.cc/paper_files/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
 - Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Ł. ukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” in Advances in Neural Information Processing Systems. Vol. 30. Curran Associates, Inc. [Link](https://papers.nips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)
 - Sikder, Md Fahim, Resmi Ramachandranpillai, and Fredrik Heintz. 2025. “TransFusion: Generating Long, High Fidelity Time Series Using Diffusion Models with Transformers.” Machine Learning with Applications 100652. doi:10.1016/j.mlwa.2025.100652. [Link](https://www.sciencedirect.com/science/article/pii/S2666827025000350)
+- Shumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. “AI Models Collapse When Trained on Recursively Generated Data.” Nature 631(8022):755–59. doi:10.1038/s41586-024-07566-y. [Link](https://www.nature.com/articles/s41586-024-07566-y)
+- Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. 2021. “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜.” Pp. 610–23 in Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency. Virtual Event Canada: ACM. [Link](https://dl.acm.org/doi/abs/10.1145/3442188.3445922)
+
+
 
 ### Lecture 4: Evaluating synthetic data: fidelity and utility
 
@@ -46,60 +51,7 @@ Read these before the lecture.
 
 ### Lecture 6: Fairness in synthetic data
 
-- Ramachandranpillai, R., Sikder, M. F., Bergström, D., & Heintz, F. (2024). Bt-GAN: Generating Fair Synthetic Healthdata via Bias-transforming Generative Adversarial Networks. *Journal of Artificial Intelligence Research*, 79, 1313–1341. [doi:10.1613/jair.1.15317](https://doi.org/10.1613/jair.1.15317) · [Publication page](/publications/bias-transforming-gan/)
-- Sikder, M. F., Ramachandranpillai, R., de Leng, D., & Heintz, F. (2024). FairX (see Lecture 4).
-
-### Guest lecture: synthetic data
-
-The background reading follows once the guest lecturer is confirmed.
-
-## Paper seminars
-
-Participants choose their own papers for the two [paper seminars](../05-paper-seminars/), on generative model families (seminar 1) and on privacy and fairness (seminar 2).
-
-## Background reading by topic
-
-### Books, monographs and tutorials
-
-- Barocas, S., Hardt, M., & Narayanan, A. (2023). *Fairness and Machine Learning: Limitations and Opportunities*. MIT Press. [fairmlbook.org](https://fairmlbook.org/)
-- Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*. Springer. [Microsoft Research](https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/)
-- Drechsler, J. (2011). *Synthetic Datasets for Statistical Disclosure Control: Theory and Implementation*. Lecture Notes in Statistics, Vol. 201. Springer. [doi:10.1007/978-1-4614-0326-5](https://doi.org/10.1007/978-1-4614-0326-5)
-- Goodfellow, I. (2016). NIPS 2016 Tutorial: Generative Adversarial Networks. *arXiv:1701.00160*. [arXiv](https://arxiv.org/abs/1701.00160)
-- Kingma, D. P., & Welling, M. (2019). An Introduction to Variational Autoencoders. *Foundations and Trends in Machine Learning*, 12(4), 307–392. [doi:10.1561/2200000056](https://doi.org/10.1561/2200000056) · [arXiv:1906.02691](https://arxiv.org/abs/1906.02691)
-- Luo, C. (2022). Understanding Diffusion Models: A Unified Perspective. *arXiv:2208.11970*. [arXiv](https://arxiv.org/abs/2208.11970)
-- Ponomareva, N., et al. (2023). How to DP-fy ML: A Practical Guide to Machine Learning with Differential Privacy. *Journal of Artificial Intelligence Research*, 77, 1113–1201. [doi:10.1613/jair.1.14649](https://doi.org/10.1613/jair.1.14649)
-
-### Law, regulation and guidance
-
-- Regulation (EU) 2016/679 (General Data Protection Regulation). [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
-- Regulation (EU) 2024/1689 (Artificial Intelligence Act). [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
-- Regulation (EU) 2026/1744 amending Regulation (EU) 2024/1689 (Digital Omnibus on AI). [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
-- Regulation (EU) 2025/327 (European Health Data Space). [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2025/327/oj)
-- Article 29 Data Protection Working Party (2014). Opinion 05/2014 on Anonymisation Techniques (WP216). [PDF](https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf)
-- Near, J. P., Darais, D., Lefkovitz, N., & Howarth, G. S. (2025). *Guidelines for Evaluating Differential Privacy Guarantees*. NIST Special Publication 800-226. [doi:10.6028/NIST.SP.800-226](https://doi.org/10.6028/NIST.SP.800-226)
-
-### Origins in statistical disclosure control
-
-- Rubin, D. B. (1993). Discussion: Statistical Disclosure Limitation. *Journal of Official Statistics*, 9(2), 461–468. [PDF](https://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/discussion-statistical-disclosure-limitation2.pdf)
-- Little, R. J. A. (1993). Statistical Analysis of Masked Data. *Journal of Official Statistics*, 9(2), 407–426. [PDF](https://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/statistical-analysis-of-masked-data.pdf)
-- Raghunathan, T. E., Reiter, J. P., & Rubin, D. B. (2003). Multiple Imputation for Statistical Disclosure Limitation. *Journal of Official Statistics*, 19(1), 1–16. [PDF](https://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/multiple-imputation-for-statistical-disclosure-limitation.pdf)
-
-### Evaluation and benchmarks
-
-- Qian, Z., Davis, R., & van der Schaar, M. (2023). Synthcity: a benchmark framework for diverse use cases of tabular synthetic data. *Advances in Neural Information Processing Systems*, 36, Datasets and Benchmarks Track. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2023/hash/09723c9f291f6056fd1885081859c186-Abstract-Datasets_and_Benchmarks.html)
-- Snoke, J., Raab, G. M., Nowok, B., Dibben, C., & Slavković, A. (2018). General and specific utility measures for synthetic data. *Journal of the Royal Statistical Society Series A*, 181(3), 663–688. [doi:10.1111/rssa.12358](https://doi.org/10.1111/rssa.12358)
-- Theis, L., van den Oord, A., & Bethge, M. (2016). A note on the evaluation of generative models. *International Conference on Learning Representations (ICLR 2016)*. [arXiv:1511.01844](https://arxiv.org/abs/1511.01844)
-
-### Energy use of machine learning
-
-- Henderson, P., Hu, J., Romoff, J., Brunskill, E., Jurafsky, D., & Pineau, J. (2020). Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning. *Journal of Machine Learning Research*, 21(248), 1–43. [JMLR](https://jmlr.org/papers/v21/20-312.html)
-- Lacoste, A., Luccioni, A., Schmidt, V., & Dandres, T. (2019). Quantifying the Carbon Emissions of Machine Learning. *arXiv:1910.09700*. [arXiv](https://arxiv.org/abs/1910.09700)
-- Luccioni, S., Jernite, Y., & Strubell, E. (2024). Power Hungry Processing: Watts Driving the Cost of AI Deployment? *Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency (FAccT '24)*, 85–99. [doi:10.1145/3630106.3658542](https://doi.org/10.1145/3630106.3658542)
-- Strubell, E., Ganesh, A., & McCallum, A. (2019). Energy and Policy Considerations for Deep Learning in NLP. *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics*, 3645–3650. [ACL Anthology](https://aclanthology.org/P19-1355/)
-- CodeCarbon documentation: methodology. [docs.codecarbon.io](https://docs.codecarbon.io/latest/explanation/methodology/)
-
-### Work by the examiner on these topics
-
-- Ramachandranpillai, R., Sikder, M. F., & Heintz, F. (2023). Fair Latent Deep Generative Models (FLDGMs) for Syntax-Agnostic and Fair Synthetic Data Generation. *ECAI 2023*, Frontiers in Artificial Intelligence and Applications, Vol. 372, 1938–1945. [doi:10.3233/FAIA230484](https://doi.org/10.3233/FAIA230484) · [Publication page](/publications/fair-latent-generative-models/)
-- Sikder, M. F., Ramachandranpillai, R., de Leng, D., & Heintz, F. (2025). Promoting Intersectional Fairness Through Knowledge Distillation. *ECAI 2025*, Frontiers in Artificial Intelligence and Applications, Vol. 413, 3427–3434. [doi:10.3233/FAIA251214](https://doi.org/10.3233/FAIA251214) · [Publication page](/publications/promoting-intersectional-fainress/)
-- Bt-GAN, FairX and TransFusion appear in the required reading above.
+- Xu, Depeng, Shuhan Yuan, Lu Zhang, and Xintao Wu. 2018. “FairGAN: Fairness-Aware Generative Adversarial Networks.” Pp. 570–75 in 2018 IEEE International Conference on Big Data (Big Data). Seattle, WA, USA: IEEE. [Link](https://ieeexplore.ieee.org/abstract/document/8622525)
+- Choi, Kristy, Aditya Grover, Trisha Singh, Rui Shu, and Stefano Ermon. 2020. “Fair Generative Modeling via Weak Supervision.” Pp. 1887–98 in Proceedings of the 37th International Conference on Machine Learning. PMLR. [Link](https://proceedings.mlr.press/v119/choi20a.html)
+- Friedrich, Felix, Manuel Brack, Lukas Struppek, Dominik Hintersdorf, Patrick Schramowski, Sasha Luccioni, and Kristian Kersting. 2025. “Auditing and Instructing Text-to-Image Generation Models on Fairness.” AI and Ethics 5(3):2103–23. doi:10.1007/s43681-024-00531-5. [Link](https://link.springer.com/article/10.1007/s43681-024-00531-5)
+- Ramachandranpillai, Resmi, Md Fahim Sikder, David Bergström, and Fredrik Heintz. 2024. “Bt-GAN: Generating Fair Synthetic Healthdata via Bias-Transforming Generative Adversarial Networks.” Journal of Artificial Intelligence Research 79:1313–41. doi:10.1613/jair.1.15317. [Link](/publications/bias-transforming-gan/)
