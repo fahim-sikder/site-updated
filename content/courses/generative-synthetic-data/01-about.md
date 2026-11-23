@@ -7,8 +7,6 @@ weight: 10
 
 Synthetic data can ease data scarcity when real data is restricted, but it can still leak sensitive information, amplify bias in the real data or lose the utility of the real data in downstream tasks. The main goal of the course is to prepare participants to use the main families of generative models to generate synthetic data, and to evaluate it for privacy, fairness and utility.
 
-This is a new course, it has not been given before.
-
 ## Intended learning outcomes {#learning-outcomes}
 
 After the course, participants should be able to:
