@@ -9,7 +9,7 @@ Each participant chooses one paper on one of the two seminar topics below, and w
 
 ## Paper seminar 1: generative model families {#paper-seminar-1-generative-model-families}
 
-This seminar extends Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, transformers and basics of LLMs).
+This seminar extends Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, transformers and basics of LLMs). Participants choose a paper on one of these topics.
 
 ## Paper seminar 2: privacy and fairness {#paper-seminar-2-privacy-and-fairness}
 
