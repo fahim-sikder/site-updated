@@ -3,7 +3,7 @@ title: Paper seminars
 weight: 50
 ---
 
-The course has two paper seminars of 2 hours each. Each participant presents in only one of them, leading the discussion of one paper with a short summary and questions for the group. In the other seminar, participants take part in the discussion. Leading one discussion is part of the [examination](../07-examination/).
+The course has two paper seminars of 2 hours each. Each participant presents in only one of them, leading the discussion of one paper with a short summary and questions for the group. Leading one discussion is part of the [examination](../07-examination/).
 
 Each participant chooses one paper on one of the two seminar topics below, and with it the seminar in which they present. Participants send their choice to the examiner at the start of the course. The two seminars should have a similar number of discussion leaders. If most participants choose the same seminar, the examiner moves some of them to the other seminar, where they choose a new paper. The examiner confirms each choice, so that no paper is presented twice, and shares the list of chosen papers. Before each seminar, all participants read every paper that is discussed in it, not only their own, so that the group can discuss them.
 
