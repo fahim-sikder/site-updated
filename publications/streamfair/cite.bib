@@ -1,0 +1,13 @@
+@article{Sikder_Johnson_Heintz_2026,
+	address = {Nuremberg, Germany},
+	title = {{StreamFair}: {Online} fair adaptation under temporal intersectional drift},
+	volume = {1},
+	url = {https://aitj.org/index.php/journal/article/view/26},
+	abstract = {A model that satisfies equalised odds on its training data does not stay fair once the input distribution starts to change, and the gap is the largest on intersectional subgroups whose sample counts may become smaller over time as the stream goes on. We can either let the equalised odds (EO) gap grow over time by doing nothing or apply online learning with cross-entropy which in turn can make the gap worse because the gradient is dominated by the majority intersection group. We present \textit{StreamFair}, which tackles this issue by keeping the deployed model frozen, then attaching a small residual module on top of the frozen model, and training the residual module only when a fairness-aware drift detector detects a shift. The detector observes the worst-intersection EO gap with a cumulative sum and exponentially weighted moving average measurement. Once the detector is triggered and detects drift, the residual module is trained with cross-entropy along with per-intersection penalties on the true-positive rate and false-positive rate gaps and a supervised contrastive term that keeps rate estimates stable on small batches. Our experiments on six datasets/state combinations across different domains show that, \textit{StreamFair} reaches the same level of fairness and accuracy compared to the always adapt fair baseline while using 4 to 33x fewer updates.},
+	number = {1},
+	journal = {AI Transparency Journal},
+	author = {Sikder, Md Fahim and Johnson, Ericka and Heintz, Fredrik},
+	month = oct,
+	year = {2026},
+	pages = {168--176},
+}

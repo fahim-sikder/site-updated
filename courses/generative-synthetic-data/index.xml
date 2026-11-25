@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Generative Models for Synthetic Data: Privacy, Fairness and Utility | Md Fahim Sikder</title><link>https://fahimsikder.com/courses/generative-synthetic-data/</link><atom:link href="https://fahimsikder.com/courses/generative-synthetic-data/index.xml" rel="self" type="application/rss+xml"/><description>Generative Models for Synthetic Data: Privacy, Fairness and Utility</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://fahimsikder.com/media/icon_hu_51d43eb3b88ae3d9.png</url><title>Generative Models for Synthetic Data: Privacy, Fairness and Utility</title><link>https://fahimsikder.com/courses/generative-synthetic-data/</link></image><item><title>About the course</title><link>https://fahimsikder.com/courses/generative-synthetic-data/01-about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fahimsikder.com/courses/generative-synthetic-data/01-about/</guid><description>&lt;h2 id="why-this-course"&gt;Why this course&lt;/h2&gt;
+&lt;p&gt;Synthetic data can ease data scarcity when real data is restricted, but it can still leak sensitive information, amplify bias in the real data or lose the utility of the real data in downstream tasks. The main goal of the course is to prepare participants to use the main families of generative models to generate synthetic data, and to evaluate it for privacy, fairness and utility.&lt;/p&gt;
+&lt;h2 id="learning-outcomes"&gt;Intended learning outcomes&lt;/h2&gt;
+&lt;p&gt;After the course, participants should be able to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;ILO1:&lt;/strong&gt; Analyse how the training objectives of the main families of generative models relate to their failure modes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ILO2:&lt;/strong&gt; Evaluate synthetic data for utility, privacy and fairness.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ILO3:&lt;/strong&gt; Assess whether a synthetic dataset can be released based on its measured privacy and fairness risks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ILO4:&lt;/strong&gt; Design and evaluate a generative model for a domain problem in their own research field.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ILO5:&lt;/strong&gt; Reflect on how their own assumptions and practice around synthetic data have changed during the course.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="who-should-take-this-course"&gt;Who should take this course&lt;/h2&gt;
+&lt;p&gt;The course is intended for PhD students in computer science who work with data that is challenging to access due to regulations or restrictions, or who want to understand how generative models work.&lt;/p&gt;
+&lt;p&gt;PhD students from other fields who work with sensitive data, for example in medicine or the social sciences, are also welcome.&lt;/p&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+data-callout="note"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;Throughout the course, &lt;em&gt;fairness&lt;/em&gt; refers to algorithmic fairness.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Some background in machine learning or deep learning.&lt;/li&gt;
+&lt;li&gt;Basic programming experience in Python, enough to run and modify the lab code.&lt;/li&gt;
+&lt;li&gt;A personal laptop that can run Docker (instructions are on the
+page).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="how-the-course-works"&gt;How the course works&lt;/h2&gt;
+&lt;p&gt;The course combines four kinds of activity.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt; cover the main families of generative models and how to evaluate them for utility, privacy and fairness.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt; let participants train generative models and evaluate their output.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;: each participant chooses one paper on one of the two seminar topics and leads its discussion, with a short summary and questions for the group.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;: each participant trains a generative model on data from their own domain, evaluates the synthetic data and writes a reflection report. Participants who cannot bring their real data, because of ethical approvals or data agreements, use a public dataset with a similar structure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="topics"&gt;Topics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Why synthetic data is needed: data access, scarcity and regulation&lt;/li&gt;
+&lt;li&gt;Main generative models: variational autoencoders, generative adversarial networks, diffusion models and transformer-based models&lt;/li&gt;
+&lt;li&gt;Generation and evaluation of synthetic data for fidelity and utility&lt;/li&gt;
+&lt;li&gt;Privacy: differential privacy and privacy attacks&lt;/li&gt;
+&lt;li&gt;Fairness: how synthetic data can carry or amplify bias&lt;/li&gt;
+&lt;li&gt;Synthetic data release risk: measuring the privacy and fairness risks of releasing a synthetic dataset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The labs and the project log the energy use of training with
+.&lt;/p&gt;</description></item><item><title>Schedule</title><link>https://fahimsikder.com/courses/generative-synthetic-data/02-schedule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fahimsikder.com/courses/generative-synthetic-data/02-schedule/</guid><description>&lt;p&gt;The course has 13 sessions of 2 hours each: 6 lectures, 1 guest lecture, 3 labs, 2 paper seminars and 1 project presentation seminar. The reflection report is due four weeks after the final presentations.&lt;/p&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+data-callout="note"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;Dates, times and rooms are to be announced.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="session-by-session"&gt;Session by session&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Lecture or seminar (2 h)&lt;/th&gt;
+&lt;th&gt;Lab session (2 h)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lecture 1: Why synthetic data? Data access and regulations&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lecture 2: VAEs and GANs&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lecture 3: Diffusion models, transformers and basics of LLMs&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;Lab 1: Train generative models and find failure modes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lecture 4: Evaluating synthetic data: fidelity and utility&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lecture 5: Privacy: differential privacy and attacks&lt;/td&gt;
+&lt;td&gt;Lab 2: Utility and privacy evaluation of synthetic data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lecture 6: Fairness in synthetic data&lt;/td&gt;
+&lt;td&gt;Lab 3: Fairness evaluation of synthetic data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Guest lecture: synthetic data&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description></item><item><title>Paper seminars</title><link>https://fahimsikder.com/courses/generative-synthetic-data/05-paper-seminars/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fahimsikder.com/courses/generative-synthetic-data/05-paper-seminars/</guid><description>&lt;p&gt;The course has two paper seminars of 2 hours each. Each participant presents in only one of them, leading the discussion of one paper with a short summary and questions for the group. Leading one discussion is part of the
+.&lt;/p&gt;
+&lt;p&gt;Each participant chooses one paper on one of the two seminar topics below, and with it the seminar in which they present. Participants send their choice to the examiner at the start of the course. The two seminars should have a similar number of discussion leaders. If most participants choose the same seminar, the examiner moves some of them to the other seminar, where they choose a new paper. The examiner confirms each choice, so that no paper is presented twice, and shares the list of chosen papers. Before each seminar, all participants read every paper that is discussed in it, not only their own, so that the group can discuss them.&lt;/p&gt;
+&lt;h2 id="paper-seminar-1-generative-model-families"&gt;Paper seminar 1: generative model families&lt;/h2&gt;
+&lt;p&gt;This seminar extends Lecture 2 (VAEs and GANs) and Lecture 3 (diffusion models, transformers and basics of LLMs). Participants choose a paper on one of these topics.&lt;/p&gt;
+&lt;h2 id="paper-seminar-2-privacy-and-fairness"&gt;Paper seminar 2: privacy and fairness&lt;/h2&gt;
+&lt;p&gt;This seminar extends Lecture 5 (privacy) and Lecture 6 (fairness). Participants choose a paper on one of these topics.&lt;/p&gt;</description></item><item><title>Individual project</title><link>https://fahimsikder.com/courses/generative-synthetic-data/06-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fahimsikder.com/courses/generative-synthetic-data/06-project/</guid><description>&lt;p&gt;In the individual project, each participant develops a generative model, trains it on data from their own domain and evaluates the synthetic data for privacy, utility and fairness (if applicable). Participants present their projects in the final session and submit a written reflection report four weeks later.&lt;/p&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-purple-100 dark:bg-purple-900 border-purple-500"
+data-callout="important"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-purple-600 dark:text-purple-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9 3.75h.008v.008H12z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Sensitive data&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;Participants follow their own ethical approvals and data agreements and do not share real sensitive data within the course. Participants who cannot bring their real data use a public dataset with a similar structure, and explain in the report how it differs from the real data.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="what-the-project-must-contain"&gt;What the project must contain&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;A domain problem:&lt;/strong&gt; State the problem in the participant&amp;rsquo;s research field that synthetic data could address, who would use the synthetic data, and for what.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data:&lt;/strong&gt; Describe the dataset: size, variable types, any temporal structure, and the attributes that are sensitive or protected. Agree on the choice of data with the examiner early in the course. Hold out a part of the real data that the generator never sees; it is needed for evaluation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A generative model:&lt;/strong&gt; Design a new model or take one from the literature, and justify the choice from its training objective and what that objective implies for the data. The lab code can serve as a starting point if it fits the data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evaluation of synthetic data:&lt;/strong&gt; Evaluate from the perspective of utility, privacy and fairness (if applicable).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Energy use:&lt;/strong&gt; Log the energy use of the training runs with
+and report it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="presentation"&gt;Presentation&lt;/h2&gt;
+&lt;p&gt;All participants present their projects in the final session and receive feedback.&lt;/p&gt;
+&lt;h2 id="reflection-report"&gt;Reflection report&lt;/h2&gt;
+&lt;p&gt;The written reflection report is due four weeks after the final presentations. It documents the findings of the project and reflects on how the participant&amp;rsquo;s assumptions and practice around synthetic data have changed during the course.&lt;/p&gt;
+&lt;p&gt;Structure the report in two parts.&lt;/p&gt;
+&lt;h3 id="part-1-project-report"&gt;Part 1: Project report&lt;/h3&gt;
+&lt;p&gt;Report each element listed under
+.&lt;/p&gt;
+&lt;h3 id="part-2-reflection"&gt;Part 2: Reflection&lt;/h3&gt;
+&lt;p&gt;Cover at least these points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What the participant assumed about synthetic data at the start of the course, for example that it is anonymous by construction, or that a good fidelity score implies a useful dataset.&lt;/li&gt;
+&lt;li&gt;What the participant will do differently in their own research practice, for example in how they evaluate, document or release synthetic data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-emerald-100 dark:bg-emerald-900 border-emerald-500"
+data-callout="tip"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-emerald-600 dark:text-emerald-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Tip&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;Participants should write down their assumptions about synthetic data before the first lecture. This makes Part 2 easier to write.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Examination</title><link>https://fahimsikder.com/courses/generative-synthetic-data/07-examination/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fahimsikder.com/courses/generative-synthetic-data/07-examination/</guid><description>&lt;p&gt;The course is graded pass/fail and gives 8 hp (8 ECTS). To pass, a participant must complete all five parts below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Part&lt;/th&gt;
+&lt;th&gt;What is required&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lectures and seminars&lt;/td&gt;
+&lt;td&gt;Attendance and active participation in the
+and
+. Participants must attend at least 80% of the lectures.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Labs&lt;/td&gt;
+&lt;td&gt;Completion of all three
+.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Paper seminar&lt;/td&gt;
+&lt;td&gt;Leading the discussion of one paper, in one of the two
+.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Individual project&lt;/td&gt;
+&lt;td&gt;Develop a generative model (new, or taken from the literature), train it on data from the participant&amp;rsquo;s own domain, and evaluate the synthetic data for privacy, utility and fairness (if applicable). The project is presented in the final session. See the
+.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reflection report&lt;/td&gt;
+&lt;td&gt;A written report, following the
+, due four weeks after the final presentations. It documents the project findings and reflects on how the participant&amp;rsquo;s assumptions and practice around synthetic data have changed.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description></item><item><title>Reading list</title><link>https://fahimsikder.com/courses/generative-synthetic-data/08-reading-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fahimsikder.com/courses/generative-synthetic-data/08-reading-list/</guid><description>&lt;p&gt;The course literature mainly consists of peer-reviewed research articles, with some regulatory guidance. This page contains the required reading for every lecture.&lt;/p&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+data-callout="note"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;The reading list changes with each course run, since generative modelling moves quickly.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="required-reading-by-lecture"&gt;Required reading by lecture&lt;/h2&gt;
+&lt;p&gt;Read these before the lecture.&lt;/p&gt;
+&lt;h3 id="lecture-1-why-synthetic-data"&gt;Lecture 1: Why synthetic data?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Jordon, James, Lukasz Szpruch, Florimond Houssiau, Mirko Bottarelli, Giovanni Cherubin, Carsten Maple, Samuel N. Cohen, and Adrian Weller. 2022. “Synthetic Data &amp;ndash; What, Why and How?”
+&lt;/li&gt;
+&lt;li&gt;Stadler, Theresa, Bristena Oprisanu, and Carmela Troncoso. 2022. “Synthetic Data – Anonymisation Groundhog Day.” Pp. 1451–68 in 31st USENIX Security Symposium (USENIX Security 22). Boston, MA: USENIX Association.
+&lt;/li&gt;
+&lt;li&gt;European Data Protection Board (2026). Guidelines 02/2026 on Anonymisation, version 1.0.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="lecture-2-vaes-and-gans"&gt;Lecture 2: VAEs and GANs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Kingma, Diederik P., and Max Welling. 2013. “Auto-Encoding Variational Bayes.”,
+&lt;/li&gt;
+&lt;li&gt;Goodfellow, Ian J., Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. 2014. “Generative Adversarial Nets.” in Advances in Neural Information Processing Systems. Vol. 27. Curran Associates, Inc.
+&lt;/li&gt;
+&lt;li&gt;Xu, Lei, Maria Skoularidou, Alfredo Cuesta-Infante, and Kalyan Veeramachaneni. 2019. “Modeling Tabular Data Using Conditional GAN.” in Advances in Neural Information Processing Systems. Vol. 32. Curran Associates, Inc.
+&lt;/li&gt;
+&lt;li&gt;Arjovsky, Martin, Soumith Chintala, and Léon Bottou. 2017. “Wasserstein Generative Adversarial Networks.” Pp. 214–23 in Proceedings of the 34th International Conference on Machine Learning. PMLR.
+&lt;/li&gt;
+&lt;li&gt;Yoon, Jinsung, Daniel Jarrett, and Mihaela van der Schaar. 2019. “Time-Series Generative Adversarial Networks.” in Advances in Neural Information Processing Systems. Vol. 32. Curran Associates, Inc.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="lecture-3-diffusion-models-transformers-and-basics-of-llms"&gt;Lecture 3: Diffusion models, transformers and basics of LLMs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ho, Jonathan, Ajay Jain, and Pieter Abbeel. 2020. “Denoising Diffusion Probabilistic Models.” Pp. 6840–51 in Advances in Neural Information Processing Systems. Vol. 33. Curran Associates, Inc.
+&lt;/li&gt;
+&lt;li&gt;Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” in Advances in Neural Information Processing Systems. Vol. 30. Curran Associates, Inc.
+&lt;/li&gt;
+&lt;li&gt;Sikder, Md Fahim, Resmi Ramachandranpillai, and Fredrik Heintz. 2025. “TransFusion: Generating Long, High Fidelity Time Series Using Diffusion Models with Transformers.” Machine Learning with Applications 100652. doi:10.1016/j.mlwa.2025.100652.
+&lt;/li&gt;
+&lt;li&gt;Shumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. “AI Models Collapse When Trained on Recursively Generated Data.” Nature 631(8022):755–59. doi:10.1038/s41586-024-07566-y.
+&lt;/li&gt;
+&lt;li&gt;Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. 2021. “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜.” Pp. 610–23 in Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency. Virtual Event Canada: ACM.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="lecture-4-evaluating-synthetic-data-fidelity-and-utility"&gt;Lecture 4: Evaluating synthetic data: fidelity and utility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Alaa, Ahmed, Boris Van Breugel, Evgeny S. Saveliev, and Mihaela van der Schaar. 2022. “How Faithful Is Your Synthetic Data? Sample-Level Metrics for Evaluating and Auditing Generative Models.” Pp. 290–306 in Proceedings of the 39th International Conference on Machine Learning. PMLR.
+&lt;/li&gt;
+&lt;li&gt;Weerts, Hilde, Miroslav Dudík, Richard Edgar, Adrin Jalali, Roman Lutz, and Michael Madaio. 2023. “Fairlearn: Assessing and Improving Fairness of AI Systems.” Journal of Machine Learning Research 24(257):1–8.
+&lt;/li&gt;
+&lt;li&gt;Sikder, Md Fahim, Resmi Ramachandranpillai, Daniel de Leng, and Fredrik Heintz. 2024. “FairX: A Comprehensive Benchmarking Tool for Model Analysis Using Fairness, Utility, and Explainability.” in Proceedings of the 2nd Workshop on Fairness and Bias in AI. Vol. 3808, CEUR Workshop Proceedings, edited by R. Calegari, V. Dignum, and B. O’Sullivan. Santiago de Compostela, Spain: CEUR.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="lecture-5-privacy-differential-privacy-and-attacks"&gt;Lecture 5: Privacy: differential privacy and attacks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Abadi, Martin, Andy Chu, Ian Goodfellow, H. Brendan McMahan, Ilya Mironov, Kunal Talwar, and Li Zhang. 2016. “Deep Learning with Differential Privacy.” Pp. 308–18 in Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security. Vienna Austria: ACM.
+&lt;/li&gt;
+&lt;li&gt;Jordon, James, Jinsung Yoon, and Mihaela van der Schaar. 2018. “PATE-GAN: Generating Synthetic Data with Differential Privacy Guarantees.”
+&lt;/li&gt;
+&lt;li&gt;Zhang, Zhikun, Tianhao Wang, Ninghui Li, Jean Honorio, Michael Backes, Shibo He, Jiming Chen, and Yang Zhang. 2021. “PrivSyn: Differentially Private Data Synthesis.” Pp. 929–46 in 30th USENIX security symposium (USENIX security 21). USENIX Association.
+&lt;/li&gt;
+&lt;li&gt;McKenna, Ryan, Gerome Miklau, and Daniel Sheldon. 2021. “Winning the NIST Contest: A Scalable and General Approach to Differentially Private Synthetic Data.” Journal of Privacy and Confidentiality 11(3). doi:10.29012/jpc.778.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="lecture-6-fairness-in-synthetic-data"&gt;Lecture 6: Fairness in synthetic data&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Xu, Depeng, Shuhan Yuan, Lu Zhang, and Xintao Wu. 2018. “FairGAN: Fairness-Aware Generative Adversarial Networks.” Pp. 570–75 in 2018 IEEE International Conference on Big Data (Big Data). Seattle, WA, USA: IEEE.
+&lt;/li&gt;
+&lt;li&gt;Choi, Kristy, Aditya Grover, Trisha Singh, Rui Shu, and Stefano Ermon. 2020. “Fair Generative Modeling via Weak Supervision.” Pp. 1887–98 in Proceedings of the 37th International Conference on Machine Learning. PMLR.
+&lt;/li&gt;
+&lt;li&gt;Friedrich, Felix, Manuel Brack, Lukas Struppek, Dominik Hintersdorf, Patrick Schramowski, Sasha Luccioni, and Kristian Kersting. 2025. “Auditing and Instructing Text-to-Image Generation Models on Fairness.” AI and Ethics 5(3):2103–23. doi:10.1007/s43681-024-00531-5.
+&lt;/li&gt;
+&lt;li&gt;Ramachandranpillai, Resmi, Md Fahim Sikder, David Bergström, and Fredrik Heintz. 2024. “Bt-GAN: Generating Fair Synthetic Healthdata via Bias-Transforming Generative Adversarial Networks.” Journal of Artificial Intelligence Research 79:1313–41. doi:10.1613/jair.1.15317.
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Practical information</title><link>https://fahimsikder.com/courses/generative-synthetic-data/09-practical/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fahimsikder.com/courses/generative-synthetic-data/09-practical/</guid><description>&lt;h2 id="computing-resources"&gt;Computing resources&lt;/h2&gt;
+&lt;p&gt;The
+page explains what participants need for the labs.&lt;/p&gt;
+&lt;h2 id="sensitive-data"&gt;Sensitive data&lt;/h2&gt;
+&lt;p&gt;Participants may use their own data in the project only if their ethical approvals and data agreements allow it, and must not share any real sensitive data within the course. In the
+, a public dataset with a similar structure can replace the real data.&lt;/p&gt;
+&lt;h2 id="sustainability"&gt;Sustainability&lt;/h2&gt;
+&lt;p&gt;Participants log the energy use of their training runs with
+, in the labs and in the project.&lt;/p&gt;
+&lt;h2 id="online-and-hybrid-participation"&gt;Online and hybrid participation&lt;/h2&gt;
+&lt;p&gt;The course can be given online or in hybrid form if there are participants from outside Linköping. Participants who would like to take part remotely should contact the examiner.&lt;/p&gt;
+&lt;h2 id="course-evaluation"&gt;Course evaluation&lt;/h2&gt;
+&lt;p&gt;Participants give feedback at mid-course and at the end of the course. The examiner uses this feedback to revise the next course run.&lt;/p&gt;
+&lt;h2 id="contact"&gt;Contact&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt;
+&lt;/p&gt;</description></item></channel></rss>
