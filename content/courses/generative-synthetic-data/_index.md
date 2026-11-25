@@ -22,7 +22,7 @@ This new PhD course teaches participants to train generative models for syntheti
 ## Registration
 
 - **IDA PhD students:** register through the IDA Graduate Portal, by the deadline the department sends out by email.
-- **PhD students from outside IDA or LiU:** register by email to [md.fahim.sikder@liu.se](mailto:md.fahim.sikder@liu.se) no later than **31 December 2026**.
+- **PhD students from outside IDA or LiU:** email [md.fahim.sikder@liu.se](mailto:md.fahim.sikder@liu.se) to express your interest, no later than **31 December 2026**. The examiner will then send you instructions on how to register.
 
 ## Course pages
 
