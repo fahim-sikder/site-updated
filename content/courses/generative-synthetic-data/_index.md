@@ -19,6 +19,11 @@ This new PhD course teaches participants to train generative models for syntheti
 - **Computing:** a laptop that runs Docker. No GPU is needed.
 - **Format:** on campus, or online or hybrid if there are participants from outside Linköping
 
+## Registration
+
+- **IDA PhD students:** register through the IDA Graduate Portal, by the deadline the department sends out by email.
+- **PhD students from outside IDA or LiU:** register by email to [md.fahim.sikder@liu.se](mailto:md.fahim.sikder@liu.se) no later than **31 December 2026**.
+
 ## Course pages
 
 {{< cards cols="2" >}}
